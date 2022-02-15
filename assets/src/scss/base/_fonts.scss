@@ -1,7 +1,11 @@
-$font : 'Roboto', sans-serif;
+$font-family : 'Roboto', sans-serif;
+$bold-weight : 700;
+$black-weight : 900;
+$lh-title : 120%;
+$lh-text : 170%;
 
-@mixin font($f , $fw , $fz , $lh ) {
-  font-family: $f;
+@mixin font($ff , $fw , $fz , $lh ) {
+  font-family: $ff;
   font-weight: $fw;
   font-size: $fz;
   line-height: $lh;
