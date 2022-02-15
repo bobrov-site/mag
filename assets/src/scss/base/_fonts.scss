@@ -1,0 +1,8 @@
+$font : 'Roboto', sans-serif;
+
+@mixin font($f , $fw , $fz , $lh ) {
+  font-family: $f;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}
