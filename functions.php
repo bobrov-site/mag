@@ -29,3 +29,5 @@ include( 'configure/acf.php' );
 if(is_admin()) {
 	include( 'configure/admin.php' );
 }
+
+echo 'hello world';
