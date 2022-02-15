@@ -57,3 +57,28 @@ $spacers : (
     9: 9rem,
     10: 10rem
 );
+
+//custom vars
+
+//colors
+
+$primary-color : #9F2727;
+$primary-soft-color : rgba(159, 39, 39, 0.4);
+$primary-gradient : linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(135deg, #9F2727 0%, #5C0808 100%);
+$white-bg : #fff;
+$primary-white : #F8F8F8;
+$primary-black : #323232;
+
+//box-shadow
+
+$red-box : 0px 3px 12px rgba(159, 39, 39, 0.8);
+$small-box : 0px 2px 4px rgba(0, 0, 0, 0.075);
+$regular-box : 0px 8px 16px rgba(0, 0, 0, 0.15);
+
+@mixin boxShadow($box) {
+  box-shadow: $box;
+}
+
+//border-radius
+
+$br : 0;
