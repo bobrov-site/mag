@@ -9,13 +9,13 @@ class SwiperJS {
 	swiperInit() {
 		Swiper.use([Navigation]);
 		// eslint-disable-next-line no-new
-		new Swiper('.swiper', {
+		new Swiper('.swiper-hero', {
 			loop: true,
 			slidesPerView: 1,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
+			// navigation: {
+			// 	nextEl: '.swiper-button-next',
+			// 	prevEl: '.swiper-button-prev',
+			// },
 		});
 	}
 }
