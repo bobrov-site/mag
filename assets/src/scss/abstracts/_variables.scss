@@ -82,3 +82,9 @@ $regular-box : 0px 8px 16px rgba(0, 0, 0, 0.15);
 //border-radius
 
 $br : 0;
+
+//animation mixin
+
+@mixin animation {
+  transition: 0.2s ease-in;
+}
