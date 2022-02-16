@@ -4,6 +4,7 @@
 
   .navbar {
     .navbar-nav {
+      margin-left: 24px;
       .nav-item {
         display: flex;
         align-items: center;
@@ -35,6 +36,7 @@
     }
     &-number {
       @include font($roboto, $bold-weight, $p, $lh-text, $primary-white);
+      margin-right: 41px;
     }
     &-callback {
       display: flex;
