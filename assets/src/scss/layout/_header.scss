@@ -36,5 +36,13 @@
     &-number {
       @include font($roboto, $bold-weight, $p, $lh-text, $primary-white);
     }
+    &-callback {
+      &-icon {
+        //background: url("../assets/dist/svg/");
+      }
+      &-text {
+        @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
+      }
+    }
   }
 }

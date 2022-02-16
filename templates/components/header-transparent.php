@@ -39,6 +39,12 @@
                             <a href="tel:<?php echo '+7 (962) 444-40-53' ?>" class="navbar-number">
                                 +7 (962) 444-40-53
                             </a>
+                            <a href="#form" class="navbar-callback">
+                                <div class="navbar-callback-icon"></div>
+                                <span class="navbar-callback-text">
+                                    Заказать звонок
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </nav>
