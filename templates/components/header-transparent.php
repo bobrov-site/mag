@@ -12,6 +12,7 @@
                             <!--            //TODO Custom Menu -->
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
+                                    <!--            //TODO Active item -->
                                     <a class="nav-link active" aria-current="page" href="#">Каталог</a>
                                 </li>
                                 <li class="nav-item">
