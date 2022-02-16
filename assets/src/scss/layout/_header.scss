@@ -26,8 +26,7 @@
 
         }
         &-item {
-          @include font($roboto, $regular-weight,$p, $lh-text );
-          color: $primary-black;
+          @include font($roboto, $regular-weight,$p, $lh-text, $primary-black );
         }
         &-item:focus {
           background: none !important;
@@ -35,8 +34,7 @@
       }
     }
     &-number {
-      @include font($roboto, $bold-weight,$p, $lh-text, $primary-white );
-
+      @include font($roboto, $bold-weight, $p, $lh-text, $primary-white);
     }
   }
 }
