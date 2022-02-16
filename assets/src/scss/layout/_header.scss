@@ -37,8 +37,15 @@
       @include font($roboto, $bold-weight, $p, $lh-text, $primary-white);
     }
     &-callback {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-soft-color;
+      padding: 10px 12px;
       &-icon {
-        //background: url("../assets/dist/svg/");
+        background: url("../svg/components/header/phone.svg") no-repeat;
+        width: 16px;
+        height: 16px;
       }
       &-text {
         @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
