@@ -28,10 +28,10 @@
                                         О компании
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item" href="#">О нас</a></li>
+                                        <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                        <li><a class="dropdown-item" href="#">Галерея</a></li>
+                                        <li><a class="dropdown-item" href="#">Лизинг</a></li>
                                     </ul>
                                 </li>
                             </ul>

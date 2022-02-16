@@ -30,6 +30,9 @@
           @include font($roboto, $regular-weight,$p, $lh-text );
           color: $primary-black;
         }
+        &-item:focus {
+          background: none !important;
+        }
       }
     }
   }
