@@ -10,7 +10,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <!--            //TODO Custom Menu -->
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Каталог</a>
                                 </li>
