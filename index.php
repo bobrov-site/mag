@@ -1,28 +1,12 @@
 <?php
 get_header();
 ?>
-    <header id="masthead" class="site-header">
-    </header><!-- #masthead -->
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-
-	        <?php
-	        while(have_posts()) : the_post();
-		        ?>
-
-                <section>
-			        <?php the_title('<h1>', '</h1>'); ?>
-
-			        <?php
-			        the_content();
-			        ?>
-                </section>
-
-		        <?php
-	        endwhile; // End of the loop.
-	        ?>
-
+            <section class="hero-screen" style="background: url(<?php echo get_template_directory_uri() . '/assets/dist/img/pages/main-page/hero-screen/slider.png' ?>)">
+	            <?php get_template_part('templates/components/header-transparent'); ?>
+            </section>
         </main><!-- #main -->
     </div><!-- #primary -->
 
