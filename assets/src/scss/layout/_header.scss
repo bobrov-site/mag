@@ -2,6 +2,15 @@
   padding-top: 75px;
   padding-bottom: 75px;
 
+  .custom-logo-link {
+    .custom-logo {
+      @media (min-width: 992px) and (max-width: 1090px) {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+
   .navbar {
     .navbar-nav {
       margin-left: 24px;
@@ -51,6 +60,9 @@
       }
       &-text {
         @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
+        @media (min-width: 992px) and (max-width: 1090px) {
+          font-size: 10px;
+        }
       }
     }
     &-callback:hover {
