@@ -94,3 +94,7 @@ function add_file_types_to_uploads($mime_types) {
 	return $mime_types;
 }
 add_action('upload_mimes', 'add_file_types_to_uploads', 1, 1);
+
+//add logo for site
+
+add_theme_support( 'custom-logo' );
