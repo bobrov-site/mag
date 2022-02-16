@@ -19,9 +19,10 @@ $regular-weight : normal;
 $lh-title : 120%;
 $lh-text : 170%;
 
-@mixin font($ff , $fw , $fz , $lh ) {
+@mixin font($ff , $fw , $fz , $lh, $c) {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fz;
   line-height: $lh;
+  color: $c;
 }

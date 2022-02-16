@@ -10,8 +10,7 @@
         justify-content: center;
         margin-right: 14px;
         .nav-link {
-          @include font($roboto, $regular-weight,$p, $lh-text );
-          color: $primary-white;
+          @include font($roboto, $regular-weight,$p, $lh-text , $primary-white);
           padding: 0;
         }
         .active {
@@ -34,6 +33,10 @@
           background: none !important;
         }
       }
+    }
+    &-number {
+      @include font($roboto, $bold-weight,$p, $lh-text, $primary-white );
+
     }
   }
 }
