@@ -1,6 +1,8 @@
 <?php
 get_header();
 ?>
+    <header id="masthead" class="site-header">
+    </header><!-- #masthead -->
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
