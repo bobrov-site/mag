@@ -36,7 +36,7 @@
                                 </li>
                             </ul>
                             <!--            //TODO ACF Number -->
-                            <a class="navbar-number">
+                            <a href="tel:<?php echo '+7 (962) 444-40-53' ?>" class="navbar-number">
                                 +7 (962) 444-40-53
                             </a>
                         </div>
