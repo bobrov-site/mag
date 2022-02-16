@@ -1,4 +1,6 @@
-import General from './_generalScripts';
+import PopperJs from './_popper';
+// eslint-disable-next-line import/no-unresolved
+import BootstrapPlugins from './_bootstrapplugins';
 
 const App = {
 
@@ -6,11 +8,15 @@ const App = {
 	 * App.init
 	 */
 	init() {
-		// General scripts
-		function initGeneral() {
-			return new General();
+		// Scripts
+		function initPopperJs() {
+			return new PopperJs();
 		}
-		initGeneral();
+		function initBootstrapPlugins() {
+			return new BootstrapPlugins();
+		}
+		initPopperJs();
+		initBootstrapPlugins();
 	}
 
 };
