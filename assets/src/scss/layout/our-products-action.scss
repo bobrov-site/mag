@@ -1,0 +1,28 @@
+.our-products-action {
+  position: relative;
+  @include paddingSection;
+  background-color: $primary-color;
+  &-img {
+    position: relative;
+    z-index: 9999;
+    @include boxShadow($regular-box);
+  }
+  &-offer {
+    .title-section {
+      margin-bottom: 15px;
+    }
+    .list-offer {
+      margin-bottom: 15px;
+      .offer-item {
+        @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+      }
+    }
+  }
+}
+.gradient-section {
+  position: absolute;
+  bottom: 0;
+  background: url("../svg/components/our-products/gradient.svg") no-repeat;
+  width: 100%;
+  height: 160px;
+}
