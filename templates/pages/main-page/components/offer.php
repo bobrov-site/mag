@@ -25,5 +25,12 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <a href="#popular-products" class="arrow-down-link">
+                    <div class="arrow-down"></div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
