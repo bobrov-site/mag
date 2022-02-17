@@ -18,11 +18,14 @@
         "layout/footer",
         "layout/forms",
         "layout/grid",
-        "layout/hero-screen";
+        "layout/hero-screen",
+        "layout/popular-products";
 
 // components
 @import "components/buttons",
-        "components/modal";
+        "components/modal",
+        "components/brick",
+        "components/title-section";
 
 // pages
 @import "pages/front-page",

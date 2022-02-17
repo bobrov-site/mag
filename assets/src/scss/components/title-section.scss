@@ -1,0 +1,6 @@
+.title-section {
+  @include font($roboto, $black-weight, $h2, $lh-title, $primary-black );
+}
+.dark-section {
+  color: $white;
+}
