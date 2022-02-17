@@ -3,7 +3,6 @@
   &-offer {
     margin-top: 75px;
     .offer {
-      width: 100%;
       &-title {
         @include font($roboto, $black-weight,$h1, $lh-title , $primary-white);
         margin-bottom: 18px;
