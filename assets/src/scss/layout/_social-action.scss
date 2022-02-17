@@ -1,0 +1,14 @@
+.social-action {
+  background-color: $primary-color;
+  @include paddingSection;
+
+  .offer {
+    .title-section {
+      margin-bottom: 15px;
+    }
+    .description {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+      margin-bottom: 15px;
+    }
+  }
+}

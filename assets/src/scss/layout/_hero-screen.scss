@@ -11,12 +11,6 @@
         @include font($roboto, $regular-weight,$p, $lh-text , $primary-white);
         margin-bottom: 18px;
       }
-      &-link {
-        padding: 12px 16px;
-        background-color: $primary-color;
-        @include font($roboto, $black-weight,20px, $lh-text , $primary-white);
-        @include boxShadow($red-box);
-      }
     }
     .slider-img {
       padding-right: 15px;

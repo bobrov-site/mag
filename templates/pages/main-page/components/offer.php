@@ -12,7 +12,7 @@
                         Настройка за 7 минут. Минимум точек смазки b удобное расположение точек обслуживания. Низкая стоимость владения техникой.
                     </p>
                     <!--                TODO link to offer-->
-                    <a class="btn-lg offer-link" href="#">
+                    <a class="btn-lg offer-link btn-primary" href="#">
                         Заказать такой же
                     </a>
                 </div>
