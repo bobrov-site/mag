@@ -2,6 +2,7 @@
   @include font($roboto, $black-weight, 16px, $lh-text, $primary-white );
   background-color: $primary-color;
   border: none;
+  @include boxShadow($red-box);
 }
 
 .btn {
