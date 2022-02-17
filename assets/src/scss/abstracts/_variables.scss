@@ -88,3 +88,10 @@ $br : 0;
 @mixin animation {
   transition: 0.2s ease-in;
 }
+
+//padding and margin mixin
+
+@mixin paddingSection {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
