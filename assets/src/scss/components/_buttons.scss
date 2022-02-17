@@ -9,7 +9,7 @@
   @include animation;
   background-color: $primary-white;
   color: $primary-color;
-  @include boxShadow($red-box);
+  @include boxShadow($regular-box);
 }
 
 .btn {
@@ -31,7 +31,7 @@
 
 .btn-secondary:hover {
   @include animation;
-  background-color: $primary-soft-color;
-  color: $primary-white;
+  background-color: $primary-white-dark;
+  color: $primary-black;
   @include boxShadow($red-box);
 }

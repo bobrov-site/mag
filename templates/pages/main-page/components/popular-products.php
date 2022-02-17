@@ -32,7 +32,7 @@
                             Культиватор Tёrmet 12000
                         </h3>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
+                        <a class="btn btn-secondary">
                             Подробнее
                         </a>
                     </div>
