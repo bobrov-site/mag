@@ -1,0 +1,13 @@
+.btn-primary {
+  @include font($roboto, $black-weight, 16px, $lh-text, $primary-white );
+  background-color: $primary-color;
+  border: none;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-lg {
+  border-radius: 0;
+}
