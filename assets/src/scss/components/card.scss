@@ -4,9 +4,41 @@
     .card-title {
       @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
       margin-bottom: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      box-orient: vertical;
     }
     .card-text {
       margin-bottom: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -moz-box;
+      -moz-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      line-clamp: 4;
+      box-orient: vertical;
+    }
+  }
+}
+.card-our-product {
+  @include boxShadow($red-box);
+  background-color: $primary-color;
+  .card-body {
+    .card-title, .card-text {
+      color: $primary-white;
+    }
+    .btn-primary {
+      color: $primary-color;
+      background-color: $primary-white;
+      @include boxShadow($regular-box);
     }
   }
 }
