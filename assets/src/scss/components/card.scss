@@ -28,6 +28,10 @@
     }
   }
 }
+.card:hover {
+  @include animation;
+  @include boxShadow($regular-box);
+}
 .card-our-product {
   @include boxShadow($red-box);
   background-color: $primary-color;
@@ -41,4 +45,7 @@
       @include boxShadow($regular-box);
     }
   }
+}
+.card-our-product:hover {
+  @include animation;
 }
