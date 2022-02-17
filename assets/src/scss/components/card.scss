@@ -1,0 +1,12 @@
+.card {
+  border-radius: 0;
+  &-body {
+    .card-title {
+      @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
+      margin-bottom: 12px;
+    }
+    .card-text {
+      margin-bottom: 12px;
+    }
+  }
+}

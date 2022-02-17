@@ -14,7 +14,9 @@
                 <div class="card">
                     <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h3 class="card-title">
+                            Культиватор Tёrmet 12000
+                        </h3>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <a class="btn btn-primary">
                             Подробнее
