@@ -1,0 +1,25 @@
+.leasing-action {
+  @include paddingSection;
+  background-color: $primary-color;
+  position: relative;
+
+  &-img {
+    width: 293px;
+    height: 379px;
+    max-width: 293px;
+    max-height: 379px;
+    position: relative;
+    z-index: 2;
+  }
+  &-offer {
+    .title-section {
+      margin-bottom: 15px;
+    }
+  }
+  .gradient-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
