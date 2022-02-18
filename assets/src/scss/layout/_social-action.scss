@@ -1,5 +1,6 @@
 .social-action {
   background-color: $primary-color;
+  position: relative;
   @include paddingSection;
 
   .offer {
@@ -23,5 +24,13 @@
     width: 475px;
     max-width: 475px;
     height: 306px;
+    position: relative;
+    z-index: 2;
+  }
+  .gradient-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
   }
 }
