@@ -12,7 +12,7 @@ get_header();
             <?php get_template_part('templates/components/feedbacks'); ?>
             <?php get_template_part('templates/components/our-partners-action'); ?>
             <?php get_template_part('templates/pages/main-page/components/leasing-action'); ?>
-            <?php get_template_part('templates/components/news'); ?>
+            <?php get_template_part('templates/components/news-slider'); ?>
             <?php get_template_part('templates/components/company-action'); ?>
             <?php get_template_part('templates/components/contact-form'); ?>
         </main><!-- #main -->
