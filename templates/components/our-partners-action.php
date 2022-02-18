@@ -23,7 +23,28 @@
                 </div>
             </div>
             <div class="col-xl-6">
-                <div class="partners-slider"></div>
+                <div class="partners-slider d-flex align-items-center justify-content-center border">
+                    <div class="partners-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+<!--                                TODO ACF img-->
+                                <img class="partners-logo" src="<?php echo get_template_directory_uri() . '/assets/src/img/components/our-partners/logo.png' ?>" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <!--                                TODO ACF img-->
+                                <img class="partners-logo" src="<?php echo get_template_directory_uri() . '/assets/src/img/components/our-partners/logo.png' ?>" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <!--                                TODO ACF img-->
+                                <img class="partners-logo" src="<?php echo get_template_directory_uri() . '/assets/src/img/components/our-partners/logo.png' ?>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-controls w-100 d-flex justify-content-center">
+                    <div class="swiper-button-prev swipers"></div>
+                    <div class="swiper-button-next swipers"></div>
+                </div>
             </div>
         </div>
 	</div>
