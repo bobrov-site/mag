@@ -1,10 +1,13 @@
-import Swiper, { Navigation, Autoplay } from 'swiper';
+import Swiper, {
+	Navigation, Autoplay, Pagination, EffectFade,
+} from 'swiper';
 
 class SwiperJS {
 	constructor() {
 		this.swiperFeedbackInit();
 		this.swiperPartnersInit();
 		this.swiperNewsSlider();
+		this.swiperHeroSlider();
 	}
 
 	// eslint-disable-next-line class-methods-use-this
@@ -53,6 +56,30 @@ class SwiperJS {
 				prevEl: '.swiper-button-prev',
 			},
 		});
+	}
+
+	// eslint-disable-next-line class-methods-use-this
+	swiperHeroSlider() {
+		Swiper.use([Pagination, Autoplay, EffectFade]);
+		// eslint-disable-next-line no-new
+		new Swiper(
+			'.swiper-hero',
+			{
+				loop: false,
+				autoplay: {
+					delay: 4000
+				},
+				slidesPerView: 1,
+				effect: 'fade',
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				fadeEffect: {
+					crossFade: true
+				},
+			}
+		);
 	}
 }
 

@@ -6,6 +6,30 @@
   overflow-x: hidden;
 }
 
+.swiper-hero {
+  overflow-x: hidden;
+  position: relative;
+  .swiper-slide {
+  }
+  .swiper-pagination {
+    text-align: left;
+    max-width: 531px;
+    right: 0;
+    left: unset;
+    .swiper-pagination-bullet {
+      border: 0;
+      border-radius: 0;
+      width: 39px;
+      height: 8px;
+      background: $white !important;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: $primary-color !important;
+    }
+  }
+}
+
 .partners-slider {
   height: 100%;
   max-height: 240px;
