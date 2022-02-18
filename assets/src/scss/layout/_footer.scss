@@ -1,4 +1,14 @@
-
 .site-footer {
+  background-color: $primary-black;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+  .nav-link {
+    @include font($roboto, $regular-weight,$p, $lh-text , $primary-white);
+  }
+  .nav-pills {
+    .active {
+      background-color: $primary-color;
+    }
+  }
 }
