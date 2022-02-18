@@ -4,6 +4,7 @@ class SwiperJS {
 	constructor() {
 		this.swiperFeedbackInit();
 		this.swiperPartnersInit();
+		this.swiperNewsSlider();
 	}
 
 	// eslint-disable-next-line class-methods-use-this
@@ -31,6 +32,22 @@ class SwiperJS {
 			autoplay: true,
 			slidesPerView: 3,
 			spaceBetween: 35,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	}
+
+	// eslint-disable-next-line class-methods-use-this
+	swiperNewsSlider() {
+		Swiper.use([Navigation, Autoplay]);
+		// eslint-disable-next-line no-new
+		new Swiper('.news-swiper', {
+			loop: true,
+			autoplay: true,
+			slidesPerView: 3,
+			spaceBetween: 24,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
