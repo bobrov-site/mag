@@ -27,5 +27,5 @@
 			</div>
 		</div>
 	</div>
-    <div class="gradient-section"></div>
+    <img class="gradient-section" alt="gradient-products" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/our-products/gradient.svg'?>">
 </section>
