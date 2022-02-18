@@ -1,0 +1,25 @@
+.feedback-swiper {
+  overflow-x: hidden;
+}
+
+.swiper-controls {
+  margin-top: 42px;
+  .swiper-button-prev {
+    background: url("../svg/components/slider/arrow-left.svg") no-repeat;
+    margin-right: 15px;
+  }
+
+  .swiper-button-next {
+    background: url("../svg/components/slider/arrow-right.svg") no-repeat;
+  }
+
+  .swipers {
+    border: none;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    position: static;
+    cursor: pointer;
+  }
+}

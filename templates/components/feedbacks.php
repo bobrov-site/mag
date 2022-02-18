@@ -56,8 +56,8 @@
                         </div>
                     </div>
                     <div class="swiper-controls w-100 d-flex justify-content-center">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-prev swipers"></div>
+                        <div class="swiper-button-next swipers"></div>
                     </div>
                 </div>
             </div>
