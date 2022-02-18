@@ -1,10 +1,10 @@
 <section class="our-products-action">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl">
+			<div class="col-xl-7">
 				<img class="our-products-action-img" src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/our-products/product.png' ?>" alt="our-products-action">
 			</div>
-			<div class="col-xl d-flex align-items-center">
+			<div class="col-xl-5 d-flex align-items-center">
 				<div class="our-products-action-offer">
 					<h2 class="title-section dark-section">
 						Наша собственная продукция
