@@ -56,6 +56,7 @@
         background: url("../svg/components/header/phone.svg") no-repeat;
         width: 16px;
         height: 16px;
+        margin-right: 4px;
       }
       &-text {
         @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
