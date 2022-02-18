@@ -1,4 +1,4 @@
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
 class SwiperJS {
 	constructor() {
@@ -7,26 +7,16 @@ class SwiperJS {
 
 	// eslint-disable-next-line class-methods-use-this
 	swiperInit() {
-		Swiper.use([Navigation]);
+		Swiper.use([Navigation, Pagination]);
 		// eslint-disable-next-line no-new
-		new Swiper('.swiper-hero', {
-			loop: false,
-			slidesPerView: 1,
-			// navigation: {
-			// 	nextEl: '.swiper-button-next',
-			// 	prevEl: '.swiper-button-prev',
-			// },
-			// breakpoints: {
-			// 	1: {
-			// 		slidesPerView: 1
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 2
-			// 	},
-			// 	1200: {
-			// 		slidesPerView: 3
-			// 	},
-			// },
+		new Swiper('.feedback-swiper', {
+			loop: true,
+			slidesPerView: 3,
+			spaceBetween: 24,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 		});
 	}
 }
