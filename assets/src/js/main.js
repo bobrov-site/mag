@@ -1,8 +1,6 @@
 import PopperJs from './_popper';
-// eslint-disable-next-line import/no-unresolved
-import BootstrapPlugins from './_bootstrapplugins';
+import BootstrapPlugins from './_bootstrapPlugins';
 import SwiperJS from './_swiperJs';
-// import TinySlider from './_tinySlider';
 
 const App = {
 
@@ -20,13 +18,9 @@ const App = {
 		function initSwiperJS() {
 			return new SwiperJS();
 		}
-		// function initTinySlider() {
-		// 	return new TinySlider();
-		// }
 		initPopperJs();
 		initBootstrapPlugins();
 		initSwiperJS();
-		// initTinySlider();
 	}
 
 };
