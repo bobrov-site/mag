@@ -1,7 +1,13 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xl-12">
-			<div class="breadcrumb"></div>
+			<div class="breadcrumbs">
+                <?php
+                if (function_exists('yoast_breadcrumb') ) {
+                    yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+                }
+                ?>
+            </div>
 		</div>
 	</div>
 	<div class="row">
