@@ -8,6 +8,7 @@ get_header();
             <?php get_template_part('templates/pages/company/components/about') ?>
 			<?php get_template_part('templates/components/benefits') ?>
 			<?php get_template_part('templates/components/socials-action') ?>
+            <?php get_template_part('templates/pages/company/components/certificates') ?>
 			<?php get_template_part('templates/components/our-partners-action') ?>
 			<?php get_template_part('templates/components/feedbacks') ?>
 			<?php get_template_part('templates/components/our-products-action') ?>
