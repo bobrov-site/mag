@@ -29,15 +29,19 @@
         "layout/leasing-action",
         "layout/news-slider",
         "layout/company-action",
-        "layout/contact-form";
+        "layout/contact-form",
+        "layout/requisites",
+        "layout/get-requisites";
 
 // components
 @import "components/buttons",
         "components/modal",
         "components/brick",
         "components/title-section",
+        "components/title-page",
         "components/card",
-        "components/slider";
+        "components/slider",
+        "components/breadcrumbs";
 
 // pages
 @import "pages/front-page",

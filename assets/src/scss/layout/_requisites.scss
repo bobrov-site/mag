@@ -1,0 +1,44 @@
+.requisites {
+  @include paddingSection;
+  .border {
+    padding: 20px 16px;
+    @include boxShadow($small-box);
+    .requisites-header {
+      .buttons-arrows {
+        .arrow-down-link {
+          .arrow-down-button {
+            background: url("../svg/pages/requisites/arrow-down.svg") no-repeat;
+            width: 24px;
+            height: 14px;
+          }
+        }
+        .arrow-down-link[aria-expanded="true"] {
+          .arrow-down-button {
+            @include animation;
+            background: url("../svg/pages/requisites/arrow-up.svg") no-repeat;
+          }
+        }
+      }
+      &-title {
+        @include font($roboto, $black-weight, $h2, $lh-title, $primary-black);
+      }
+    }
+    .collapse {
+      margin-top: 22px;
+      .requisites-field {
+        margin-bottom: 22px;
+        &-title {
+          @include font($roboto, $black-weight, $h4, $lh-title, $primary-black);
+        }
+        &-data {
+          @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+          text-align: right;
+        }
+      }
+    }
+  }
+  .border:hover {
+    @include animation;
+    @include boxShadow($regular-box);
+  }
+}
