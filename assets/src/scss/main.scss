@@ -4,6 +4,8 @@
 
 // vendors
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/swiper/swiper";
+@import "node_modules/swiper/modules/pagination/pagination";
 
 // vendors overrides
 // @import "vendors/myvendor";
@@ -16,12 +18,28 @@
 @import "layout/header",
         "layout/footer",
         "layout/forms",
-        "layout/grid";
+        "layout/grid",
+        "layout/hero-screen",
+        "layout/popular-products",
+        "layout/social-action",
+        "layout/benefits",
+        "layout/our-products-action",
+        "layout/feedbacks",
+        "layout/our-partners-action",
+        "layout/leasing-action",
+        "layout/news-slider",
+        "layout/company-action",
+        "layout/contact-form";
 
 // components
 @import "components/buttons",
-        "components/modal";
+        "components/modal",
+        "components/brick",
+        "components/title-section",
+        "components/card",
+        "components/slider";
 
 // pages
 @import "pages/front-page",
-        "pages/page";
+        "pages/page",
+        "pages/main-page";

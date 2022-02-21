@@ -1,0 +1,42 @@
+.company-action {
+  @include paddingSection;
+  background-color: $primary-color;
+  .title-section {
+    margin-bottom: 15px;
+  }
+  &-desc {
+    @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+    margin-bottom: 15px;
+  }
+  &-img {
+    @include boxShadow($regular-box);
+    max-width: 546px;
+    max-height: 320px;
+    height: auto;
+  }
+}
+.mosh-partner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: $primary-gradient;
+  &-offer {
+    max-width: 256px;
+    .mosh-logo {
+      margin-bottom: 15px;
+    }
+    .mosh-desc {
+      font-family: $roboto;
+      font-weight: $black-weight;
+      font-size: 16px;
+      color: $primary-white;
+      margin-bottom: 15px;
+      max-width: 256px;
+    }
+    .mosh-link {
+      border: 1px solid $primary-white;
+      padding: 4px 8px;
+      color: $primary-white;
+      @include font($roboto, $black-weight, 16px, $lh-text, $primary-white);
+    }
+  }
+}

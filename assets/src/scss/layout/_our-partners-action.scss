@@ -1,0 +1,20 @@
+.our-partners-action {
+  @include paddingSection;
+  padding-top: 0;
+
+  .partners-offer {
+    &-img {
+      width: 100%;
+      max-height: 240px;
+      margin-bottom: 15px;
+    }
+    &-title {
+      @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
+      margin-bottom: 15px;
+    }
+    &-desc {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+      margin-bottom: 15px;
+    }
+  }
+}

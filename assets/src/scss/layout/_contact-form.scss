@@ -1,0 +1,68 @@
+.contact-form {
+  @include paddingSection;
+  .form {
+    padding: 20px 16px;
+    margin-bottom: 30px;
+    @include boxShadow($regular-box);
+    &-title {
+      @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
+      margin-bottom: 22px;
+    }
+    div {
+      margin-bottom: 22px;
+      .form-control {
+        @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+      }
+      .form-control:focus {
+        @include animation;
+        border: 1px solid $primary-color;
+      }
+    }
+    .btn {
+      margin-bottom: 22px;
+    }
+
+    .privacy {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+      &-link {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  .form:hover {
+    @include boxShadow($red-box);
+    @include animation;
+  }
+  &-map {
+    @include boxShadow($regular-box);
+  }
+  &-map:hover {
+    @include boxShadow($red-box);
+    @include animation;
+  }
+  .contact-data {
+    padding: 20px 16px;
+    @include boxShadow($regular-box);
+    .title-data {
+      @include font($roboto, $black-weight, $h4, $lh-title, $primary-black);
+      margin-bottom: 22px;
+    }
+    .contact-data-item {
+      margin-bottom: 22px;
+      img {
+        margin-right: 7px;
+      }
+      &-title {
+        @include font($roboto, $black-weight, $p, $lh-title, $primary-black);
+      }
+      a, p {
+        @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+      }
+    }
+  }
+  .contact-data:hover {
+    @include boxShadow($red-box);
+    @include animation;
+  }
+}

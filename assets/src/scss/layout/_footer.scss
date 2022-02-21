@@ -1,4 +1,73 @@
-
 .site-footer {
+  background-color: $primary-black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .nav-link {
+    @include font($roboto, $regular-weight,$p, $lh-text , $primary-white);
+  }
+  .nav-pills {
+    .active {
+      background-color: $primary-color;
+    }
+  }
+
+  .footer-address {
+    .address-info {
+      margin-bottom: 15px;
+      &-title {
+        @include font($roboto, $black-weight, $h4, $lh-title, $primary-white)
+      }
+      &-text {
+        @include font($roboto, $regular-weight, $p, $lh-text, $primary-white)
+      }
+    }
+  }
+  .footer-number {
+    @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
+    margin-right: 41px;
+  }
+
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: $primary-white;
+  }
+
+  .callback-and-social {
+    .callback {
+      margin-bottom: 30px;
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-icon {
+        background: url("../svg/components/header/phone.svg") no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+      }
+      &-text {
+        @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
+        //@media (min-width: 992px) and (max-width: 1090px) {
+        //  font-size: 10px;
+        //}
+      }
+    }
+    .socials {
+      .social-link {
+        margin-right: 15px;
+      }
+      .social-link:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .copyright, .developer, .privacy-policy {
+    @include font($roboto, $regular-weight, $p, $lh-text, $primary-white)
+  }
+
 
 }

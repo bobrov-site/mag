@@ -4,23 +4,17 @@ get_header();
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-
-	        <?php
-	        while(have_posts()) : the_post();
-		        ?>
-
-                <section>
-			        <?php the_title('<h1>', '</h1>'); ?>
-
-			        <?php
-			        the_content();
-			        ?>
-                </section>
-
-		        <?php
-	        endwhile; // End of the loop.
-	        ?>
-
+            <?php get_template_part('templates/pages/main-page/components/hero-screen'); ?>
+            <?php get_template_part('templates/pages/main-page/components/popular-products'); ?>
+            <?php get_template_part('templates/components/socials-action'); ?>
+            <?php get_template_part('templates/components/benefits'); ?>
+            <?php get_template_part('templates/components/our-products-action'); ?>
+            <?php get_template_part('templates/components/feedbacks'); ?>
+            <?php get_template_part('templates/components/our-partners-action'); ?>
+            <?php get_template_part('templates/pages/main-page/components/leasing-action'); ?>
+            <?php get_template_part('templates/components/news-slider'); ?>
+            <?php get_template_part('templates/components/company-action'); ?>
+            <?php get_template_part('templates/components/contact-form'); ?>
         </main><!-- #main -->
     </div><!-- #primary -->
 

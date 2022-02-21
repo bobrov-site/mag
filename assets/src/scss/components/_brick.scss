@@ -1,0 +1,8 @@
+.brick {
+  display: block;
+  margin-bottom: 10px;
+  width: 39px;
+  height: 8px;
+  @include boxShadow($red-box);
+  background: $primary-color;
+}

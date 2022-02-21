@@ -1,4 +1,73 @@
-
 .site-header {
+  padding-top: 75px;
 
+  .custom-logo-link {
+    .custom-logo {
+      @media (min-width: 992px) and (max-width: 1090px) {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+
+  .navbar {
+    .navbar-nav {
+      margin-left: 24px;
+      .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 14px;
+        .nav-link {
+          @include font($roboto, $regular-weight,$p, $lh-text , $primary-white);
+          padding: 0;
+        }
+        .active {
+          padding: 5px;
+          background-color: $primary-color;
+        }
+      }
+      .nav-item:last-child {
+        margin-right: 0;
+      }
+      .dropdown {
+        &-menu {
+
+        }
+        &-item {
+          @include font($roboto, $regular-weight,$p, $lh-text, $primary-black );
+        }
+        &-item:focus {
+          background: none !important;
+        }
+      }
+    }
+    &-number {
+      @include font($roboto, $bold-weight, $p, $lh-text, $primary-white);
+      margin-right: 41px;
+    }
+    &-callback {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-soft-color;
+      padding: 10px 12px;
+      &-icon {
+        background: url("../svg/components/header/phone.svg") no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+      }
+      &-text {
+        @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
+        @media (min-width: 992px) and (max-width: 1090px) {
+          font-size: 10px;
+        }
+      }
+    }
+    &-callback:hover {
+      @include animation;
+      background-color: $primary-color;
+    }
+  }
 }

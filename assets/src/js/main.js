@@ -1,4 +1,6 @@
-import General from './_generalScripts';
+import PopperJs from './_popper';
+import BootstrapPlugins from './_bootstrapPlugins';
+import SwiperJS from './_swiperJs';
 
 const App = {
 
@@ -6,11 +8,19 @@ const App = {
 	 * App.init
 	 */
 	init() {
-		// General scripts
-		function initGeneral() {
-			return new General();
+		// Scripts
+		function initPopperJs() {
+			return new PopperJs();
 		}
-		initGeneral();
+		function initBootstrapPlugins() {
+			return new BootstrapPlugins();
+		}
+		function initSwiperJS() {
+			return new SwiperJS();
+		}
+		initPopperJs();
+		initBootstrapPlugins();
+		initSwiperJS();
 	}
 
 };

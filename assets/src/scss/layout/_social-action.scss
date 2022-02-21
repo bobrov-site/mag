@@ -1,0 +1,36 @@
+.social-action {
+  background-color: $primary-color;
+  position: relative;
+  @include paddingSection;
+
+  .offer {
+    .title-section {
+      margin-bottom: 15px;
+    }
+    .description {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+      margin-bottom: 15px;
+    }
+    .social-buttons {
+      .btn {
+        margin-right: 15px;
+      }
+      .btn:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .social-icons {
+    width: 475px;
+    max-width: 475px;
+    height: 306px;
+    position: relative;
+    z-index: 2;
+  }
+  .gradient-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

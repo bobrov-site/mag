@@ -1,0 +1,37 @@
+.btn-primary {
+  @include font($roboto, $black-weight, 16px, $lh-text, $primary-white );
+  background-color: $primary-color;
+  border: none;
+  @include boxShadow($red-box);
+}
+
+.btn-primary:hover {
+  @include animation;
+  background-color: $primary-white;
+  color: $primary-color;
+  @include boxShadow($regular-box);
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-lg {
+  padding: 12px 16px;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.btn-secondary {
+  @include font($roboto, $black-weight, 16px, $lh-text, $primary-color );
+  background-color: $primary-white;
+  border: none;
+  @include boxShadow($regular-box);
+}
+
+.btn-secondary:hover {
+  @include animation;
+  background-color: $primary-white-dark;
+  color: $primary-black;
+  @include boxShadow(none);
+}

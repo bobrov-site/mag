@@ -1,0 +1,69 @@
+.feedback-swiper {
+  overflow-x: hidden;
+}
+
+.news-swiper {
+  overflow-x: hidden;
+}
+
+.swiper-hero {
+  overflow-x: hidden;
+  position: relative;
+  .swiper-slide {
+  }
+  .swiper-pagination {
+    text-align: left;
+    max-width: 531px;
+    right: 0;
+    left: unset;
+    .swiper-pagination-bullet {
+      border: 0;
+      border-radius: 0;
+      width: 39px;
+      height: 8px;
+      background: $white !important;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: $primary-color !important;
+    }
+  }
+}
+
+.partners-slider {
+  height: 100%;
+  max-height: 240px;
+  .partners-swiper {
+    overflow-x: hidden;
+    .swiper-wrapper {
+      .swiper-slide {
+        .partners-logo {
+          max-width: 146px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.swiper-controls {
+  margin-top: 42px;
+  .swiper-button-prev {
+    background: url("../svg/components/slider/arrow-left.svg") no-repeat;
+    margin-right: 15px;
+  }
+
+  .swiper-button-next {
+    background: url("../svg/components/slider/arrow-right.svg") no-repeat;
+  }
+
+  .swipers {
+    border: none;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    position: static;
+    cursor: pointer;
+  }
+}
