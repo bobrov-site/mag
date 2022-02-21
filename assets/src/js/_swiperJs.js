@@ -8,6 +8,7 @@ class SwiperJS {
 		this.swiperPartnersInit();
 		this.swiperNewsSlider();
 		this.swiperHeroSlider();
+		this.swiperCertificatesSlider();
 	}
 
 	// eslint-disable-next-line class-methods-use-this
@@ -80,6 +81,22 @@ class SwiperJS {
 				},
 			}
 		);
+	}
+
+	// eslint-disable-next-line class-methods-use-this
+	swiperCertificatesSlider() {
+		Swiper.use([Navigation, Autoplay]);
+		// eslint-disable-next-line no-new
+		new Swiper('.certificates-swiper', {
+			loop: true,
+			autoplay: true,
+			slidesPerView: 3,
+			spaceBetween: 24,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
 	}
 }
 

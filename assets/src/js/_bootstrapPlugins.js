@@ -22,11 +22,13 @@ class BootstrapPlugins {
 	// eslint-disable-next-line class-methods-use-this
 	collapseRequisites() {
 		const collapse = document.getElementById('collapseRequisites');
-		// eslint-disable-next-line no-undef
-		const bscollapse = new Collapse(collapse, {
-			toggle: false,
-		});
-		bscollapse.show();
+		if (collapse) {
+			// eslint-disable-next-line no-undef
+			const bscollapse = new Collapse(collapse, {
+				toggle: false,
+			});
+			bscollapse.show();
+		}
 	}
 }
 

@@ -6,6 +6,17 @@
   overflow-x: hidden;
 }
 
+.certificates-swiper {
+  overflow-x: hidden;
+  .certificates-swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+
+      }
+    }
+  }
+}
+
 .swiper-hero {
   overflow-x: hidden;
   position: relative;

@@ -4,7 +4,15 @@
             <div class="col-xl-6 d-flex align-items-center">
                 <div class="offer">
                     <h2 class="title-section dark-section">
-                        Понравился каталог?
+                        <?php
+                        $post = get_post();
+                        if ($post->ID == 27) {
+                            echo 'Оставайтесь с нами на связи!';
+                        }
+                        else {
+                            echo 'Понравился каталог?';
+                        }
+                        ?>
                         <br>
                         Следите за нами в социальных сетях!
                     </h2>
