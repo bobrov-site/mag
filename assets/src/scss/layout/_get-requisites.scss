@@ -1,0 +1,22 @@
+.get-requisites {
+  @include paddingSection;
+  background-color: $primary-color;
+  position: relative;
+  &-offer {
+    .title-section {
+      margin-bottom: 15px;
+    }
+    .desc-section {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+      margin-bottom: 15px;
+    }
+  }
+  &-img {
+    width: 377px;
+    max-width: 377px;
+    height: 383px;
+    max-height: 383px;
+    position: relative;
+    z-index: 2;
+  }
+}
