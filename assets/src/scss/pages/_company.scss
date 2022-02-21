@@ -1,0 +1,44 @@
+.catalog-about {
+  @include paddingSection;
+  &-offer {
+    .title-section {
+      margin-bottom: 15px;
+    }
+    .desc-section {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+      margin-bottom: 15px;
+    }
+  }
+  &-img {
+    position: relative;
+    max-width: 531px;
+    max-height: 415px;
+    img {
+      position: relative;
+      z-index: 2;
+    }
+    &-bg {
+      @include boxShadow($red-box);
+      position: absolute;
+      background-color: #9F2727;
+      width: 100%;
+      height: 100%;
+      max-width: 531px;
+      max-height: 415px;
+      z-index: 1;
+      top: -15px;
+      right: -15px;
+    }
+  }
+}
+
+.feedback-about {
+  @include paddingSection;
+  .catalog-about-offer {
+    text-align: right;
+  }
+  .catalog-about-img-bg {
+    right: 0;
+    left: -15px;
+  }
+}
