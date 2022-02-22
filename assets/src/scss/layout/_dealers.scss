@@ -1,4 +1,8 @@
 .dealers {
   @include paddingSection;
   padding-bottom: 0;
+
+  .become-dealer-link {
+    margin-top: 42px;
+  }
 }
