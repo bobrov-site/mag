@@ -1,14 +1,14 @@
 .btn-primary {
   @include font($roboto, $black-weight, 16px, $lh-text, $primary-white );
   background-color: $primary-color;
-  border: none;
   @include boxShadow($red-box);
+  border:none;
+  border-bottom-color: unset;
 }
 
 .btn-primary:hover {
   @include animation;
-  background-color: $primary-white;
-  color: $primary-color;
+  background: $primary-black;
   @include boxShadow($regular-box);
 }
 
