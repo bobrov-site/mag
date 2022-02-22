@@ -3,4 +3,8 @@
   .border {
     padding: 20px 16px;
   }
+  .border:hover {
+    @include animation;
+    @include boxShadow($regular-box);
+  }
 }
