@@ -51,6 +51,12 @@
       line-clamp: 4;
       box-orient: vertical;
     }
+    .card-number {
+      margin-bottom: 12px;
+      &-link {
+        @include font($roboto, $black-weight, 16px, $lh-title, $primary-black);
+      }
+    }
   }
 }
 .card:hover {
