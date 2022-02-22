@@ -3,12 +3,20 @@
   position: relative;
   background-color: $primary-color;
 
-  .title-section {
-    margin-bottom: 15px;
+  &-offer {
+    .title-section {
+      margin-bottom: 15px;
+    }
+    .desc-section {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+      margin-bottom: 15px;
+    }
   }
-  .title-desc {
-    @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
-    margin-bottom: 15px;
+
+  &-img {
+    position: relative;
+    z-index: 2;
+    @include boxShadow($regular-box);
   }
 
   .gradient-section {
