@@ -1,0 +1,20 @@
+.dealer-invite {
+  @include paddingSection;
+  position: relative;
+  background-color: $primary-color;
+
+  .title-section {
+    margin-bottom: 15px;
+  }
+  .title-desc {
+    @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+    margin-bottom: 15px;
+  }
+
+  .gradient-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

@@ -5,8 +5,8 @@
 				<h2 class="title-section dark-section">
 					ООО “Монолит Агро Групп” приглашает вас стать официальным дилером
 				</h2>
-				<p class="title-desc"></p>
-				<a class="btn btn-secondary">
+				<p class="desc-section"></p>
+				<a href="#dealers-blank" class="btn btn-secondary">
 					Стать дилером
 				</a>
 			</div>
