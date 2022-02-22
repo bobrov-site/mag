@@ -9,6 +9,7 @@ class SwiperJS {
 		this.swiperNewsSlider();
 		this.swiperHeroSlider();
 		this.swiperCertificatesSlider();
+		this.swiperDealersInit();
 	}
 
 	// eslint-disable-next-line class-methods-use-this
@@ -25,6 +26,33 @@ class SwiperJS {
 				prevEl: '.swiper-button-prev',
 			},
 		});
+	}
+
+	// eslint-disable-next-line class-methods-use-this
+	swiperDealersInit() {
+		Swiper.use([Navigation, Autoplay]);
+		// eslint-disable-next-line no-new
+		const slider = new Swiper('.dealers-swiper', {
+			autoplay: true,
+			slidesPerView: 2,
+			spaceBetween: 24,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				992: {
+					enabled: false
+				}
+			}
+		});
+
+		const screen = window.matchMedia('(min-width: 992px)').matches;
+		if (!screen) {
+			slider.init();
+		} else {
+			slider.destroy(true, true);
+		}
 	}
 
 	// eslint-disable-next-line class-methods-use-this
