@@ -1,4 +1,4 @@
-<section class="contact-form">
+<section id="contact-form" class="contact-form">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
@@ -66,7 +66,9 @@
                                     </h4>
                                     <p>
                                         г. Михайловск 350000
+                                        <br>
                                         ул. Вокзальная 22
+                                        <br>
                                         2 этаж, каб 14
                                     </p>
                                 </div>
@@ -81,6 +83,7 @@
                                     </h4>
                                     <p>
                                         г. Ставрополь 355044
+                                        <br>
                                         пр. Кулакова, 18
                                     </p>
                                 </div>
