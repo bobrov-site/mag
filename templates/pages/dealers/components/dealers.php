@@ -250,5 +250,10 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <a class="btn btn-primary btn-lg" href="#dealers-blank">
+                Стать дилером
+            </a>
+        </div>
 	</div>
 </section>
