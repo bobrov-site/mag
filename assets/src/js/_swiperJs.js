@@ -40,11 +40,6 @@ class SwiperJS {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-			breakpoints: {
-				992: {
-					enabled: false
-				}
-			}
 		});
 
 		const screen = window.matchMedia('(min-width: 992px)').matches;
