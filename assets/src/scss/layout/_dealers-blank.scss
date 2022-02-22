@@ -1,0 +1,22 @@
+.dealers-blank {
+  @include paddingSection;
+  padding-bottom: 0;
+  &-offer {
+    .title-offer {
+      @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
+      margin-bottom: 15px;
+    }
+    .desc-section {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+      margin-bottom: 15px;
+      a {
+        color: $primary-color;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  &-img {
+    @include boxShadow($regular-box);
+  }
+}
