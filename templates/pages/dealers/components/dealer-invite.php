@@ -12,7 +12,7 @@
 			</div>
 			<div class="col-xl-7">
 <!--                TODO ACF-->
-				<img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/dealers/dealer.png' ?>">
+				<img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/dealers/dealer.png' ?>" alt="dealer">
 			</div>
 		</div>
 	</div>
