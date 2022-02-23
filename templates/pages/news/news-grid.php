@@ -2,15 +2,18 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
+                <?php
+                //параметры
+                $posts = get_posts(array(
+	                'post_type' => 'news',
+	                'suppress_filters' => true,
+                ));
+                ?>
+	            <?php get_sidebar('news') ?>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             <?php
-            //параметры
-            $posts = get_posts(array(
-                    'post_type' => 'news',
-                    'suppress_filters' => true,
-            ));
             foreach ($posts as $post){
                 setup_postdata($post);
 	            //формат вывода the_title()...
