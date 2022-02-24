@@ -1,19 +1,44 @@
+<?php
+$current_url = get_page_uri();
+?>
 <section class="news-grid">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <?php
-                //параметры
-                $posts = get_posts(array(
-	                'post_type' => 'news',
-	                'suppress_filters' => true,
-                ));
-                ?>
-	            <?php get_sidebar('news') ?>
+                <div class="categories">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link <?php if ($current_url == 'novosti') { echo 'active'; } ?>" aria-current="page" href="<?php echo get_page_link('19') ?>">Все</a>
+                        </li>
+	                    <?php
+	                    $categories = get_categories([
+		                    'taxonomy' => 'category',
+		                    'type' => 'news',
+                            'exclude' => array('bez-rubriki'),
+	                    ]);
+	                    if ($categories) {
+		                    foreach ($categories as $category) {
+			                    ?>
+                                <li class="nav-item">
+                                    <a class="nav-link <?php if ($current_url == $category->name) {echo 'active'; } ?>" href="<?php echo get_category_link($category->term_id) ?>"><?php echo $category->name ?></a>
+                                </li>
+                                <?php
+		                    }
+	                    }
+	                    ?>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             <?php
+
+            //параметры
+            $posts = get_posts( array(
+	            'post_type'        => 'news',
+	            'suppress_filters' => true,
+            ) );
+
             foreach ($posts as $post){
                 setup_postdata($post);
 	            //формат вывода the_title()...
