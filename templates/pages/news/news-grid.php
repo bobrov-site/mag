@@ -12,15 +12,15 @@ $current_url = get_page_uri();
                         </li>
 	                    <?php
 	                    $categories = get_categories([
-		                    'taxonomy' => 'category',
+		                    'taxonomy' => 'news_categories',
 		                    'type' => 'news',
-                            'exclude' => array('bez-rubriki'),
 	                    ]);
 	                    if ($categories) {
 		                    foreach ($categories as $category) {
+                                $title_page = single_term_title('', false)
 			                    ?>
                                 <li class="nav-item">
-                                    <a class="nav-link <?php if ($current_url == $category->name) {echo 'active'; } ?>" href="<?php echo get_category_link($category->term_id) ?>"><?php echo $category->name ?></a>
+                                    <a class="nav-link <?php if ($category->name == $title_page  ) {echo 'active'; } ?>" href="<?php echo get_term_link($category->term_id) ?>"><?php echo $category->name ?></a>
                                 </li>
                                 <?php
 		                    }
@@ -30,13 +30,14 @@ $current_url = get_page_uri();
                 </div>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php
-
+            $title_page = single_term_title('', false);
             //параметры
             $posts = get_posts( array(
 	            'post_type'        => 'news',
 	            'suppress_filters' => true,
+                'category' => $title_page,
             ) );
 
             foreach ($posts as $post){
