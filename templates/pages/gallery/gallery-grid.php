@@ -1,0 +1,66 @@
+<?php
+$arg_category = array(
+	'orderby'      => 'name',
+	'order'        => 'ASC',
+	'taxonomy'     => 'years',
+    'type' => 'gallery',
+);
+$categories = get_categories( $arg_category );
+?>
+
+<?php
+if( $categories ){
+	foreach( $categories as $cat ){
+		$mypost = array(
+			'post_type' => 'gallery',
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'years',
+					'field' => 'slug',
+					'terms' => $cat->slug
+				),
+			),
+		);
+		$loop = new WP_Query( $mypost ); ?>
+
+        <?php if ($loop->have_posts()) ?>
+            <h2><?php echo $cat->name; ?> </h2>
+		<?php while ( $loop->have_posts() ) : $loop->the_post();?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                </div>
+            </article>
+		<?php endwhile; ?>
+		<?php
+	}
+}
+?>
+
+<section class="gallery-grid">
+    <div class="gallery-grid-year">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="title-section"><?php the_taxonomies(); ?></h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="<?php echo get_the_post_thumbnail_url() ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">
+								<?php the_title() ?>
+                            </h3>
+                            <p class="card-text"><?php the_field('date') . the_field('year'); ?></p>
+                            <a class="btn btn-primary" href="<?php the_permalink(); ?>">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
