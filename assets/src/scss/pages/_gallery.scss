@@ -1,3 +1,9 @@
 .gallery-grid {
   @include paddingSection;
+  &-year {
+    margin-bottom: 75px;
+  }
+  &-year:last-child {
+    margin-bottom: 0;
+  }
 }
