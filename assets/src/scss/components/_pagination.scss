@@ -1,0 +1,16 @@
+.pagination-archive {
+  margin-top: 25px;
+  .nav-links {
+    @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+    .current {
+      color: $primary-color;
+      font-weight: $black-weight;
+    }
+    .page-numbers {
+      margin-right: 10px;
+    }
+    .page-numbers:last-child {
+      margin-right: 0;
+    }
+  }
+}

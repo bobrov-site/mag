@@ -1,5 +1,6 @@
 <?php
 $current_url = get_page_uri();
+$paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 ?>
 <section class="news-grid">
 	<div class="container">
@@ -34,7 +35,8 @@ $current_url = get_page_uri();
 			<?php
 			$mypost = array(
 				'post_type' => 'news',
-				'posts_per_archive_page' => 1,
+				'posts_per_archive_page' => 9,
+                'paged' => $paged,
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'news_categories',
@@ -68,12 +70,18 @@ $current_url = get_page_uri();
 						</div>
 					</div>
 				</div>
+            <?php wp_reset_postdata(); ?>
 			<?php endwhile; ?>
 		</div>
 		<div class="row">
 			<div class="col-xl-12 d-flex justify-content-end">
-				<div class="pagination">
-					<?php  the_posts_pagination(); ?>
+				<div class="pagination-archive">
+					<?php
+					$args = array(
+						'prev_next' => false,
+					);
+					?>
+					<?php  the_posts_pagination($args); ?>
 				</div>
 			</div>
 		</div>
