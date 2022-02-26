@@ -60,6 +60,7 @@ $current_url = get_page_uri();
                     </div>
                 </div>
             </div>
+		        <?php wp_reset_postdata(); ?>
 	        <?php endwhile; ?>
         </div>
     </div>
