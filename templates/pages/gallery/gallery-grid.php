@@ -1,7 +1,7 @@
 <?php
 $arg_category = array(
 	'orderby'      => 'name',
-	'order'        => 'ASC',
+	'order'        => 'CSA',
 	'taxonomy'     => 'years',
     'type' => 'gallery',
 );
