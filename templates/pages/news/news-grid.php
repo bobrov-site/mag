@@ -32,38 +32,35 @@ $current_url = get_page_uri();
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php
-            $title_page = single_term_title('', false);
-            //параметры
-            $posts = get_posts( array(
-	            'post_type'        => 'news',
-	            'suppress_filters' => true,
-                'category' => $title_page,
-            ) );
+            $mypost = array(
+	            'post_type' => 'news',
+                'posts_per_page' => '9'
+            );
+            $loop = new WP_Query( $mypost ); ?>
+	        <?php if ($loop->have_posts()) ?>
+	        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            <div class="col">
+                <div class="card h-100">
+		            <?php
+		            $image_id = get_post_thumbnail_id();
 
-            foreach ($posts as $post){
-                setup_postdata($post);
-	            //формат вывода the_title()...
-                $img_id = get_post_thumbnail_id();
-                $img_alt = get_post_meta($img_id, '_wp_attachment_image_alt', TRUE);
-                ?>
-                <div class="col">
-                    <div class="card h-100" id="<?php the_ID(); ?>">
-                        <img src="<?php echo get_the_post_thumbnail_url() ?>" class="card-img-top" alt="<?php echo $img_alt ; ?>">
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                <?php the_title() ?>
-                            </h3>
-                            <p class="card-text"><?php the_date(); ?></p>
-                            <a href="<?php the_permalink(); ?>" class="btn btn-primary">
-                                Подробнее
-                            </a>
-                        </div>
+		            $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+
+		            $image_title = get_the_title($image_id);
+		            ?>
+                    <img src="<?php echo get_the_post_thumbnail_url() ?>" class="card-img-top" alt="<?php echo $image_title ?>">
+                    <div class="card-body">
+                        <h3 class="card-title">
+				            <?php the_title() ?>
+                        </h3>
+                        <p class="card-text"><?php the_date(); ?></p>
+                        <a class="btn btn-primary" href="<?php the_permalink(); ?>">
+                            Подробнее
+                        </a>
                     </div>
                 </div>
-            <?php
-            }
-            wp_reset_postdata();//сброс
-            ?>
+            </div>
+	        <?php endwhile; ?>
         </div>
     </div>
 </section>
