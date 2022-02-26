@@ -38,7 +38,8 @@
         "layout/dealers",
         "layout/dealers-blank",
         "layout/dealers-map",
-        "layout/post-content";
+        "layout/post-content",
+        "layout/news-grid";
 
 // components
 @import "components/buttons",
@@ -49,7 +50,9 @@
         "components/card",
         "components/slider",
         "components/breadcrumbs",
-        "components/certificates";
+        "components/certificates",
+        "components/nav-pills",
+        "components/pagination";
 
 // pages
 @import "pages/front-page",

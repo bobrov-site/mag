@@ -1,0 +1,6 @@
+.news-grid {
+  @include paddingSection;
+  .categories {
+    margin-bottom: 42px;
+  }
+}

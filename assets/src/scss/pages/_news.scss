@@ -1,0 +1,15 @@
+.news-grid {
+  @include paddingSection;
+  .categories {
+    margin-bottom: 42px;
+    .nav-pills {
+      .nav-link {
+        color: $primary-color;
+      }
+      .active {
+        color: $primary-white;
+        background-color: $primary-color;
+      }
+    }
+  }
+}

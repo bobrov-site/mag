@@ -98,3 +98,20 @@ add_action('upload_mimes', 'add_file_types_to_uploads', 1, 1);
 //add logo for site
 
 add_theme_support( 'custom-logo' );
+
+//add sidebar
+
+function mag_widgets_init() {
+	register_sidebar(array(
+		'name' => esc_html('News', 'mag'),
+		'id' => 'news-sidebar',
+		'description' => esc_html('Widgets here' , 'mag'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+
+	));
+}
+
+add_action('widgets_init', 'mag_widgets_init');

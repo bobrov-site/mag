@@ -13,7 +13,14 @@
 	<div class="row">
 		<div class="col-xl-12">
 			<h1 class="title-page">
-                <?php the_title(); ?>
+                <?php
+                if (is_archive()) {
+                    single_term_title();
+                }
+                else {
+	                the_title();
+                }
+                ?>
 			</h1>
 		</div>
 	</div>
