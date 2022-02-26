@@ -1,0 +1,9 @@
+.post-content {
+  @include paddingSection;
+  h2 {
+    @include font($roboto, $black-weight, $h2, $lh-title, $primary-black );
+  }
+  p {
+    @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+  }
+}
