@@ -12,19 +12,33 @@
             <div class="col-xl-8">
                 <div class="border">
                     <div class="row g-3">
-<!--                        TODO ACF-->
+	                    <?php
+	                    $mypost = array(
+		                    'post_type' => 'partners',
+                            'order' => 'ASC',
+		                    'tax_query' => array(
+			                    array(
+				                    'taxonomy' => 'partners_categories',
+				                    'field' => 'slug',
+				                    'terms' => 'lizing'
+			                    ),
+		                    ),
+	                    );
+	                    $loop = new WP_Query( $mypost ); ?>
+	                    <?php if ($loop->have_posts()) ?>
+	                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         <div class="col-xl-6 d-flex justify-content-center">
-                            <img class="company-logo" src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/leasing/logo1.png' ?>" alt="">
+	                        <?php
+	                        $image_id = get_post_thumbnail_id();
+
+	                        $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+
+	                        $image_title = get_the_title($image_id);
+	                        ?>
+                            <img class="company-logo" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
                         </div>
-                        <div class="col-xl-6 d-flex justify-content-center">
-                            <img class="company-logo" src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/leasing/logo2.png' ?>" alt="">
-                        </div>
-                        <div class="col-xl-6 d-flex justify-content-center">
-                            <img class="company-logo" src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/leasing/logo3.svg' ?>" alt="">
-                        </div>
-                        <div class="col-xl-6 d-flex justify-content-center">
-                            <img class="company-logo" src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/leasing/logo4.svg' ?>" alt="">
-                        </div>
+		                    <?php wp_reset_postdata(); ?>
+	                    <?php endwhile; ?>
                     </div>
                 </div>
             </div>
