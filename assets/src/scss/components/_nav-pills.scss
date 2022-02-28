@@ -11,3 +11,28 @@
     }
   }
 }
+
+.site-header {
+  .navbar-nav {
+    .dropdown-menu {
+      .nav-item {
+        margin-right: 0;
+      }
+      .active {
+        color: $primary-white;
+      }
+      .dropdown-item:active {
+        background-color: #fff;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.nav-pills {
+  .dropdown-menu {
+    .nav-item {
+      margin-right: 0;
+    }
+  }
+}
