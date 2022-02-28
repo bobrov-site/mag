@@ -53,7 +53,7 @@ $current_url = get_page_uri();
                         <h3 class="card-title">
 				            <?php the_title() ?>
                         </h3>
-                        <p class="card-text"><?php the_date(); ?></p>
+                        <p class="card-text"><?php echo get_the_date(); ?></p>
                         <a class="btn btn-primary" href="<?php the_permalink(); ?>">
                             Подробнее
                         </a>
