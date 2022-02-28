@@ -8,23 +8,17 @@
                     <img src="<?php echo get_template_directory_uri() . '/assets/src/img/components/footer/logo.png'?>">
                 </div>
                 <div class="col-xl-2">
-                    <ul class="nav nav-pills ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Каталог</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Производство</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Дилеры</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">О компании</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
+	                <?php
+	                wp_nav_menu(array(
+		                'theme_location' => 'main-menu',
+		                'container' => false,
+		                'menu_class' => '',
+		                'fallback_cb' => '__return_false',
+		                'items_wrap' => '<ul id="%1$s" class="navbar-nav nav-pills me-auto %2$s">%3$s</ul>',
+		                'depth' => 2,
+		                'walker' => new bootstrap_5_wp_nav_menu_walker()
+	                ));
+	                ?>
                 </div>
                 <div class="col-xl-3">
                     <div class="footer-address">
