@@ -12,6 +12,11 @@
 
 .card {
   border-radius: 0;
+  .card-img-top {
+    max-height: 182px;
+    object-fit: cover;
+    object-position: center center;
+  }
   &-body {
     .card-img-avatar {
       border-radius: 50%;
