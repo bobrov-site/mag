@@ -53,71 +53,30 @@
             <div class="col-xl-12">
                 <div class="dealers-swiper">
                     <div class="swiper-wrapper">
-                        <!--                            TODO ACF-->
+	                    <?php if ($loop->have_posts()) ?>
+	                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         <div class="swiper-slide card h-100">
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    ООО «Агро –Склад 63»
+			                        <?php the_title() ?>
                                 </h4>
                                 <p class="card-text">
-                                    г. Самара, Самарская об-ть
+			                        <?php the_field('address'); ?>
                                 </p>
-                                <div class="card-number">
-                                    <a class="card-number-link" href="tel:<?php echo '' ?>">
-                                        7 (962) 444-40-53
-                                    </a>
-                                </div>
-                                <a class="btn btn-primary" href="<?php echo '' ?>">Перейти на сайт дилера</a>
+		                        <?php if (get_field('number')): ?>
+                                    <div class="card-number">
+                                        <a class="card-number-link" href="tel:<?php the_field('number'); ?>">
+					                        <?php the_field('number'); ?>
+                                        </a>
+                                    </div>
+		                        <?php endif; ?>
+		                        <?php if(get_field('link')):?>
+                                    <a class="btn btn-primary" href="<?php the_field('link'); ?>">Перейти на сайт дилера</a>
+		                        <?php endif; ?>
                             </div>
                         </div>
-                        <div class="swiper-slide card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    ООО «Агро –Склад 63»
-                                </h4>
-                                <p class="card-text">
-                                    г. Самара, Самарская об-ть
-                                </p>
-                                <div class="card-number">
-                                    <a class="card-number-link" href="tel:<?php echo '' ?>">
-                                        7 (962) 444-40-53
-                                    </a>
-                                </div>
-                                <a class="btn btn-primary" href="<?php echo '' ?>">Перейти на сайт дилера</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    ООО «Агро –Склад 63»
-                                </h4>
-                                <p class="card-text">
-                                    г. Самара, Самарская об-ть
-                                </p>
-                                <div class="card-number">
-                                    <a class="card-number-link" href="tel:<?php echo '' ?>">
-                                        7 (962) 444-40-53
-                                    </a>
-                                </div>
-                                <a class="btn btn-primary" href="<?php echo '' ?>">Перейти на сайт дилера</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide card h-100">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    ООО «Агро –Склад 63»
-                                </h4>
-                                <p class="card-text">
-                                    г. Самара, Самарская об-ть
-                                </p>
-                                <div class="card-number">
-                                    <a class="card-number-link" href="tel:<?php echo '' ?>">
-                                        7 (962) 444-40-53
-                                    </a>
-                                </div>
-                                <a class="btn btn-primary" href="<?php echo '' ?>">Перейти на сайт дилера</a>
-                            </div>
-                        </div>
+		                    <?php wp_reset_postdata(); ?>
+	                    <?php endwhile; ?>
                     </div>
                     <div class="swiper-controls w-100 d-flex justify-content-center">
                         <div class="swiper-button-prev swipers"></div>
