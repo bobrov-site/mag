@@ -115,3 +115,17 @@ function mag_widgets_init() {
 }
 
 add_action('widgets_init', 'mag_widgets_init');
+
+//add new title for feedbacks
+
+function wpb_change_title_text_feedbacks($title) {
+	$screen = get_current_screen();
+
+	if ('feedbacks' == $screen->post_type) {
+		$title = 'Введите ФИО клиента';
+	}
+
+	return $title ;
+}
+
+add_filter('enter_title_here' , 'wpb_change_title_text_feedbacks');
