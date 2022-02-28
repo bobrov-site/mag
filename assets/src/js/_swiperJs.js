@@ -42,11 +42,13 @@ class SwiperJS {
 			},
 		});
 
-		const screen = window.matchMedia('(min-width: 992px)').matches;
-		if (!screen) {
-			slider.init();
-		} else {
-			slider.destroy(true, true);
+		if (document.querySelector('.dealers-swiper')) {
+			const screen = window.matchMedia('(min-width: 992px)').matches;
+			if (!screen) {
+				slider.init();
+			} else {
+				slider.destroy(true, true);
+			}
 		}
 	}
 
