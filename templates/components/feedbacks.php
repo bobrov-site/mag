@@ -22,7 +22,7 @@
 	                    $loop = new WP_Query( $mypost ); ?>
 	                    <?php if ($loop->have_posts()) ?>
 	                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <div class="swiper-slide card h-100">
+                        <div class="swiper-slide card">
 	                        <?php
 	                        $image_id = get_post_thumbnail_id();
 
