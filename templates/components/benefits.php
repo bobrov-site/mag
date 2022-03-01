@@ -1,3 +1,19 @@
+<?php
+$mypost = array(
+	'post_type' => 'sections',
+	'posts_per_page' => '1',
+    'title' => 'Преимущества'
+);
+$loop = new WP_Query( $mypost ); ?>
+<?php if ($loop->have_posts()) ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php
+$image_id = get_post_thumbnail_id();
+
+$image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+
+$image_title = get_the_title($image_id);
+?>
 <section class="benefits">
 	<div class="container">
 		<div class="row">
@@ -66,10 +82,11 @@
             </div>
             <div class="col-xl-6 d-flex justify-content-end">
                 <div class="benefits-img">
-<!--                    //TODO ACF-->
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/benefits/woman.png' ?>" alt="benefit">
+                    <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
                 </div>
             </div>
         </div>
 	</div>
 </section>
+	<?php wp_reset_postdata(); ?>
+<?php endwhile; ?>
