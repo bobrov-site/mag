@@ -9,8 +9,7 @@
                     <p class="desc-section">
                         Скачайте нашу карту партнера в формате .doc нажав на кнопку  ниже
                     </p>
-<!--                    TODO link to file-->
-                    <a href="<?php ?>" class="btn btn-secondary btn-lg">
+                    <a download="<?php the_field('file'); ?>" class="btn btn-secondary btn-lg">
                         Получить реквизиты
                     </a>
                 </div>
