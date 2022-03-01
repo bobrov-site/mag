@@ -52,14 +52,12 @@
                     </div>
                 </div>
                 <div class="col-xl d-flex justify-content-end">
-                    <a href="#" class="footer-number">
-                        <!--                        TODO number-->
+                    <a href="tel:+7 (962) 444-40-53" class="footer-number">
                         +7 (962) 444-40-53
                     </a>
                     <div class="callback-and-social">
                         <div class="callback">
-                            <!--                        TODO callback-->
-                            <a class="btn btn-primary" href="#">
+                            <a class="btn btn-primary" href="#form">
                                 <div class="callback-icon"></div>
                                 <span class="callback-text">
                                     Заказать звонок
@@ -67,11 +65,10 @@
                             </a>
                         </div>
                         <div class="socials d-flex justify-content-end">
-<!--                            TODO Get links-->
-                            <a class="social-link" href="#">
+                            <a class="social-link" href="https://www.instagram.com/mag_official_ru/">
                                 <img class="social-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/instagram.svg'?>" alt="instagram">
                             </a>
-                            <a class="social-link" href="#">
+                            <a class="social-link" href="https://www.youtube.com/channel/UCN9A0uLBBE-7c83rDxkOqLw">
                                 <img class="social-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/youtube.svg'?>" alt="youtube">
                             </a>
                         </div>
@@ -91,8 +88,7 @@
                     </a>
                 </div>
                 <div class="col-xl">
-<!--                    TODO Add page-->
-                    <a class="privacy-policy" href="#">
+                    <a class="privacy-policy" href="<?php get_the_privacy_policy_link(); ?>">
                         Политика конфиденциальности
                     </a>
                 </div>

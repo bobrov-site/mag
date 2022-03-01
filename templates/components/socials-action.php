@@ -27,7 +27,6 @@
                 </div>
             </div>
             <div class="col-xl-6">
-<!--                TODO ACF-->
                 <div style="background: url('<?php echo get_template_directory_uri() . '/assets/dist/img/components/socials-action/socials.png' ?>')" class="social-icons"></div>
             </div>
         </div>
