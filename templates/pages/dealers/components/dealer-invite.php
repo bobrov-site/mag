@@ -15,8 +15,7 @@
                 </div>
 			</div>
 			<div class="col-xl-7 d-flex justify-content-end">
-<!--                TODO ACF-->
-				<img class="dealer-invite-img" src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/dealers/dealer.png' ?>" alt="dealer">
+				<img class="dealer-invite-img" src="<?php the_field('img'); ?>" alt="dealer">
 			</div>
 		</div>
 	</div>

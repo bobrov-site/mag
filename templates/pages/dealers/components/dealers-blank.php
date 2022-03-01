@@ -19,15 +19,14 @@
 						электронную почту: <a href="mailto:info@ooo-mag.ru,">info@ooo-mag.ru,</a> приложив к письму карту
 						агента. Ваша заявка будет рассмотрена в ближайшее время.
 					</p>
-<!--                    TODO get blank-->
-					<a class="btn btn-primary" href="<?php ?>">
+					<a class="btn btn-primary" download href="<?php the_field('blank'); ?>">
 						Скачать бланк
 					</a>
 				</div>
 			</div>
 			<div class="col-xl-7 d-flex justify-content-end">
 				<div class="dealers-blank-img">
-					<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/pages/dealers/dealer-blank.png' ?>" alt="Диллер">
+					<img src="<?php the_field('img_blank'); ?>" alt="Диллер">
 				</div>
 			</div>
 		</div>
