@@ -10,7 +10,7 @@
                         в развитии всей линейки продукции заводов на закрепленной территории
                     </p>
 <!--                    TODO link to page-->
-                    <a href="#" class="btn btn-primary">
+                    <a href="<?php echo home_url('/') . get_page_uri( 17 ) ?>" class="btn btn-primary btn-lg">
                         Перейти в каталог
                     </a>
                 </div>
