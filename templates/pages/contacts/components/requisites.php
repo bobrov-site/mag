@@ -12,7 +12,6 @@
                         </div>
 					</div>
                     <div id="collapseRequisites" class="collapse">
-<!--                        TODO ACF field-->
                         <div class="requisites-field">
                             <div class="row">
                                 <div class="col-6">
@@ -22,7 +21,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        ООО «Монолит Агро Групп»
+                                        <?php the_field('full_name'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -36,7 +35,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        ООО «МАГ»
+	                                    <?php the_field('name'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -50,7 +49,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        MONOLITH AGRO GROUP LLC
+	                                    <?php the_field('eng_name'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -64,7 +63,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        Абакумов Олег Викторович
+	                                    <?php the_field('director'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -78,7 +77,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        2623031875/262301001
+	                                    <?php the_field('inn'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -92,7 +91,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        1212600001481
+	                                    <?php the_field('ogrn'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -106,7 +105,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        10.02.2021г
+	                                    <?php the_field('reg_date'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -120,7 +119,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        356245,  Российская Федерация, Ставропольский край, г. Михайловск, ул. Вокзальная д.22 каб. 14
+	                                    <?php the_field('address'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -134,7 +133,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        40702810560100022758
+	                                    <?php the_field('account'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -148,7 +147,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        СТАВРОПОЛЬСКОЕ ОТДЕЛЕНИЕ N5230 ПАО СБЕРБАНК
+	                                    <?php the_field('bank'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -162,7 +161,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        Доп. офис по г. Ставрополь, пр-т Кулакова, 7
+	                                    <?php the_field('bank_address'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -176,7 +175,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        30101810907020000615
+	                                    <?php the_field('bank_account'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -190,7 +189,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        040702615
+	                                    <?php the_field('bik'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -204,7 +203,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        46.61 Торговля оптовая машинами, оборудованием и инструментами для сельского хозяйства
+	                                    <?php the_field('okved'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -218,7 +217,7 @@
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="requisites-field-data">
-                                        ooo-mag1@yandex.ru
+	                                    <?php the_field('email'); ?>
                                     </p>
                                 </div>
                             </div>
