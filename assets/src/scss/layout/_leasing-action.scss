@@ -4,14 +4,16 @@
   position: relative;
 
   &-img {
-    width: 293px;
-    height: 379px;
-    max-width: 293px;
-    max-height: 379px;
+    width: 325px;
+    height: 411px;
+    max-width: 325px;
+    max-height: 411px;
     position: relative;
     z-index: 2;
   }
   &-offer {
+    position: relative;
+    z-index: 2;
     .title-section {
       margin-bottom: 15px;
     }
