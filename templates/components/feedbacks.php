@@ -31,7 +31,6 @@
 	                        $image_title = get_the_title($image_id);
 	                        ?>
                             <div class="card-body">
-                                <!--                        TODO ACF-->
                                 <img src="<?php echo get_the_post_thumbnail_url() ?>" class="card-img-avatar" alt="<?php echo $image_title ?>">
                                 <h3 class="card-title">
 	                                <?php the_title() ?>
