@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-xl-6 d-flex">
                 <div class="catalog-about-img">
-                    <img src="<?php get_field('img-f')?>" alt="feedback">
+                    <img src="<?php the_field('img-f')?>" alt="feedback">
                     <div class="catalog-about-img-bg"></div>
                 </div>
             </div>
