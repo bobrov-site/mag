@@ -4,21 +4,19 @@
 			<div class="col-xl-5 d-flex align-items-center">
 				<div class="catalog-about-offer">
                     <h2 class="title-section">
-                        Мы с гордостью берем на себя обязательства
+                        <?php the_field('title'); ?>
                     </h2>
                     <p class="desc-section">
-                        в развитии всей линейки продукции заводов на закрепленной территории
+                        <?php the_field('desc'); ?>
                     </p>
-<!--                    TODO link to page-->
-                    <a href="#" class="btn btn-primary">
+                    <a href="<?php echo home_url('/') . get_page_uri( 17 ) ?>" class="btn btn-primary btn-lg">
                         Перейти в каталог
                     </a>
                 </div>
 			</div>
 			<div class="col-xl-7 d-flex justify-content-end">
 				<div class="catalog-about-img">
-<!--					TODO ACF-->
-					<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/pages/about/catalog.png' ?>">
+					<img src="<?php the_field('img');?>" alt="catalog">
 					<div class="catalog-about-img-bg"></div>
 				</div>
 			</div>
@@ -30,21 +28,19 @@
         <div class="row">
             <div class="col-xl-6 d-flex">
                 <div class="catalog-about-img">
-                    <!--					TODO ACF-->
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/pages/about/feedback.png' ?>">
+                    <img src="<?php the_field('img-f')?>" alt="feedback">
                     <div class="catalog-about-img-bg"></div>
                 </div>
             </div>
             <div class="col-xl-6 d-flex align-items-center">
                 <div class="catalog-about-offer">
                     <h2 class="title-section">
-                        При проектировании были учтены пожелания и предложения
+                        <?php the_field('title-f'); ?>
                     </h2>
                     <p class="desc-section">
-                        большого количества не только Руководителей АПК, но и их механизаторов который ежедневно работают в полях.
+                        <?php the_field('desc-f'); ?>
                     </p>
-                    <!--                    TODO link to page-->
-                    <a href="#feedbacks" class="btn btn-primary">
+                    <a href="#feedbacks" class="btn btn-primary btn-lg">
                         Посмотреть отзывы
                     </a>
                 </div>
