@@ -3,6 +3,8 @@
   background-color: $primary-color;
   position: relative;
   &-offer {
+    position: relative;
+    z-index: 2;
     .title-section {
       margin-bottom: 15px;
     }
