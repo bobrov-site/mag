@@ -9,8 +9,7 @@
 					<h2 class="title-section dark-section">
 						Важная информация о скидках и лизинговых программах
 					</h2>
-					<!--				TODO Link-->
-					<a href="#" class="btn btn-secondary btn-lg">
+					<a href="<?php echo get_permalink('31') ?>" class="btn btn-secondary btn-lg">
 						Подробнее
 					</a>
 				</div>
