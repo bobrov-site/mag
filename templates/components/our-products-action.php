@@ -36,7 +36,7 @@ $image_title = get_the_title($image_id);
 							Опытные и высоко квалифицированные кадры
 						</li>
 					</ol>
-					<a class="btn btn-secondary btn-lg">
+					<a href="<?php echo get_permalink(29) ?>" class="btn btn-secondary btn-lg">
 						Посмотреть продукцию
 					</a>
 				</div>
