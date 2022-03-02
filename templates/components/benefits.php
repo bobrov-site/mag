@@ -76,7 +76,7 @@ $image_title = get_the_title($image_id);
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-lg">
+                <a href="<?php echo get_permalink(17) ?>" class="btn btn-primary btn-lg">
                     Перейти в каталог
                 </a>
             </div>
