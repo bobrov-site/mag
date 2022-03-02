@@ -1,4 +1,4 @@
-<section class="dealers-blank">
+<section class="dealers-blank" id="dealers-blank">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">

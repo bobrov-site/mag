@@ -17,11 +17,10 @@
 		            'walker' => new bootstrap_5_wp_nav_menu_walker()
 	            ));
 	            ?>
-                <!--            //TODO ACF Number -->
                 <a href="tel:<?php echo '+7 (962) 444-40-53' ?>" class="navbar-number">
                     +7 (962) 444-40-53
                 </a>
-                <a href="#form" class="navbar-callback">
+                <a href="#contact-form" class="navbar-callback">
                     <div class="navbar-callback-icon"></div>
                     <span class="navbar-callback-text">
                                     Заказать звонок
