@@ -57,7 +57,7 @@
                     </a>
                     <div class="callback-and-social">
                         <div class="callback">
-                            <a class="btn btn-primary" href="#form">
+                            <a class="btn btn-primary" href="#contact-form">
                                 <div class="callback-icon"></div>
                                 <span class="callback-text">
                                     Заказать звонок
