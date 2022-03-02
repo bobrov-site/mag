@@ -21,8 +21,8 @@
                         чтобы следить за последними обновлениями
                     </p>
                     <div class="social-buttons">
-                        <a class="btn btn-secondary btn-lg">Youtube</a>
-                        <a class="btn btn-secondary btn-lg">Instagram</a>
+                        <a href="https://www.youtube.com/channel/UCN9A0uLBBE-7c83rDxkOqLw" class="btn btn-secondary btn-lg">Youtube</a>
+                        <a href="https://www.instagram.com/mag_official_ru/" class="btn btn-secondary btn-lg">Instagram</a>
                     </div>
                 </div>
             </div>
