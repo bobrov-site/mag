@@ -10,25 +10,9 @@
 		</div>
 		<div class="row">
 			<div class="col-xl-5">
-				<div class="form">
-					<h3 class="form-title">
-						Введите ваше имя, контактный номер телефона и мы свяжемся с Вами в течение 15 минут
-					</h3>
-                    <div>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ваше имя">
-                    </div>
-                    <div>
-                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Ваше номер телефона">
-                    </div>
-                    <a class="btn btn-primary">
-                        Отправить заявку
-                    </a>
-                    <p class="privacy">
-                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" class="privacy-link">
-                            политикой конфиденциальности
-                        </a>
-                    </p>
-				</div>
+                <div class="form">
+                    <?php echo do_shortcode('[forminator_form id="209"]') ?>
+                </div>
                 <div class="contact-data">
                     <h3 class="title-data">
                         Контактные данные
@@ -36,7 +20,7 @@
                     <div class="row">
                         <div class="col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/phone.svg'?>">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/phone.svg'?>" alt="phone">
                                 <a class="contact-data-item-phone" href="tel:+7 (962) 444-40-53">
                                     +7 (962) 444-40-53
                                 </a>
@@ -44,7 +28,7 @@
                         </div>
                         <div class="col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/mail.svg'?>">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/mail.svg'?>" alt="mail">
                                 <div class="d-flex flex-column">
                                     <a class="contact-data-item-mail" href="mailto:info@ooo-mag.ru">
                                         info@ooo-mag.ru
@@ -59,7 +43,7 @@
                     <div class="row">
                         <div class="col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
                                 <div class="d-flex flex-column">
                                     <h4 class="contact-data-item-title">
                                         Главный офис:
@@ -76,7 +60,7 @@
                         </div>
                         <div class="col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
                                 <div class="d-flex flex-column">
                                     <h4 class="contact-data-item-title">
                                         Наше производство:
@@ -93,7 +77,7 @@
                     <div class="row">
                         <div class="col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex m-0">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/time.svg'?>">
+                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/time.svg'?>" alt="time">
                                 <div class="d-flex flex-column">
                                     <h4 class="contact-data-item-title">
                                         Режим работы:
