@@ -25,7 +25,7 @@ $image_title = get_the_title($image_id);
                     <p class="company-action-desc">
                         Мы с гордостью берем на себя обязательства в развитии всей линейки продукции заводов на закрепленной территории. Также спешим отметить непревзойденное качество изготовления и используемых комплектующих мировых брендов в выпускаемой техники.
                     </p>
-                    <a class="btn btn-secondary">
+                    <a href="<?php echo get_permalink(27) ?>" class="btn btn-secondary btn-lg">
                         Узнать больше
                     </a>
                 </div>
