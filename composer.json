@@ -1,5 +1,8 @@
 {
   "name": "oguilleux/blankthemewebpack",
   "description": "Blank Theme with Gulp and Webpack",
-  "type": "wordpress-theme"
+  "type": "wordpress-theme",
+  "require": {
+    "htmlburger/carbon-fields": "^3.3"
+  }
 }
