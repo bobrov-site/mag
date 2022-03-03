@@ -1,0 +1,35 @@
+.catalog-grid {
+  padding-bottom: 75px;
+  &-filters {
+    padding: 25px 15px;
+    .title-filters {
+      @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
+      margin-bottom: 15px;
+    }
+    .filter-item {
+      margin-bottom: 15px;
+      &-title {
+        @include font($roboto, $black-weight, $h4, $lh-title, $primary-black);
+        margin-bottom: 10px;
+      }
+      .form-check {
+        &-input:checked {
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
+        &-label {
+          @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+
+        }
+      }
+    }
+    hr {
+      background-color: #dee2e6;
+      opacity: unset;
+    }
+  }
+  &-filters:hover {
+    @include animation;
+    @include boxShadow($regular-box);
+  }
+}
