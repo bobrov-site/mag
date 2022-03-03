@@ -71,3 +71,45 @@
     }
   }
 }
+.header-white {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding-top: 31px;
+  padding-bottom: 31px;
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          @include font($roboto, $regular-weight,$p, $lh-text , $primary-black);
+        }
+        .active {
+          background-color: $primary-color;
+          color: $primary-white;
+        }
+      }
+      .dropdown {
+        &-item {
+          @include font($roboto, $regular-weight,$p, $lh-text, $primary-black);
+        }
+      }
+    }
+    &-number {
+      @include font($roboto, $bold-weight, $p, $lh-text, $primary-black);
+    }
+    &-callback {
+      background-color: #fff;
+      border: 1px solid $primary-color;
+      &-icon {
+        background: url("../svg/components/header/phone-red.svg") no-repeat;
+      }
+      &-text {
+        @include font($roboto, $black-weight, $p, $lh-text, $primary-color);
+      }
+    }
+    &-callback:hover {
+      background-color: #fff;
+      @include animation;
+      @include boxShadow($regular-box);
+    }
+  }
+}

@@ -6,4 +6,9 @@
       @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
     }
   }
+  .dark {
+    #breadcrumbs {
+      color: $primary-black;
+    }
+  }
 }

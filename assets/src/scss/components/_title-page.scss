@@ -1,3 +1,9 @@
 .title-page {
   @include font($roboto, $black-weight, $h1, $lh-title, $primary-white);
 }
+
+.hero-screen {
+  .dark {
+    color: $primary-black;
+  }
+}
