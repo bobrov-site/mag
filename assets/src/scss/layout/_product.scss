@@ -1,5 +1,9 @@
 .product {
   padding-bottom: 75px;
+  .product-images {
+    position: sticky;
+    top: 0;
+  }
   &-info {
     &-item {
       margin-bottom: 20px;
