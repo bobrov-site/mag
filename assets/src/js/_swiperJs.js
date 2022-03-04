@@ -10,6 +10,7 @@ class SwiperJS {
 		this.swiperHeroSlider();
 		this.swiperCertificatesSlider();
 		this.swiperDealersInit();
+		this.swiperProductSlider();
 	}
 
 	// eslint-disable-next-line class-methods-use-this
@@ -115,6 +116,21 @@ class SwiperJS {
 		new Swiper('.certificates-swiper', {
 			loop: true,
 			autoplay: true,
+			slidesPerView: 3,
+			spaceBetween: 24,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	}
+
+	// eslint-disable-next-line class-methods-use-this
+	swiperProductSlider() {
+		Swiper.use([Navigation]);
+		// eslint-disable-next-line no-new
+		new Swiper('.product-img-swiper', {
+			loop: true,
 			slidesPerView: 3,
 			spaceBetween: 24,
 			navigation: {

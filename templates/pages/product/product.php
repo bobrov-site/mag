@@ -2,8 +2,32 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-7">
-                <div class="product-img">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                <div class="product-images">
+                    <div class="product-img">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                    </div>
+                    <div class="product-slider">
+                        <div class="product-img-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-controls w-100 d-flex justify-content-center">
+                            <div class="swiper-button-prev swipers"></div>
+                            <div class="swiper-button-next swipers"></div>
+                        </div>
+                    </div>
                 </div>
 			</div>
 			<div class="col-xl-5">
