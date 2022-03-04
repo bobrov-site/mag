@@ -1,1 +1,85 @@
+<section class="product">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-7">
 
+			</div>
+			<div class="col-xl-5">
+				<div class="product-info">
+					<div class="product-info-item">
+						<div class="product-info-header d-flex align-items-center">
+							<img class="product-info-item-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/info.svg' ?>" alt="info">
+							<h3 class="product-info-header-title">
+								Характеристики:
+							</h3>
+						</div>
+						<div class="product-info-item-chars">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="product-info-item-chars-title">
+                                        Масса
+                                    </p>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <p class="product-info-item-chars-value">
+                                        0.3 кг
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="product-info-item-chars-title">
+                                        Масса
+                                    </p>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <p class="product-info-item-chars-value">
+                                        0.3 кг
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="product-info-item-chars-title">
+                                        Масса
+                                    </p>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end">
+                                    <p class="product-info-item-chars-value">
+                                        0.3 кг
+                                    </p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<hr>
+                    <div class="product-info-item">
+                        <div class="product-info-header d-flex align-items-center">
+                            <img class="product-info-item-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/file.svg' ?>" alt="info">
+                            <h3 class="product-info-header-title">
+                                Описание:
+                            </h3>
+                        </div>
+                        <div class="product-info-item-desc">
+                            <p>
+                                <?php the_content(); ?>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product-info-item">
+                        <div class="product-info-header d-flex align-items-center">
+                            <img class="product-info-header-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/download.svg' ?>" alt="info">
+                            <h3 class="product-info-header-title">
+                                Дополнительная информация:
+                            </h3>
+                        </div>
+                        <div class="product-info-item-link">
+                            <a href="<?php ?>" download>Скачать коммерческое предложение</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
