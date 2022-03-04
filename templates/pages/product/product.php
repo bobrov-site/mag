@@ -2,7 +2,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-7">
-
+                <div class="product-img">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                </div>
 			</div>
 			<div class="col-xl-5">
 				<div class="product-info">
