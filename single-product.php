@@ -6,6 +6,7 @@ get_header();
 		<main id="main" class="site-main">
 			<?php get_template_part('templates/components/hero-screen-product') ?>
             <?php get_template_part('templates/pages/product/product') ?>
+            <?php get_template_part('templates/pages/product/buy-with-product') ?>
 			<?php get_template_part('templates/components/our-products-action') ?>
 			<?php get_template_part('templates/components/contact-form'); ?>
 		</main><!-- #main -->
