@@ -1,26 +1,28 @@
+<?php
+$image_id = get_post_thumbnail_id();
+
+$image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
+
+$image_title = get_the_title($image_id);
+
+$slider_imgs = carbon_get_post_meta(get_the_ID(), 'crb_slider')
+?>
 <section class="product">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-7">
                 <div class="product-images">
-                    <div class="product-img">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                    <div class="product-img d-flex justify-content-center">
+                        <img src="<?php echo get_the_post_thumbnail_url() ?>">
                     </div>
                     <div class="product-slider">
                         <div class="product-img-swiper">
                             <div class="swiper-wrapper">
+                                <?php foreach ($slider_imgs as $img) { ?>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
+                                    <img src="<?php echo wp_get_attachment_url($img['crb_image'])  ?>" alt="<?php echo get_the_title($img['crb_image']) ?>">
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri() . '/assets/src/img/pages/product/example.png' ?>" alt="">
-                                </div>
+                                <?php } ?>
                             </div>
                         </div>
                         <div class="swiper-controls w-100 d-flex justify-content-center">
