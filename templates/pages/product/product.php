@@ -5,7 +5,8 @@ $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
 
 $image_title = get_the_title($image_id);
 
-$slider_imgs = carbon_get_post_meta(get_the_ID(), 'crb_slider')
+$slider_imgs = carbon_get_post_meta(get_the_ID(), 'crb_slider');
+$product_chars = carbon_get_post_meta(get_the_ID(), 'crb_characteristics');
 ?>
 <section class="product">
 	<div class="container">
@@ -42,42 +43,20 @@ $slider_imgs = carbon_get_post_meta(get_the_ID(), 'crb_slider')
 							</h3>
 						</div>
 						<div class="product-info-item-chars">
+                            <?php foreach ($product_chars as $char) { ?>
                             <div class="row">
                                 <div class="col-6">
                                     <p class="product-info-item-chars-title">
-                                        Масса
+                                        <?php echo $char['crb_name'] ?>
                                     </p>
                                 </div>
                                 <div class="col-6 d-flex justify-content-end">
                                     <p class="product-info-item-chars-value">
-                                        0.3 кг
+                                        <?php echo $char['crb_value'] ?>
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="product-info-item-chars-title">
-                                        Масса
-                                    </p>
-                                </div>
-                                <div class="col-6 d-flex justify-content-end">
-                                    <p class="product-info-item-chars-value">
-                                        0.3 кг
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <p class="product-info-item-chars-title">
-                                        Масса
-                                    </p>
-                                </div>
-                                <div class="col-6 d-flex justify-content-end">
-                                    <p class="product-info-item-chars-value">
-                                        0.3 кг
-                                    </p>
-                                </div>
-                            </div>
+                            <?php } ?>
 						</div>
 					</div>
 					<hr>
