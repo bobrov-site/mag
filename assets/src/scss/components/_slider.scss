@@ -17,6 +17,23 @@
   }
 }
 
+.product-slider {
+  max-width: 546px;
+  max-height: 546px;
+  .product-img-swiper {
+    overflow-x: hidden;
+    padding-bottom: 24px;
+    .swiper-slide {
+      img {
+        @include boxShadow($regular-box);
+        width: 166px;
+        height: 166px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
 .swiper-hero {
   overflow-x: hidden;
   position: relative;
