@@ -129,7 +129,7 @@ class SwiperJS {
 	swiperProductSlider() {
 		Swiper.use([Navigation]);
 		// eslint-disable-next-line no-new
-		new Swiper('.product-img-swiper', {
+		const swiper = new Swiper('.product-img-swiper', {
 			slidesPerView: 3,
 			spaceBetween: 24,
 			navigation: {
@@ -137,6 +137,13 @@ class SwiperJS {
 				prevEl: '.swiper-button-prev',
 			},
 		});
+		const count = swiper.slides.length;
+		if (count <= 3) {
+			const navNext = swiper.navigation.nextEl;
+			const navPrev = swiper.navigation.prevEl;
+			navNext.classList.add('d-none');
+			navPrev.classList.add('d-none');
+		}
 	}
 }
 

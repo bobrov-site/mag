@@ -7,6 +7,7 @@ $image_title = get_the_title($image_id);
 
 $slider_imgs = carbon_get_post_meta(get_the_ID(), 'crb_slider');
 $product_chars = carbon_get_post_meta(get_the_ID(), 'crb_characteristics');
+$files = carbon_get_post_meta(get_the_ID(), 'crb_file');
 ?>
 <section class="product">
 	<div class="container">
@@ -14,15 +15,17 @@ $product_chars = carbon_get_post_meta(get_the_ID(), 'crb_characteristics');
 			<div class="col-xl-7">
                 <div class="product-images">
                     <div class="product-img d-flex justify-content-center">
-                        <img src="<?php echo get_the_post_thumbnail_url() ?>">
+                        <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title?>">
                     </div>
                     <div class="product-slider">
                         <div class="product-img-swiper">
                             <div class="swiper-wrapper">
                                 <?php foreach ($slider_imgs as $img) { ?>
+	                                <?php if ($img['crb_image'] !== ''): ?>
                                 <div class="swiper-slide">
                                     <img src="<?php echo wp_get_attachment_url($img['crb_image'])  ?>" alt="<?php echo get_the_title($img['crb_image']) ?>">
                                 </div>
+                                    <?php endif; ?>
                                 <?php } ?>
                             </div>
                         </div>
@@ -73,6 +76,7 @@ $product_chars = carbon_get_post_meta(get_the_ID(), 'crb_characteristics');
                             </p>
                         </div>
                     </div>
+					<?php if ($files !== '') : ?>
                     <hr>
                     <div class="product-info-item">
                         <div class="product-info-header d-flex align-items-center">
@@ -84,6 +88,13 @@ $product_chars = carbon_get_post_meta(get_the_ID(), 'crb_characteristics');
                         <div class="product-info-item-link">
                             <a href="<?php ?>" download>Скачать коммерческое предложение</a>
                         </div>
+                    </div>
+                    <?php endif; ?>
+                    <hr>
+                    <div class="product-info-item">
+                        <a class="btn btn-lg btn-primary" href="#">
+                            Узнать цену
+                        </a>
                     </div>
 				</div>
 			</div>
