@@ -1,0 +1,26 @@
+#priceModal {
+  .modal-header {
+    padding: 20px;
+  }
+  .modal-body {
+    padding: 20px;
+    .forminator-tittle {
+      margin-bottom: 15px;
+    }
+    .forminator-row {
+      margin-bottom: 20px;
+    }
+
+    .forminator-checkbox-box {
+      background-color: #fff !important;
+      border:none;
+    }
+    .forminator-checkbox input:checked + .forminator-checkbox-box {
+      color: $primary-color !important;
+      border: 1px solid $primary-color !important
+    }
+  }
+  .modal-title {
+    @include font($roboto, $black-weight, $h4, $lh-title, $primary-black)
+  }
+}

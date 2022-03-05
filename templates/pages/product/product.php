@@ -92,7 +92,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                     <?php endif; ?>
                     <hr>
                     <div class="product-info-item">
-                        <a class="btn btn-lg btn-primary" href="#">
+                        <a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#priceModal">
                             Узнать цену
                         </a>
                     </div>
@@ -101,3 +101,18 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
 		</div>
 	</div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="priceModal" tabindex="-1" aria-labelledby="priceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Узнайте цену заполнив форму обратной связи</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+	            <?php echo do_shortcode('[forminator_form id="209"]') ?>
+            </div>
+        </div>
+    </div>
+</div>
