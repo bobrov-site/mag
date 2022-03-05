@@ -12,6 +12,18 @@
   @include boxShadow($regular-box);
 }
 
+.btn-primary:active {
+  @include animation;
+  background: $primary-black;
+  @include boxShadow($regular-box);
+}
+
+.btn-primary:focus {
+  @include animation;
+  background: $primary-black;
+  @include boxShadow($regular-box);
+}
+
 .btn {
   border-radius: 0;
 }
