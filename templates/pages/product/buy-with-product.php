@@ -16,13 +16,13 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association')
 			<?php foreach ($products as $product) { ?>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
+                        <img src="<?php echo get_the_post_thumbnail_url($product['id']) ?>" class="card-img-top" alt="">
                         <div class="card-body">
                             <h3 class="card-title">
-                                Культиватор Tёrmet 12000
+                                <?php echo get_the_title($product['id']) ?>
                             </h3>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a class="btn btn-primary">
+                            <p class="card-text"><?php echo get_the_excerpt($product['id']) ?></p>
+                            <a class="btn btn-primary" href="<?php echo get_the_permalink($product['id']) ?>">
                                 Подробнее
                             </a>
                         </div>
