@@ -36,7 +36,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 							<h3 class="card-title">
 								<?php the_title() ?>
 							</h3>
-							<div class="card-text"><?php esc_html(the_excerpt()); ?></div>
+							<p class="card-text"><?php echo get_the_excerpt() ?></p>
 							<a class="btn btn-primary" href="<?php the_permalink(); ?>">
 								Подробнее
 							</a>
