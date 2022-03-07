@@ -52,6 +52,13 @@ function crb_attach_theme_options() {
 
 	Container::make( 'post_meta', 'Товар' )
 	         ->where( 'post_type', '=', 'product' )
+		->add_tab(__('Производитель'), array(
+			Field::make('select', 'crb_developer', __('Кто производитель товара?'))
+			->add_options(array(
+				'MAG' => __('МАГ'),
+				'DEV' => __('Сторонний производитель'),
+			))
+		))
 		->add_tab( __( 'Фотографии' ), array(
 			Field::make('complex', 'crb_slider', __('Слайдер') )
 				->setup_labels( $slider_labels )
@@ -79,7 +86,23 @@ function crb_attach_theme_options() {
 				)
 			))
 			->set_max(4)
-		) );
+		) )
+		->add_tab(__('Преимущества'), array(
+			Field::make('complex', 'crb_benefits', __('Список Преимуществ') )
+				->set_conditional_logic(array(
+					array(
+						'field' => 'crb_developer',
+						'value' => 'MAG',
+						'compare' => '=',
+					)
+				))
+			     ->setup_labels($benefit_labels)
+			     ->add_fields(array(
+				     Field::make('text', 'crb_title', __('Заголовок преимущества') ),
+				     Field::make('textarea', 'crb_desc' , __('Описание ')),
+				     Field::make('image', 'crb_image', __('Изображение преимущества'))
+			     ))
+		));
 
 	Container::make( 'post_meta', 'Производство' )
 	         ->where( 'post_type', '=', 'production' )
