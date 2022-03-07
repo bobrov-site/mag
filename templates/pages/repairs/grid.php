@@ -37,14 +37,10 @@ $terms = get_terms( $args );
             ?>
 				<div class="col">
 					<div class="card h-100">
-						<?php
-						$image_id = get_post_thumbnail_id();
-
-						$image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
-
-						$image_title = get_the_title($image_id);
-						?>
-						<img src="<?php echo get_the_post_thumbnail_url() ?>" class="card-img-top" alt="<?php echo $image_title ?>">
+                        <?php
+                        $imgField = carbon_get_term_meta($term->term_id, 'crb_image');
+                        ?>
+						<img src="<?php echo wp_get_attachment_url($imgField)  ?>" class="card-img-top" alt="<?php echo get_the_title($imgField) ?>">
 						<div class="card-body">
 							<h3 class="card-title">
 								<?php echo $term->name ?>
