@@ -116,7 +116,7 @@ function crb_attach_theme_options() {
 				->setup_labels($benefit_labels)
 				->add_fields(array(
 					Field::make('text', 'crb_title', __('Заголовок преимущества') ),
-					Field::make('text', 'crb_desc' , __('Описание ')),
+					Field::make('textarea', 'crb_desc' , __('Описание ')),
 					Field::make('image', 'crb_image', __('Изображение преимущества'))
 				))
 			));
