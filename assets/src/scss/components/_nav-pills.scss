@@ -1,13 +1,12 @@
-.news-grid {
-  .categories {
-    .nav-pills {
-      .active {
-        background-color: $primary-color;
-        color: $primary-white !important;
-      }
-      .nav-link {
-        color: $primary-color;
-      }
+.categories {
+  margin-bottom: 42px;
+  .nav-pills {
+    .active {
+      background-color: $primary-color;
+      color: $primary-white !important;
+    }
+    .nav-link {
+      color: $primary-color;
     }
   }
 }
