@@ -88,9 +88,7 @@
                     </a>
                 </div>
                 <div class="col-xl">
-                    <a class="privacy-policy" href="<?php get_the_privacy_policy_link(); ?>">
-                        Политика конфиденциальности
-                    </a>
+                    <?php echo get_the_privacy_policy_link();?>
                 </div>
             </div>
         </div>

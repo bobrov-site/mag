@@ -65,7 +65,7 @@
     }
   }
 
-  .copyright, .developer, .privacy-policy {
+  .copyright, .developer, .privacy-policy-link {
     @include font($roboto, $regular-weight, $p, $lh-text, $primary-white)
   }
 
