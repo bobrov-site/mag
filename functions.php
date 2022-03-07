@@ -75,6 +75,11 @@ function crb_attach_theme_options() {
 			))
 			->set_max(4)
 		) );
+
+	Container::make('term_meta', 'Запчасти')
+		->add_fields(array(
+			Field::make('image' , 'crb_image', __('Изображение Категории') ),
+		));
 }
 
 add_action( 'after_setup_theme', 'crb_load' );
