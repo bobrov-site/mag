@@ -102,7 +102,9 @@ function crb_attach_theme_options() {
 			     ))
 			     ->setup_labels($details_labels)
 			     ->add_fields(array(
-				     Field::make( 'separator', 'crb_separator_top', __( 'Координаты точки' ) ),
+				     Field::make( 'separator', 'crb_separator_top', __( 'Главное изображение' ) ),
+					 Field::make('image', 'crb_bg', __('Изображение')),
+				     Field::make( 'separator', 'crb_separator_middle', __( 'Координаты точки' ) ),
 				     Field::make('text' , 'crb_top', __('Точка top')),
 				     Field::make('text' , 'crb_right', __('Точка right')),
 				     Field::make('text' , 'crb_bottom', __('Точка bottom')),
