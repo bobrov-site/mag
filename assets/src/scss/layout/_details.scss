@@ -10,23 +10,20 @@
   .dropdown-toggle:after {
     content: none;
   }
-  .dropdown-menu {
-    padding: 16px;
-    width: 300px;
-    max-width: 300px;
-    li {
+  .modal-body {
+    img, h3, p {
       margin-bottom: 10px;
-      h3 {
-        @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
-      }
-      p {
-        @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
-      }
-      img {
-        width: 154px;
-        height: 154px;
-        object-fit: cover;
-      }
+    }
+    h3 {
+      @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
+    }
+    p {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+    }
+    img {
+      width: 154px;
+      height: 154px;
+      object-fit: cover;
     }
   }
   &-img {
@@ -35,17 +32,16 @@
     margin: 0 auto;
     img {
       max-width: none;
+      max-height: 450px;
     }
   }
   &-point {
-    top: 50px;
-    right: 50px;
+    border: none;
+    outline: none;
     position: absolute;
-    a {
-      background: url("../svg/pages/product-page/plus.svg") no-repeat;
-      width: 40px;
-      height: 40px;
-      display: block;
-    }
+    background: url("../svg/pages/product-page/plus.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
   }
 }
