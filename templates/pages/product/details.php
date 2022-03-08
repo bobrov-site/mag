@@ -18,8 +18,12 @@ $bg = carbon_get_post_meta(get_the_ID(), 'crb_bg');
                         </div>
                         <div class="modal-body">
                             <img src="<?php echo wp_get_attachment_url($detail['crb_image'])  ?>" alt="<?php echo get_the_title($detail['crb_image']) ?>">
+                            <?php if ($detail['crb_title'] !== '') : ?>
                             <h3><?php echo $detail['crb_title'] ?></h3>
+                            <?php endif; ?>
+	                        <?php if ($detail['crb_desc'] !== '') : ?>
                             <p><?php echo $detail['crb_desc'] ?></p>
+	                        <?php endif; ?>
                         </div>
                     </div>
                 </div>
