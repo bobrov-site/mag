@@ -7,7 +7,8 @@ get_header();
 			<?php get_template_part('templates/components/hero-screen-product') ?>
             <?php get_template_part('templates/pages/product/product') ?>
             <?php get_template_part('templates/pages/product/buy-with-product') ?>
-			<?php get_template_part('templates/components/our-products-action') ?>
+            <?php get_template_part('templates/pages/product/details') ?>
+            <?php get_template_part('templates/pages/product/benefits') ?>
 			<?php get_template_part('templates/components/contact-form'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->

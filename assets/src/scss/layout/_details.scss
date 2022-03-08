@@ -1,0 +1,47 @@
+.details {
+  overflow-x: auto;
+  width: 100%;
+  @include paddingSection;
+  margin-bottom: 75px;
+  background-color: $primary-color;
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+  .dropdown-toggle:after {
+    content: none;
+  }
+  .modal-body {
+    img, h3, p {
+      margin-bottom: 10px;
+    }
+    h3 {
+      @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
+    }
+    p {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+    }
+    img {
+      width: 154px;
+      height: 154px;
+      object-fit: cover;
+    }
+  }
+  &-img {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    img {
+      max-width: none;
+      max-height: 450px;
+    }
+  }
+  &-point {
+    border: none;
+    outline: none;
+    position: absolute;
+    background: url("../svg/pages/product-page/plus.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
