@@ -1,0 +1,26 @@
+.benefits-product {
+  &:nth-child(odd) {
+    background-color: $primary-color;
+    color: $primary-white;
+
+    .benefits-product-offer {
+      color: $primary-white;
+    }
+  }
+  padding-bottom: 75px;
+  &-box {
+    padding: 16px;
+  }
+  &-offer {
+    .title-section {
+      margin-bottom: 10px;
+    }
+    .desc-section {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+    }
+  }
+  &-box:hover {
+    @include animation;
+    @include boxShadow($regular-box);
+  }
+}
