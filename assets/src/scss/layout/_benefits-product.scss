@@ -20,8 +20,10 @@
     }
   }
   padding-bottom: 75px;
+  padding-top: 75px;
   &-box {
-    padding: 16px;
+    @include boxShadow($regular-box);
+    padding: 20px;
   }
   &-offer {
     .title-section {
@@ -31,11 +33,12 @@
       @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
     }
   }
-  &-box:hover {
-    @include animation;
-    @include boxShadow($regular-box);
-  }
   .col-xl-7 {
     justify-content: flex-end;
+  }
+  .benefits-product-img {
+    max-width: 530px;
+    height: 340px;
+    object-fit: cover;
   }
 }
