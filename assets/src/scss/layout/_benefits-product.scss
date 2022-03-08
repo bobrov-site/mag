@@ -1,5 +1,5 @@
 .benefits-product {
-  &:nth-child(odd) {
+  &:nth-child(even) {
     .col-xl-7 {
       justify-content: flex-start;
     }
