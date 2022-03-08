@@ -24,7 +24,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-7 d-flex justify-content-end">
+                        <div class="col-xl-7 d-flex">
                             <img class="benefits-product-img" src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/our-products/product.png' ?>" alt="">
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-7 d-flex justify-content-end">
+                        <div class="col-xl-7 d-flex">
                             <img class="benefits-product-img" src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/our-products/product.png' ?>" alt="">
                         </div>
                     </div>

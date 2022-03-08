@@ -1,10 +1,22 @@
 .benefits-product {
   &:nth-child(odd) {
+    .col-xl-7 {
+      justify-content: flex-start;
+    }
+    .row {
+      flex-flow: row-reverse;
+    }
+    padding-top: 75px;
     background-color: $primary-color;
     color: $primary-white;
 
     .benefits-product-offer {
-      color: $primary-white;
+      .title-section , .desc-section {
+        color: $primary-white;
+      }
+    }
+    .benefits-product-box {
+      box-shadow: none;
     }
   }
   padding-bottom: 75px;
@@ -22,5 +34,8 @@
   &-box:hover {
     @include animation;
     @include boxShadow($regular-box);
+  }
+  .col-xl-7 {
+    justify-content: flex-end;
   }
 }
