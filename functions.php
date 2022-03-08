@@ -106,8 +106,6 @@ function crb_attach_theme_options() {
 			     ->add_fields(array(
 				     Field::make( 'separator', 'crb_separator_middle', __( 'Координаты точки' ) ),
 				     Field::make('text' , 'crb_top', __('Точка top')),
-				     Field::make('text' , 'crb_right', __('Точка right')),
-				     Field::make('text' , 'crb_bottom', __('Точка bottom')),
 				     Field::make('text' , 'crb_left', __('Точка left')),
 				     Field::make( 'separator', 'crb_separator_bottom', __( 'Данные для всплывающего окна' ) ),
 				     Field::make('image', 'crb_image', __('Изображение') ),
