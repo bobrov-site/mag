@@ -7,7 +7,7 @@ $bg = carbon_get_post_meta(get_the_ID(), 'crb_bg');
         <img src="<?php echo wp_get_attachment_url($bg) ?>" alt="<?php echo get_the_title($bg)?>">
         <?php foreach ($details as $detail) { ?>
         <div class="details-point-wrapper">
-            <button class="details-point" style="top:<?php echo $detail['crb_top'] ?>; right:0; bottom:0; left: <?php echo $detail['crb_left'] ?>;" data-bs-toggle="modal" data-bs-target="#<?php echo $detail['crb_image'] ?>"></button>
+            <button class="details-point" style="top:<?php echo $detail['crb_top'] ?>; right:0; bottom:0; left: <?php echo $detail['crb_left'] ?>;" data-bs-toggle="modal" data-bs-target="#modal<?php echo $detail['crb_image'] ?>"></button>
         </div>
             <!-- Modal -->
             <div class="modal fade" id="modal<?php echo $detail['crb_image'] ?>" tabindex="-1" aria-labelledby="modalLabel<?php echo $detail['crb_image'] ?>" aria-hidden="true">
