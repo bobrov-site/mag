@@ -33,8 +33,8 @@
                                     <a class="contact-data-item-mail" href="mailto:info@ooo-mag.ru">
                                         info@ooo-mag.ru
                                     </a>
-                                    <a class="contact-data-item-mail" href="mailto:info@ooo-mag.ru">
-                                        info@ooo-mag.ru
+                                    <a class="contact-data-item-mail" href="mailto:ooo-mag1@yandex.ru">
+                                        ooo-mag1@yandex.ru
                                     </a>
                                 </div>
                             </div>
