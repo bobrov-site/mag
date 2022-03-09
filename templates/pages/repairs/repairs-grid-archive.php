@@ -1,34 +1,10 @@
 <?php
 $current_url = get_page_uri();
 $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+$term = get_term_by('name', single_term_title('', false), 'repairs');
 ?>
 <section class="product-archive-grid">
 	<div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="categories">
-                    <ul class="nav nav-pills">
-						<?php
-						$categories = get_categories([
-							'taxonomy' => 'repairs',
-							'type' => 'product',
-							'hierarchical' => true
-						]);
-						if ($categories) {
-							foreach ($categories as $category) {
-								$title_page = single_term_title('', false)
-								?>
-                                <li class="nav-item">
-                                    <a class="nav-link <?php if ($category->name == $title_page  ) {echo 'active'; } ?>" href="<?php echo get_term_link($category->term_id) ?>"><?php echo $category->name ?></a>
-                                </li>
-								<?php
-							}
-						}
-						?>
-                    </ul>
-                </div>
-            </div>
-        </div>
 		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 			<?php
 			$mypost = array(
@@ -61,6 +37,18 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 							<h3 class="card-title">
 								<?php the_title() ?>
 							</h3>
+                            <div class="card-links">
+								<?php
+								$terms = get_the_terms(get_the_ID(), 'technique');
+								if ($terms) {
+									foreach ($terms as $term) {
+										?>
+                                        <a class="card-link" href="<?php echo get_term_link($term->term_id)?>"><?php echo $term->name ?></a>
+										<?php
+									}
+								}
+								?>
+                            </div>
 							<p class="card-text"><?php echo get_the_excerpt() ?></p>
 							<a class="btn btn-primary" href="<?php the_permalink(); ?>">
 								Подробнее
