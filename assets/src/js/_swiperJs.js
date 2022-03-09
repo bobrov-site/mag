@@ -94,17 +94,16 @@ class SwiperJS {
 			{
 				loop: false,
 				autoplay: {
-					delay: 4000
+					delay: 6000
 				},
 				slidesPerView: 1,
-				effect: 'fade',
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,
 				},
-				fadeEffect: {
-					crossFade: true
-				},
+				// fadeEffect: {
+				// 	crossFade: true
+				// },
 			}
 		);
 	}

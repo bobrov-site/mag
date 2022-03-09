@@ -54,6 +54,27 @@ function crb_attach_theme_options() {
 		'singular_name' => 'Точки'
 	);
 
+	Container::make('post_meta', 'Слайдер')
+		->where('post_id', '=', 274)
+		->add_fields(array(
+			Field::make('complex', 'crb_slider', __('Слайдер'))
+			->setup_labels($slider_labels)
+			->add_fields(array(
+				Field::make('text', 'crb_title', __('Заголовок слайда')),
+				Field::make('text', 'crb_desc', __('Описание оффера')),
+				Field::make('text', 'crb_btn_name', __('Текст кнопки')),
+				Field::make('image', 'crb_image', __('Изображение слайда')),
+				Field::make('association', 'crb_association', __('Выбрать связующий товар'))
+				     ->set_types(array(
+					     array(
+						     'post_type' => 'product',
+						     'type' => 'post'
+					     )
+				     ))
+				     ->set_max(1)
+			))
+		));
+
 	Container::make( 'post_meta', 'Товар' )
 	         ->where( 'post_type', '=', 'product' )
 		->add_tab(__('Производитель'), array(
