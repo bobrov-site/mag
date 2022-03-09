@@ -32,7 +32,8 @@ $loop = new WP_Query( $mypost ); ?>
                     <p class="partners-offer-desc">
                         Оставьте заявку на нашем сайте и мы рассмотрем ваше предложение.
                     </p>
-                    <a href="#contact-form" class="btn btn-primary">
+
+                    <a href="<?php echo get_page_link(21) ?>" class="btn btn-primary">
                         Стать партнером
                     </a>
                 </div>
