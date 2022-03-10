@@ -1,6 +1,8 @@
 <?php
 $products = carbon_get_post_meta(get_the_ID(), 'crb_association')
 ?>
+
+<?php if (sizeof($products) !== 0) : ?>
 <section class="buy-with-product">
 	<div class="container">
 		<div class="row">
@@ -31,3 +33,4 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association')
         </div>
 	</div>
 </section>
+<?php endif; ?>
