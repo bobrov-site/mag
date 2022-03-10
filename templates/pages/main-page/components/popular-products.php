@@ -1,5 +1,14 @@
 <?php
-
+$mypost = array(
+	'post_type' => 'sections',
+	'posts_per_page' => '1',
+	'title' => 'Популярная продукция'
+);
+$loop = new WP_Query( $mypost ); ?>
+<?php if ($loop->have_posts()) ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php
+$products = carbon_get_post_meta(get_the_ID(), 'crb_association');
 ?>
 <section id="popular-products" class="popular-products">
     <div class="container">
@@ -11,120 +20,29 @@
                 </h2>
             </div>
         </div>
-<!--        TODO to Cards ACF-->
+<!--        TODO card out product-->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <?php foreach ($products as $product) { ?>
+                    <?php
+                $developer = carbon_get_post_meta($product['id'], 'crb_developer');
+                ?>
             <div class="col">
-                <div class="card h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
+                <div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100">
+                    <img src="<?php echo get_the_post_thumbnail_url($product['id']) ?>" class="card-img-top" alt="<?php echo wp_get_attachment_url( $product['id'] ) ?> ?>">
                     <div class="card-body">
                         <h3 class="card-title">
-                            Культиватор Tёrmet 12000
+	                        <?php echo get_the_title($product['id']) ?>
                         </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
+                        <p class="card-text"><?php echo get_the_excerpt($product['id']) ?></p>
+                        <a class="btn btn-primary" href="<?php echo get_the_permalink($product['id']) ?>">
                             Подробнее
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card card-our-product h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Культиватор Tёrmet 12000
-                        </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-secondary">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Культиватор Tёrmet 12000
-                        </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Культиватор Tёrmet 12000
-                        </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Культиватор Tёrmet 12000
-                        </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Культиватор Tёrmet 12000
-                        </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Культиватор Tёrmet 12000
-                        </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">
-                            Культиватор Tёrmet 12000
-                        </h3>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a class="btn btn-primary">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>
+	<?php wp_reset_postdata(); ?>
+<?php endwhile; ?>
