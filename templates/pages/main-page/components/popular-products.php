@@ -33,7 +33,7 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association');
 	                        <?php echo get_the_title($product['id']) ?>
                         </h3>
                         <p class="card-text"><?php echo get_the_excerpt($product['id']) ?></p>
-                        <a class="btn btn-primary" href="<?php echo get_the_permalink($product['id']) ?>">
+                        <a class="btn <?php if ($developer == 'MAG'){ echo 'btn-secondary'; } else { echo 'btn-primary'; }; ?>" href="<?php echo get_the_permalink($product['id']) ?>">
                             Подробнее
                         </a>
                     </div>
