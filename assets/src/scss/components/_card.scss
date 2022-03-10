@@ -13,7 +13,7 @@
 .card {
   border-radius: 0;
   .card-img-top {
-    max-height: 182px;
+    max-height: 143px;
     object-fit: cover;
     object-position: center center;
   }
@@ -79,7 +79,6 @@
   @include boxShadow($regular-box);
 }
 .card-our-product {
-  @include boxShadow($red-box);
   background-color: $primary-color;
   .card-body {
     .card-title, .card-text {
@@ -93,5 +92,6 @@
   }
 }
 .card-our-product:hover {
+  @include boxShadow($red-box);
   @include animation;
 }
