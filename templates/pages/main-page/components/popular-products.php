@@ -20,7 +20,6 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association');
                 </h2>
             </div>
         </div>
-<!--        TODO card out product-->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             <?php foreach ($products as $product) { ?>
                     <?php
