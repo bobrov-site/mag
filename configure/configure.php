@@ -231,3 +231,8 @@ function mytheme_admin_bar_render() {
 
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
+// Удаляет "Рубрика: ", "Метка: " и т.д. из заголовка архива
+add_filter( 'get_the_archive_title', function( $title ){
+	return preg_replace('~^[^:]+: ~', '', $title );
+});
+
