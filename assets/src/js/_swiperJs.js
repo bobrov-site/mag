@@ -140,8 +140,10 @@ class SwiperJS {
 		if (count <= 3) {
 			const navNext = swiper.navigation.nextEl;
 			const navPrev = swiper.navigation.prevEl;
-			navNext.classList.add('d-none');
-			navPrev.classList.add('d-none');
+			if (navNext !== null && navPrev !== null) {
+				navNext.classList.add('d-none');
+				navPrev.classList.add('d-none');
+			}
 		}
 	}
 }
