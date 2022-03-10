@@ -13,7 +13,8 @@
 .card {
   border-radius: 0;
   .card-img-top {
-    max-height: 182px;
+    height: 143px;
+    max-height: 143px;
     object-fit: cover;
     object-position: center center;
   }
