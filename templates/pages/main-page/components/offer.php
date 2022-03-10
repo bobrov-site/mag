@@ -1,60 +1,48 @@
+<?php
+$mypost = array(
+	'post_type' => 'sections',
+	'posts_per_page' => '1',
+	'title' => 'Слайдер на главном экране'
+);
+$loop = new WP_Query( $mypost ); ?>
+<?php if ($loop->have_posts()) ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php
+$slider = carbon_get_post_meta(get_the_ID(), 'crb_slider');
+?>
 <div class="hero-screen-offer">
-<!--    TODO Slider-->
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <div class="swiper-hero">
                     <div class="swiper-wrapper">
+                        <?php foreach ($slider as $slide) {
+                            $product_id = $slide['crb_association'][0]['id']
+                        ?>
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-xl-5 d-flex align-items-center">
                                     <div class="offer">
                                         <h1 class="offer-title">
-                                            Тормет – современный высокопроизводительный культиватор
+                                            <?php echo $slide['crb_title']?>
                                         </h1>
                                         <p class="offer-description">
-                                            Настройка за 7 минут. Минимум точек смазки b удобное расположение точек обслуживания. Низкая стоимость владения техникой.
+                                            <?php echo $slide['crb_desc']?>
                                         </p>
-                                        <!--                TODO link to offer-->
-                                        <a class="btn-lg offer-link btn-primary" href="#">
-                                            Заказать такой же
+                                        <a class="btn-lg offer-link btn-primary" href="<?php echo get_permalink($product_id)?>">
+                                            <?php echo $slide['crb_btn_name'] ?>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="col-xl-7 d-flex justify-content-xl-end justify-content-xll-end align-items-center">
                                     <div class="slider-img">
-                                        <!--                    TODO alt, src-->
-                                        <img alt="slide" src="<?php echo get_template_directory_uri() . '/assets/dist/img/pages/main-page/hero-screen/slider.png' ?>">
+                                        <img alt="<?php get_post_meta($slide['crb_image'], '_wp_attachment_image_alt', TRUE); ?>" src="<?php echo wp_get_attachment_url($slide['crb_image'])?>">
                                         <div class="slider-bg"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="row">
-                                <div class="col-xl-5 d-flex align-items-center">
-                                    <div class="offer">
-                                        <h1 class="offer-title">
-                                            Тормет –  высокопроизводительный культиватор
-                                        </h1>
-                                        <p class="offer-description">
-                                            Настройка за 7 минут. Минимум точек смазки b удобное расположение точек обслуживания. Низкая стоимость владения техникой.
-                                        </p>
-                                        <!--                TODO link to offer-->
-                                        <a class="btn-lg offer-link btn-primary" href="#">
-                                            Заказать такой же
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 d-flex justify-content-xl-end justify-content-xll-end align-items-center">
-                                    <div class="slider-img">
-                                        <!--                    TODO alt, src-->
-                                        <img alt="slide" src="<?php echo get_template_directory_uri() . '/assets/dist/img/pages/main-page/hero-screen/slider.png' ?>">
-                                        <div class="slider-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -69,3 +57,5 @@
         </div>
     </div>
 </div>
+	<?php wp_reset_postdata(); ?>
+<?php endwhile; ?>
