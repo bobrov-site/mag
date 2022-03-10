@@ -1,7 +1,10 @@
 <?php
 $details = carbon_get_post_meta(get_the_ID(), 'crb_points');
 $bg = carbon_get_post_meta(get_the_ID(), 'crb_bg');
+$developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
 ?>
+
+<?php if ($developer == 'MAG') : ?>
 <section class="details">
     <div class="details-img">
         <img src="<?php echo wp_get_attachment_url($bg) ?>" alt="<?php echo get_the_title($bg)?>">
@@ -31,3 +34,4 @@ $bg = carbon_get_post_meta(get_the_ID(), 'crb_bg');
         <?php }?>
     </div>
 </section>
+<?php endif; ?>
