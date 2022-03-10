@@ -1,3 +1,7 @@
+<?php
+$current_url = get_page_uri();
+$paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+?>
 <section class="catalog-grid">
 	<div class="container">
 		<div class="row">
@@ -122,119 +126,51 @@
 			</div>
 			<div class="col-xl-9">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+					<?php
+					$mypost = array(
+						'post_type' => 'product',
+						'posts_per_page' => 9,
+						'paged' => $paged,
+
+					);
+					$loop = new WP_Query( $mypost ); ?>
+					<?php if ($loop->have_posts()) ?>
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                    <?php
+						$developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
+
+                        ?>
 					<div class="col">
-						<div class="card h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
+						<div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100">
+							<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
 							<div class="card-body">
 								<h3 class="card-title">
-									Культиватор Tёrmet 12000
+									<?php echo get_the_title(get_the_ID()) ?>
 								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-primary">
+								<p class="card-text"><?php echo get_the_excerpt(get_the_ID()) ?></p>
+								<a class="btn <?php if ($developer == 'MAG'){ echo 'btn-secondary'; } else { echo 'btn-primary'; }; ?>" href="<?php echo get_the_permalink(get_the_ID()) ?>">
 									Подробнее
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="col">
-						<div class="card card-our-product h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h3 class="card-title">
-									Культиватор Tёrmet 12000
-								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-secondary">
-									Подробнее
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h3 class="card-title">
-									Культиватор Tёrmet 12000
-								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-primary">
-									Подробнее
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h3 class="card-title">
-									Культиватор Tёrmet 12000
-								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-primary">
-									Подробнее
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h3 class="card-title">
-									Культиватор Tёrmet 12000
-								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-primary">
-									Подробнее
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h3 class="card-title">
-									Культиватор Tёrmet 12000
-								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-primary">
-									Подробнее
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h3 class="card-title">
-									Культиватор Tёrmet 12000
-								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-primary">
-									Подробнее
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card h-100">
-							<img src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/popular-products/Example-card.png' ?>" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h3 class="card-title">
-									Культиватор Tёrmet 12000
-								</h3>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<a class="btn btn-primary">
-									Подробнее
-								</a>
-							</div>
-						</div>
-					</div>
+						<?php wp_reset_postdata(); ?>
+					<?php endwhile; ?>
 				</div>
+                <div class="row">
+                    <div class="col-xl-12 d-flex justify-content-end">
+                        <div class="pagination-archive">
+							<?php
+							$args = [
+								'base'         => user_trailingslashit( wp_normalize_path( get_permalink() .'/%#%/' ) ),
+								'current' => max( 1, get_query_var( 'page' ) ),
+								'total'   => $loop->max_num_pages,
+							];
+							?>
+							<?php echo paginate_links($args); ?>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
