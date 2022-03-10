@@ -1,3 +1,6 @@
+<?php
+
+?>
 <section id="popular-products" class="popular-products">
     <div class="container">
         <div class="row">

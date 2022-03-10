@@ -74,6 +74,21 @@ function crb_attach_theme_options() {
 				     ->set_max(1)
 			))
 		));
+	Container::make('post_meta', 'Популярная продукция')
+		->where('post_id', '=', 275)
+		->add_fields(
+			array(
+				Field::make('association', 'crb_association', __('Выберите популярную продукцию'))
+				     ->set_types(array(
+					     array(
+						     'post_type' => 'product',
+						     'type' => 'post'
+					     )
+				     ))
+					->set_min(4)
+				     ->set_max(8)
+			)
+		);
 
 	Container::make( 'post_meta', 'Товар' )
 	         ->where( 'post_type', '=', 'product' )
