@@ -138,7 +138,6 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <?php
 						$developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
-
                         ?>
 					<div class="col">
 						<div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100">
@@ -161,13 +160,11 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                     <div class="col-xl-12 d-flex justify-content-end">
                         <div class="pagination-archive">
 							<?php
-							$args = [
-								'base'         => user_trailingslashit( wp_normalize_path( get_permalink() .'/%#%/' ) ),
-								'current' => max( 1, get_query_var( 'page' ) ),
-								'total'   => $loop->max_num_pages,
-							];
+							$args = array(
+								'prev_next' => false,
+							);
 							?>
-							<?php echo paginate_links($args); ?>
+							<?php  the_posts_pagination($args); ?>
                         </div>
                     </div>
                 </div>
