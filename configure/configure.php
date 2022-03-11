@@ -103,7 +103,7 @@ add_theme_support( 'custom-logo' );
 
 function mag_widgets_init() {
 	register_sidebar(array(
-		'name' => esc_html('News', 'mag'),
+		'name' => esc_html('Filters', 'mag'),
 		'id' => 'news-sidebar',
 		'description' => esc_html('Widgets here' , 'mag'),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
