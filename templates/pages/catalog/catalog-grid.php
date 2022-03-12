@@ -6,126 +6,139 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-3">
-                <div class="catalog-grid-filters border">
-                    <h3 class="title-filters">
-                        Фильтр
-                    </h3>
-                    <div class="filter-item">
-                        <h4 class="filter-item-title">
-                            Вид продукции
-                        </h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Техника
-                            </label>
+                <form class="filters-form" data-js-form="filter" action="filter" method="post">
+                    <div class="catalog-grid-filters border">
+                        <h3 class="title-filters">
+                            Фильтр
+                        </h3>
+                        <div class="filter-item">
+                            <h4 class="filter-item-title">
+                                Поиск
+                            </h4>
+
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Запчасти
-                            </label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <h4 class="filter-item-title">
-                            Мощность трактора, л.с
-                        </h4>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="От 65">
+                        <div class="filter-item">
+                            <h4 class="filter-item-title">
+                                Вид продукции
+                            </h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="taxonomyProduct" value="technique" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Техника
+                                </label>
                             </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="До 600">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="taxonomyProduct" value="repairs" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Запчасти
+                                </label>
                             </div>
                         </div>
+                        <div class="filter-item">
+                            <h4 class="filter-item-title">
+                                Мощность трактора, л.с
+                            </h4>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" name="powerFrom" class="form-control" min="65" placeholder="От 65">
+                                </div>
+                                <div class="col">
+                                    <input type="number" name="powerUntil" class="form-control" min="65" max="600" placeholder="До 600">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <h4 class="filter-item-title">
+                                Тип агрегатирования:
+                            </h4>
+                            <div class="form-check">
+                                <input class="form-check-input" name="AggregationType" type="checkbox" value="hinged" id="hingedCheck">
+                                <label class="form-check-label" for="hingedCheck">
+                                    Навесной
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="AggregationType" type="checkbox" value="semi-hinged" id="semiHingedCheck">
+                                <label class="form-check-label" for="semiHingedCheck">
+                                    Полунавесной
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="AggregationType" type="checkbox" value="trailed" id="trailedCheck">
+                                <label class="form-check-label" for="trailedCheck">
+                                    Прицепной
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="AggregationType" type="checkbox" value="trailed-hydraulic" id="trailedHydraulicCheck">
+                                <label class="form-check-label" for="trailedHydraulicCheck">
+                                    Прицепной гидравлический
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <h4 class="filter-item-title">
+                                Тип навески трактора:
+                            </h4>
+                            <div class="form-check">
+                                <input name="hitch-type" class="form-check-input" type="checkbox" value="three-point" id="threePointCheck">
+                                <label class="form-check-label" for="threePointCheck">
+                                    Трехточечная
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input name="hitch-type" class="form-check-input" type="checkbox" value="drawbar" id="drawbarCheck">
+                                <label class="form-check-label" for="drawbarCheck">
+                                    Тяговый брус
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input name="hitch-type" class="form-check-input" type="checkbox" value="combine" id="combineCheck">
+                                <label class="form-check-label" for="combineCheck">
+                                    Комбинированная
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <h4 class="filter-item-title">
+                                Технология обработки почты:
+                            </h4>
+                            <div class="form-check">
+                                <input name="processing-technology" class="form-check-input" type="checkbox" value="classic" id="classicСheck">
+                                <label class="form-check-label" for="classicСheck">
+                                    Классическая обработка
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input name="processing-technology" class="form-check-input" type="checkbox" value="minimal" id="minimalCheck">
+                                <label class="form-check-label" for="minimalCheck">
+                                    Минимальная обработка
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input name="processing-technology" class="form-check-input" type="checkbox" value="no-till" id="noTillCheck">
+                                <label class="form-check-label" for="noTillCheck">
+                                    No-till
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input name="processing-technology" class="form-check-input" type="checkbox" value="strip-till" id="stripTillCheck">
+                                <label class="form-check-label" for="stripTillCheck">
+                                    Strip-till
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-item d-grid">
+                            <input type="hidden" name="action" value="filter">
+                            <button class="btn btn-primary" type="submit">
+                                Найти
+                            </button>
+                        </div>
                     </div>
-                    <div class="filter-item">
-                        <h4 class="filter-item-title">
-                            Вид продукции
-                        </h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Техника
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Запчасти
-                            </label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <h4 class="filter-item-title">
-                            Вид продукции
-                        </h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Техника
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Запчасти
-                            </label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <h4 class="filter-item-title">
-                            Вид продукции
-                        </h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Техника
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Запчасти
-                            </label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <h4 class="filter-item-title">
-                            Вид продукции
-                        </h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Техника
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Запчасти
-                            </label>
-                        </div>
-                    </div>
-                    <hr>
-                    <h3 class="title-filters">
-                        Категории
-                    </h3>
-                    <div class="filter-item">
-                        <div class="input-group">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        </div>
-                    </div>
-                    <div class="filter-item d-flex">
-                        <div class="category-item">
-                            Рабл <span class="category-item-count"> (1300) </span>
-                        </div>
-                    </div>
-                </div>
+                </form>
 			</div>
 			<div class="col-xl-9">
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-js-filter="target">
 					<?php
 					$mypost = array(
 						'post_type' => 'product',
