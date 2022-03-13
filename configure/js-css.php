@@ -43,6 +43,18 @@ function filterAjax () {
                 'terms' => wp_list_pluck($terms, 'slug'),
 			),
 		),
+		'meta_query' => [
+			'relation' => 'OR',
+			[
+				'key' => 'color',
+				'value' => 'blue'
+			],
+			[
+				'key' => 'price',
+				'value' => 20
+			]
+		]
+
 
 	); ?>
 
