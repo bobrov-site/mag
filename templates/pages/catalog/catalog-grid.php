@@ -101,7 +101,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                         </div>
                         <div class="filter-item">
                             <h4 class="filter-item-title">
-                                Технология обработки почты:
+                                Технология обработки почвы:
                             </h4>
                             <div class="form-check">
                                 <input name="processing-technology" class="form-check-input" type="checkbox" value="classic" id="classicСheck">
