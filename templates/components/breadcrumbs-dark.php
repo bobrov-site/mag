@@ -15,7 +15,7 @@
 			<h1 class="title-page dark">
 				<?php
 				if (is_archive()) {
-					single_term_title();
+                    the_archive_title();
 				}
 				else {
 					the_title();

@@ -1,6 +1,7 @@
 import PopperJs from './_popper';
 import BootstrapPlugins from './_bootstrapPlugins';
 import SwiperJS from './_swiperJs';
+import Filters from './_filters';
 
 const App = {
 
@@ -18,9 +19,13 @@ const App = {
 		function initSwiperJS() {
 			return new SwiperJS();
 		}
+		function initFilters() {
+			return new Filters();
+		}
 		initPopperJs();
 		initBootstrapPlugins();
 		initSwiperJS();
+		initFilters();
 	}
 
 };

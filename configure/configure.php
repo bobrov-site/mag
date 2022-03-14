@@ -71,13 +71,13 @@ function my_deregister_scripts() {
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
 // delete jquery migrate
-function dequeue_jquery_migrate( &$scripts){
-	if(!is_admin()){
-		$scripts->remove( 'jquery');
-		$scripts->add('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', null, null, true );
-	}
-}
-add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
+//function dequeue_jquery_migrate( &$scripts){
+//	if(!is_admin()){
+//		$scripts->remove( 'jquery');
+//		$scripts->add('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', null, null, true );
+//	}
+//}
+//add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
 
 // force all scripts to load in footer
 function clean_header() {
@@ -103,7 +103,7 @@ add_theme_support( 'custom-logo' );
 
 function mag_widgets_init() {
 	register_sidebar(array(
-		'name' => esc_html('News', 'mag'),
+		'name' => esc_html('Filters', 'mag'),
 		'id' => 'news-sidebar',
 		'description' => esc_html('Widgets here' , 'mag'),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -230,4 +230,9 @@ function mytheme_admin_bar_render() {
 }
 
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
+
+// Удаляет "Рубрика: ", "Метка: " и т.д. из заголовка архива
+add_filter( 'get_the_archive_title', function( $title ){
+	return preg_replace('~^[^:]+: ~', '', $title );
+});
 
