@@ -22,7 +22,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                                 Вид продукции
                             </h4>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="taxonomyProduct" value="technique" id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="taxonomyProduct" value="technique" id="flexRadioDefault1" checked>
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Техника
                                 </label>
@@ -52,25 +52,25 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                                 Тип агрегатирования:
                             </h4>
                             <div class="form-check">
-                                <input class="form-check-input" name="AggregationType" type="checkbox" value="hinged" id="hingedCheck">
+                                <input class="form-check-input aggregationType-check" name="AggregationType[]" type="checkbox" value="hinged" id="hingedCheck">
                                 <label class="form-check-label" for="hingedCheck">
                                     Навесной
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="AggregationType" type="checkbox" value="semi-hinged" id="semiHingedCheck">
+                                <input class="form-check-input aggregationType-check" name="AggregationType[]" type="checkbox" value="semi-hinged" id="semiHingedCheck">
                                 <label class="form-check-label" for="semiHingedCheck">
                                     Полунавесной
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="AggregationType" type="checkbox" value="trailed" id="trailedCheck">
+                                <input class="form-check-input aggregationType-check" name="AggregationType[]" type="checkbox" value="trailed" id="trailedCheck">
                                 <label class="form-check-label" for="trailedCheck">
                                     Прицепной
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="AggregationType" type="checkbox" value="trailed-hydraulic" id="trailedHydraulicCheck">
+                                <input class="form-check-input aggregationType-check" name="AggregationType[]" type="checkbox" value="trailed-hydraulic" id="trailedHydraulicCheck">
                                 <label class="form-check-label" for="trailedHydraulicCheck">
                                     Прицепной гидравлический
                                 </label>
@@ -81,19 +81,19 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                                 Тип навески трактора:
                             </h4>
                             <div class="form-check">
-                                <input name="hitch-type" class="form-check-input" type="checkbox" value="three-point" id="threePointCheck">
+                                <input name="hitch-type[]" class="form-check-input" type="checkbox" value="three-point" id="threePointCheck">
                                 <label class="form-check-label" for="threePointCheck">
                                     Трехточечная
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input name="hitch-type" class="form-check-input" type="checkbox" value="drawbar" id="drawbarCheck">
+                                <input name="hitch-type[]" class="form-check-input" type="checkbox" value="drawbar" id="drawbarCheck">
                                 <label class="form-check-label" for="drawbarCheck">
                                     Тяговый брус
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input name="hitch-type" class="form-check-input" type="checkbox" value="combine" id="combineCheck">
+                                <input name="hitch-type[]" class="form-check-input" type="checkbox" value="combine" id="combineCheck">
                                 <label class="form-check-label" for="combineCheck">
                                     Комбинированная
                                 </label>
@@ -104,25 +104,25 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                                 Технология обработки почвы:
                             </h4>
                             <div class="form-check">
-                                <input name="processing-technology" class="form-check-input" type="checkbox" value="classic" id="classicСheck">
+                                <input name="processing-technology[]" class="form-check-input" type="checkbox" value="classic" id="classicСheck">
                                 <label class="form-check-label" for="classicСheck">
                                     Классическая обработка
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input name="processing-technology" class="form-check-input" type="checkbox" value="minimal" id="minimalCheck">
+                                <input name="processing-technology[]" class="form-check-input" type="checkbox" value="minimal" id="minimalCheck">
                                 <label class="form-check-label" for="minimalCheck">
                                     Минимальная обработка
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input name="processing-technology" class="form-check-input" type="checkbox" value="no-till" id="noTillCheck">
+                                <input name="processing-technology[]" class="form-check-input" type="checkbox" value="no-till" id="noTillCheck">
                                 <label class="form-check-label" for="noTillCheck">
                                     No-till
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input name="processing-technology" class="form-check-input" type="checkbox" value="strip-till" id="stripTillCheck">
+                                <input name="processing-technology[]" class="form-check-input" type="checkbox" value="strip-till" id="stripTillCheck">
                                 <label class="form-check-label" for="stripTillCheck">
                                     Strip-till
                                 </label>

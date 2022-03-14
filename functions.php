@@ -117,6 +117,29 @@ function crb_attach_theme_options() {
 		->add_tab( __( 'Дополнительная информация' ), array(
 			Field::make('file', 'crb_file', __('Коммерческое предложение'))
 		) )
+		->add_tab(__('Фильтры'), array(
+			Field::make('text', 'crb_power', __('Мощность трактора')),
+			Field::make('set', 'crb_aggregationtype', __(' Тип агрегатирования: '))
+				->set_options (array(
+					'hinged' => __('Навесной'),
+					'semi-hinged' => __('Полунавесной'),
+					'trailed' => __('Прицепной'),
+					'trailed-hydraulic' => __('Прицепной гидравлический')
+				)),
+			Field::make('set', 'crb_hitchtype', __('Тип навески трактора:'))
+				->set_options (array(
+					'three-point' => __('Трехточечная'),
+					'drawbar' => __('Тяговый брус'),
+					'combine' => __('Комбинированная'),
+				)),
+			Field::make('set', 'crb_processingtechnology', __('Технология обработки почты'))
+				->set_options (array(
+					'classic' => __('Классическая обработка'),
+					'minimal' => __('Минимальная обработка'),
+					'no-till' => __('No-till'),
+					'strip-till' => __('Strip-till'),
+				)),
+		))
 		->add_tab( __( 'С этим товаром покупают' ), array(
 			Field::make('association', 'crb_association', __('Выбрать товары'))
 			->set_types(array(

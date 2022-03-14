@@ -32,6 +32,45 @@ function filterAjax () {
 
     $terms = get_terms($taxonomy);
 
+    if (!empty($aggregationType)) {
+        $key_aggregation = array(
+	        'key' => 'crb_aggregationtype',
+	        'value' => $aggregationType,
+        );
+    }
+    else {
+        $key_aggregation = array(
+	        'key' => 'crb_aggregationtype',
+            'compare' => 'EXISTS',
+        );
+    }
+
+	if (!empty($hitchType)) {
+		$key_hitchtype = array(
+			'key' => 'crb_hitchtype',
+			'value' => $hitchType,
+		);
+	}
+	else {
+		$key_hitchtype = array(
+			'key' => 'crb_hitchtype',
+			'compare' => 'EXISTS',
+		);
+	}
+
+	if (!empty($processingTech)) {
+		$key_processingtech = array(
+			'key' => 'crb_processingtechnology',
+			'value' => $processingTech,
+		);
+	}
+	else {
+		$key_processingtech = array(
+			'key' => 'crb_processingtechnology',
+			'compare' => 'EXISTS',
+		);
+	}
+
 	$args = array(
 		'post_type' => 'product',
 		'posts_per_archive_page' => 9,
@@ -44,15 +83,10 @@ function filterAjax () {
 			),
 		),
 		'meta_query' => [
-			'relation' => 'OR',
-			[
-				'key' => 'color',
-				'value' => 'blue'
-			],
-			[
-				'key' => 'price',
-				'value' => 20
-			]
+			'relation' => 'AND',
+            $key_aggregation,
+            $key_hitchtype,
+            $key_processingtech
 		]
 
 

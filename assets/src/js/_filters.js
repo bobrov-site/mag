@@ -11,7 +11,7 @@ class Filters {
 				// eslint-disable-next-line func-names
 				$(document).on('submit', '[data-js-form=filter]', function (e) {
 					e.preventDefault();
-					const form = $(this).serialize();
+					const form = $(this).serializeArray();
 
 					$.ajax({
 						// eslint-disable-next-line no-undef
@@ -20,7 +20,6 @@ class Filters {
 						type: 'post',
 						success(result) {
 							// eslint-disable-next-line no-console
-							console.log(result);
 							$('[data-js-filter="target"]').html(result);
 						},
 						error(result) {
