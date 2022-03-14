@@ -48,20 +48,6 @@ function filterAjax () {
 		);
 	}
 
-//    if (!empty($productName)) {
-//	    $key_name = array(
-//		    'key' => 'post_title',
-//		    'value' => $productName,
-//            'compare' => 'LIKE',
-//	    );
-//    }
-//    else {
-//	    $key_name = array(
-//		    'key' => 'post_title',
-//		    'compare' => 'EXISTS',
-//	    );
-//    }
-
     if (!empty($aggregationType)) {
         $key_aggregation = array(
 	        'key' => 'crb_aggregationtype',
@@ -119,7 +105,6 @@ function filterAjax () {
             $key_hitchtype,
             $key_processingtech,
             $key_power,
-//            $key_name
 		]
 
 
