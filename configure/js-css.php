@@ -26,6 +26,8 @@ function filterAjax () {
 
 	$processingTech = $_POST['processing-technology'];
 
+    $productName = $_POST['productName'];
+
 
 	$current_url = get_page_uri();
 	$paged       = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
@@ -45,6 +47,20 @@ function filterAjax () {
 			'compare' => 'EXISTS',
 		);
 	}
+
+//    if (!empty($productName)) {
+//	    $key_name = array(
+//		    'key' => 'post_title',
+//		    'value' => $productName,
+//            'compare' => 'LIKE',
+//	    );
+//    }
+//    else {
+//	    $key_name = array(
+//		    'key' => 'post_title',
+//		    'compare' => 'EXISTS',
+//	    );
+//    }
 
     if (!empty($aggregationType)) {
         $key_aggregation = array(
@@ -89,6 +105,7 @@ function filterAjax () {
 		'post_type' => 'product',
 		'posts_per_archive_page' => 9,
 		'paged' => $paged,
+        'search_prod_title' => $productName,
 		'tax_query' => array(
 			array(
 				'taxonomy' => $taxonomy,
@@ -101,11 +118,14 @@ function filterAjax () {
             $key_aggregation,
             $key_hitchtype,
             $key_processingtech,
-            $key_power
+            $key_power,
+//            $key_name
 		]
 
 
-	); ?>
+	);
+	add_filter( 'posts_where', 'title_filter', 10, 2 );
+    ?>
 
 	<?php $loop = new WP_Query( $args ); ?>
 
@@ -140,6 +160,7 @@ function filterAjax () {
 	?>
 
 	<?php
+	remove_filter( 'posts_where', 'title_filter', 10, 2 );
 	die();
 
 }

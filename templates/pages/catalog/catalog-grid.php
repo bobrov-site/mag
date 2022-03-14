@@ -15,7 +15,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                             <h4 class="filter-item-title">
                                 Поиск
                             </h4>
-
+                            <input type="text" name="productName" class="form-control" placeholder="Введите название">
                         </div>
                         <div class="filter-item">
                             <h4 class="filter-item-title">

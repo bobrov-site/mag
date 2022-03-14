@@ -200,3 +200,11 @@ function crb_load() {
 	require_once( 'vendor/autoload.php' );
 	\Carbon_Fields\Carbon_Fields::boot();
 }
+
+function title_filter( $where, &$wp_query ){
+	global $wpdb;
+	if ( $search_term = $wp_query->get( 'search_prod_title' ) ) {
+		$where .= ' AND ' . $wpdb->posts . '.post_title LIKE \'%' . esc_sql( like_escape( $search_term ) ) . '%\'';
+	}
+	return $where;
+}
