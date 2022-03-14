@@ -32,6 +32,20 @@ function filterAjax () {
 
     $terms = get_terms($taxonomy);
 
+	if (!empty($powerFrom) or !empty($powerUntil)) {
+		$key_power = array(
+			'key' => 'crb_power',
+			'value' => array($powerFrom, $powerUntil),
+            'compare' => 'BETWEEN'
+		);
+	}
+	else {
+		$key_power = array(
+			'key' => 'crb_power',
+			'compare' => 'EXISTS',
+		);
+	}
+
     if (!empty($aggregationType)) {
         $key_aggregation = array(
 	        'key' => 'crb_aggregationtype',
@@ -86,7 +100,8 @@ function filterAjax () {
 			'relation' => 'AND',
             $key_aggregation,
             $key_hitchtype,
-            $key_processingtech
+            $key_processingtech,
+            $key_power
 		]
 
 
