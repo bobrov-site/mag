@@ -16,8 +16,8 @@ function filterAjax () {
 	//values from ajax filters
 
 	$taxonomy = $_POST['taxonomyProduct'];
-	$powerFrom = $_POST['powerFrom'];
-	$powerUntil = $_POST['powerUntil'];
+	$powerFrom = intval($_POST['powerFrom']);
+	$powerUntil = intval($_POST['powerUntil']);
 	$aggregationType = $_POST['AggregationType'];
 	$hitchType = $_POST['hitch-type'];
 	$processingTech = $_POST['processing-technology'];
@@ -30,17 +30,20 @@ function filterAjax () {
 
     $terms = get_terms($taxonomy);
 
-	if (!empty($powerFrom) or !empty($powerUntil)) {
+	if (!empty($powerFrom) and !empty($powerUntil)) {
 		$key_power = array(
 			'key' => 'crb_power',
 			'value' => array($powerFrom, $powerUntil),
+			'type'    => 'numeric',
             'compare' => 'BETWEEN'
 		);
 	}
 	else {
 		$key_power = array(
 			'key' => 'crb_power',
-			'compare' => 'EXISTS',
+            'value' => array(65, 600),
+			'type'    => 'numeric',
+			'compare' => 'BETWEEN',
 		);
 	}
 
