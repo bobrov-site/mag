@@ -152,7 +152,14 @@ function crb_attach_theme_options() {
 		) )
 		->add_tab(__('Обьект детально'), array(
 			Field::make( 'separator', 'crb_separator_top', __( 'Главное изображение' ) ),
-			Field::make('image', 'crb_bg', __('Изображение')),
+			Field::make('image', 'crb_bg', __('Изображение'))
+				->set_conditional_logic(array(
+					array(
+						'field' => 'crb_developer',
+						'value' => 'MAG',
+						'compare' => '=',
+					)
+				)),
 			Field::make('complex', 'crb_points', __('Детальный просмотр обьектов товара') )
 			     ->set_conditional_logic(array(
 				     array(
