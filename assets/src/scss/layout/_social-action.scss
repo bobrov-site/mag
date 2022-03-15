@@ -28,6 +28,9 @@
     height: 306px;
     position: relative;
     z-index: 2;
+    @media screen and (max-width: 1199px) {
+      margin: auto;
+    }
   }
   .gradient-section {
     position: absolute;

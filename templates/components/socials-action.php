@@ -1,7 +1,7 @@
 <section class="social-action">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-6 d-flex align-items-center">
+        <div class="row flex-column-reverse flex-xl-row">
+            <div class="col-xl-6 d-flex justify-content-center justify-content-xl-start align-items-center">
                 <div class="offer">
                     <h2 class="title-section dark-section">
                         <?php
