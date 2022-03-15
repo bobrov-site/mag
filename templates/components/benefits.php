@@ -22,11 +22,11 @@ $image_title = get_the_title($image_id);
 				<h2 class="title-section">Преимущества покупки продукции у ООО “МАГ”</h2>
 			</div>
 		</div>
-        <div class="row">
+        <div class="row flex-column-reverse flex-xl-row d-flex">
             <div class="col-xl-6">
                 <div class="benefits-list">
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-md-6 col-xl-6">
                             <div class="benefit">
                                 <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/headphones.svg' ?>">
                                 <h3 class="benefit-title">
@@ -39,7 +39,7 @@ $image_title = get_the_title($image_id);
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-md-6 col-xl-6">
                             <div class="benefit">
                                 <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/handshake.svg' ?>">
                                 <h3 class="benefit-title">
@@ -52,7 +52,7 @@ $image_title = get_the_title($image_id);
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-md-6 col-xl-6">
                             <div class="benefit">
                                 <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/checkbox.svg' ?>">
                                 <h3 class="benefit-title">
@@ -63,7 +63,7 @@ $image_title = get_the_title($image_id);
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-md-6 col-xl-6">
                             <div class="benefit">
                                 <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/gear.svg' ?>">
                                 <h3 class="benefit-title">
@@ -80,7 +80,7 @@ $image_title = get_the_title($image_id);
                     Перейти в каталог
                 </a>
             </div>
-            <div class="col-xl-6 d-flex justify-content-end">
+            <div class="col-xl-6 justify-content-end">
                 <div class="benefits-img">
                     <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
                 </div>
