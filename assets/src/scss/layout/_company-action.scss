@@ -10,9 +10,7 @@
   }
   &-img {
     @include boxShadow($regular-box);
-    max-width: 546px;
-    max-height: 320px;
-    height: auto;
+    object-fit: cover;
   }
 }
 .mosh-partner {
