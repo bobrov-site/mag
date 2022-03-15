@@ -1,7 +1,7 @@
 <section class="catalog-about">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-5 d-flex align-items-center">
+			<div class="col-xl-5 col-lg-5 d-flex align-items-center">
 				<div class="catalog-about-offer">
                     <h2 class="title-section">
                         <?php the_field('title'); ?>
@@ -14,7 +14,7 @@
                     </a>
                 </div>
 			</div>
-			<div class="col-xl-7 d-flex justify-content-end">
+			<div class="col-xl-7 col-lg-7 d-flex justify-content-end">
 				<div class="catalog-about-img">
 					<img src="<?php the_field('img');?>" alt="catalog">
 					<div class="catalog-about-img-bg"></div>
@@ -26,13 +26,13 @@
 <section class="feedback-about">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 d-flex">
+            <div class="col-xl-6 col-lg-6 d-flex">
                 <div class="catalog-about-img">
                     <img src="<?php the_field('img-f')?>" alt="feedback">
                     <div class="catalog-about-img-bg"></div>
                 </div>
             </div>
-            <div class="col-xl-6 d-flex align-items-center">
+            <div class="col-xl-6 col-lg-6 d-flex align-items-center">
                 <div class="catalog-about-offer">
                     <h2 class="title-section">
                         <?php the_field('title-f'); ?>
