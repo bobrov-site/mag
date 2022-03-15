@@ -29,7 +29,12 @@
     position: relative;
     z-index: 2;
     @media screen and (max-width: 1199px) {
-      margin: auto;
+      width: 276px;
+      height: 177px;
+      max-width: unset;
+      max-height: unset;
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
     }
   }
   .gradient-section {
