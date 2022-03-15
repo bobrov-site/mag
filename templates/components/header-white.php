@@ -1,5 +1,5 @@
 <header id="masthead" class="site-header transparent header-white">
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav class="navbar navbar-expand-xl navbar-light">
 		<div class="container-fluid container-xl">
             <a href="<?php echo home_url(); ?>" class="custom-logo-link" rel="home">
                 <img width="261" height="43" class="custom-logo" src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/header/logo-dark.png' ?>" alt="Монолит Агро Групп">
