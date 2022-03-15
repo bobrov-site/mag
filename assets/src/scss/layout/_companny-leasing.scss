@@ -7,4 +7,8 @@
     @include animation;
     @include boxShadow($regular-box);
   }
+
+  .company-logo {
+    max-width: 262px;
+  }
 }
