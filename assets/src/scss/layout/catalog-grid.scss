@@ -1,6 +1,13 @@
 .catalog-grid {
   padding-bottom: 75px;
   &-filters {
+    .form-control {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
+    }
+    .form-control:focus {
+      @include animation;
+      border: 1px solid $primary-color;
+    }
     padding: 25px 15px;
     .title-filters {
       @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
