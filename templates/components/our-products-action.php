@@ -17,10 +17,10 @@ $image_title = get_the_title($image_id);
 <section class="our-products-action">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-7">
+			<div class="col-xl-7 col-md-7">
 				<img class="our-products-action-img" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
 			</div>
-			<div class="col-xl-5 d-flex align-items-center">
+			<div class="col-xl-5 col-md-5 d-flex align-items-center">
 				<div class="our-products-action-offer">
 					<h2 class="title-section dark-section">
 						Наша собственная продукция
