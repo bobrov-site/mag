@@ -7,7 +7,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 <section class="catalog-grid">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-3">
+			<div class="col-xl-3 col-lg-3">
                 <form class="filters-form" data-js-form="filter" action="filter" method="post">
                     <div class="catalog-grid-filters border">
                         <h3 class="title-filters">
@@ -139,8 +139,8 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                     </div>
                 </form>
 			</div>
-			<div class="col-xl-9">
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-js-filter="target">
+			<div class="col-xl-9 col-lg-9">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" data-js-filter="target">
 					<?php
 					$mypost = array(
 						'post_type' => 'product',
@@ -192,7 +192,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 <section class="catalog-grid">
     <div class="container">
         <div class="row">
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3">
                 <form class="filters-form" data-js-form="filter" action="filter" method="post">
                     <div class="catalog-grid-filters border">
                         <h3 class="title-filters">
@@ -325,8 +325,8 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                     </div>
                 </form>
             </div>
-            <div class="col-xl-9">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-js-filter="target">
+            <div class="col-xl-9 col-lg-9">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" data-js-filter="target">
 					<?php
                     $key_developer = array(
 	                    'key' => 'crb_developer',

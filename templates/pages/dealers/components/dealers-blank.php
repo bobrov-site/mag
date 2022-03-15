@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-5 d-flex align-items-center">
+			<div class="col-xl-5 col-lg-5 d-flex align-items-center">
 				<div class="dealers-blank-offer">
 					<h3 class="title-offer">
                         Если вы хотите стать официальным дилером нашей компании
@@ -24,7 +24,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-xl-7 d-flex justify-content-end">
+			<div class="col-xl-7 col-lg-7 d-flex justify-content-end">
 				<div class="dealers-blank-img">
 					<img src="<?php the_field('img_blank'); ?>" alt="Диллер">
 				</div>

@@ -14,7 +14,7 @@ $loop = new WP_Query( $mypost ); ?>
 			</div>
 		</div>
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-md-6">
 	            <?php if ($loop->have_posts()) ?>
 	            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	            <?php
@@ -40,7 +40,7 @@ $loop = new WP_Query( $mypost ); ?>
 		            <?php wp_reset_postdata(); ?>
 	            <?php endwhile; ?>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-md-6">
                 <div class="partners-slider d-flex align-items-center justify-content-center border">
                     <div class="partners-swiper">
                         <div class="swiper-wrapper d-flex align-items-center">

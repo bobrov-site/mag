@@ -1,5 +1,5 @@
 .benefits-product {
-  &:nth-child(even) {
+  &:nth-child(odd) {
     .col-xl-7 {
       justify-content: flex-start;
     }
@@ -37,8 +37,8 @@
     justify-content: flex-end;
   }
   .benefits-product-img {
-    max-width: 530px;
     height: 340px;
     object-fit: cover;
+    @include boxShadow($regular-box);
   }
 }

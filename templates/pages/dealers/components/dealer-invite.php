@@ -1,7 +1,7 @@
 <section class="dealer-invite">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-5 d-flex align-items-center">
+			<div class="col-xl-5 col-lg-5 d-flex align-items-center">
 				<div class="dealer-invite-offer">
                     <h2 class="title-section dark-section">
                         ООО “Монолит Агро Групп” приглашает вас стать официальным дилером
@@ -14,7 +14,7 @@
                     </a>
                 </div>
 			</div>
-			<div class="col-xl-7 d-flex justify-content-end">
+			<div class="col-xl-7 col-lg-7 d-flex justify-content-end">
 				<img class="dealer-invite-img" src="<?php the_field('img'); ?>" alt="dealer">
 			</div>
 		</div>
