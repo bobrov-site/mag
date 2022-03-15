@@ -20,7 +20,7 @@ $slider = carbon_get_post_meta(get_the_ID(), 'crb_slider');
                             $product_id = $slide['crb_association'][0]['id']
                         ?>
                         <div class="swiper-slide">
-                            <div class="row">
+                            <div class="row flex-column-reverse flex-xl-row">
                                 <div class="col-xl-5 d-flex align-items-center">
                                     <div class="offer">
                                         <h1 class="offer-title">
@@ -34,7 +34,7 @@ $slider = carbon_get_post_meta(get_the_ID(), 'crb_slider');
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-xl-7 d-flex justify-content-xl-end justify-content-xll-end align-items-center">
+                                <div class="col-xl-7 d-xl-flex justify-content-xl-end justify-content-xll-end align-items-center">
                                     <div class="slider-img">
                                         <img alt="<?php get_post_meta($slide['crb_image'], '_wp_attachment_image_alt', TRUE); ?>" src="<?php echo wp_get_attachment_url($slide['crb_image'])?>">
                                         <div class="slider-bg"></div>

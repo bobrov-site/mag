@@ -6,6 +6,9 @@
       &-title {
         @include font($roboto, $black-weight,$h1, $lh-title , $primary-white);
         margin-bottom: 18px;
+        @media screen and (max-width: 1199px) {
+          margin-top: 18px;
+        }
       }
       &-description {
         @include font($roboto, $regular-weight,$p, $lh-text , $primary-white);
@@ -23,6 +26,9 @@
         object-fit: cover;
         position: relative;
         z-index: 9999 !important;
+        @media screen and (max-width: 1199px) {
+          width: 100%;
+        }
       }
       .slider-bg {
         max-width: 531px;
@@ -34,6 +40,11 @@
         z-index: 9998 !important;
         background: $primary-color;
         opacity: .5;
+        @media screen and (max-width: 1199px) {
+          right: 0;
+          left: 0;
+          max-width: unset;
+        }
       }
     }
     .arrow-down-link {

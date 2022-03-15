@@ -1,23 +1,24 @@
 .site-header {
   padding-top: 75px;
 
-  .custom-logo-link {
-    .custom-logo {
-      @media (min-width: 992px) and (max-width: 1090px) {
-        width: 200px;
-        height: auto;
-      }
-    }
-  }
-
   .navbar {
     .navbar-nav {
       margin-left: 24px;
+      @media screen and (max-width: 1199px) {
+        margin-left: 0;
+        margin-top: 24px;
+      }
       .nav-item {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-right: 14px;
+        @media screen and (max-width: 1199px){
+          display: unset;
+          align-items: unset;
+          justify-content: unset;
+          margin-bottom: 14px;
+        }
         .nav-link {
           @include font($roboto, $regular-weight,$p, $lh-text , $primary-white);
           padding: 0;
@@ -45,6 +46,10 @@
     &-number {
       @include font($roboto, $bold-weight, $p, $lh-text, $primary-white);
       margin-right: 41px;
+      @media screen and (max-width: 1199px){
+        display: block;
+        margin-bottom: 14px;
+      }
     }
     &-callback {
       display: flex;
@@ -52,14 +57,23 @@
       align-items: center;
       background-color: $primary-soft-color;
       padding: 10px 12px;
+      @media screen and (max-width: 1199px){
+        display: inline-block;
+      }
       &-icon {
         background: url("../svg/components/header/phone.svg") no-repeat;
         width: 16px;
         height: 16px;
         margin-right: 4px;
+        @media screen and (max-width: 1199px){
+          display: inline-block;
+        }
       }
       &-text {
         @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
+        @media screen and (max-width: 1199px){
+          display: inline-block;
+        }
         @media (min-width: 992px) and (max-width: 1090px) {
           font-size: 10px;
         }

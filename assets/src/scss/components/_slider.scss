@@ -38,12 +38,20 @@
   overflow-x: hidden;
   position: relative;
   .swiper-slide {
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 30px;
+    }
   }
   .swiper-pagination {
     text-align: left;
     max-width: 531px;
     right: 0;
     left: unset;
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+      max-width: unset;
+      top: 400px;
+    }
     .swiper-pagination-bullet {
       border: 0;
       border-radius: 0;
