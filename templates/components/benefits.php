@@ -80,7 +80,7 @@ $image_title = get_the_title($image_id);
                     Перейти в каталог
                 </a>
             </div>
-            <div class="col-xl-6 justify-content-end">
+            <div class="col-xl-6 d-flex justify-content-end">
                 <div class="benefits-img">
                     <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
                 </div>

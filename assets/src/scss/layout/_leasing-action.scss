@@ -10,6 +10,11 @@
     max-height: 411px;
     position: relative;
     z-index: 2;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: 240px;
+      background-size: contain !important;
+    }
   }
   &-offer {
     position: relative;

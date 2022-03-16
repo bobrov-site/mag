@@ -31,7 +31,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 				</div>
 			</div>
 		</div>
-		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 g-sm-4">
 			<?php
 			$mypost = array(
 				'post_type' => 'news',

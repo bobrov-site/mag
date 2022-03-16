@@ -3,6 +3,9 @@
   .product-images {
     position: sticky;
     top: 0;
+    @media screen and (max-width: 767px) {
+      position: static;
+    }
   }
   &-info {
     &-item {

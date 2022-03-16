@@ -6,6 +6,11 @@
         line-clamp: unset;
         -webkit-line-clamp: unset;
       }
+      .card-text {
+        overflow: unset;
+        line-clamp: unset;
+        -webkit-line-clamp: unset;
+      }
     }
   }
 }
@@ -16,6 +21,9 @@
     max-height: 143px;
     object-fit: cover;
     object-position: center center;
+    @media screen and (max-width: 767px) {
+      max-height: 240px;
+    }
   }
   &-body {
     .card-links {

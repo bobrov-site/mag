@@ -13,7 +13,7 @@ $loop = new WP_Query( $mypost ); ?>
 				<h2 class="title-section">Наши партнеры</h2>
 			</div>
 		</div>
-        <div class="row">
+        <div class="row flex-column-reverse flex-md-row">
             <div class="col-xl-6 col-md-6">
 	            <?php if ($loop->have_posts()) ?>
 	            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -41,9 +41,9 @@ $loop = new WP_Query( $mypost ); ?>
 	            <?php endwhile; ?>
             </div>
             <div class="col-xl-6 col-md-6">
-                <div class="partners-slider d-flex align-items-center justify-content-center border">
+                <div class="partners-slider border">
                     <div class="partners-swiper">
-                        <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-wrapper">
 	                        <?php
 	                        $mypost = array(
 		                        'post_type' => 'partners',

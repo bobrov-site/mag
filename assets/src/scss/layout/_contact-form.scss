@@ -46,6 +46,11 @@
   }
   &-map {
     @include boxShadow($regular-box);
+    @media screen and (max-width: 991px){
+      height: 420px;
+      width: 100%;
+      margin-top: 30px;
+    }
   }
   &-map:hover {
     @include boxShadow($red-box);

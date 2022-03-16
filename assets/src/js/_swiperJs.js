@@ -20,12 +20,23 @@ class SwiperJS {
 		new Swiper('.feedback-swiper', {
 			loop: true,
 			autoplay: true,
-			slidesPerView: 4,
+			slidesPerView: 1,
 			spaceBetween: 24,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 4,
+				}
+			}
 		});
 	}
 
@@ -41,6 +52,17 @@ class SwiperJS {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 4,
+				}
+			}
 		});
 
 		if (document.querySelector('.dealers-swiper')) {
@@ -60,12 +82,22 @@ class SwiperJS {
 		new Swiper('.partners-swiper', {
 			loop: true,
 			autoplay: true,
-			slidesPerView: 3,
+			slidesPerView: 1,
 			spaceBetween: 35,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 'auto',
+					spaceBetween: 0,
+					centeredSlides: true,
+				},
+				992: {
+					slidesPerView: 3,
+				}
+			}
 		});
 	}
 
@@ -82,6 +114,18 @@ class SwiperJS {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				}
+			}
 		});
 	}
 
@@ -101,9 +145,14 @@ class SwiperJS {
 					el: '.swiper-pagination',
 					clickable: true,
 				},
-				// fadeEffect: {
-				// 	crossFade: true
-				// },
+				breakpoints: {
+					320: {
+						spaceBetween: 24,
+					},
+					576: {
+						spaceBetween: 0
+					}
+				}
 			}
 		);
 	}
@@ -121,6 +170,16 @@ class SwiperJS {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 'auto',
+					spaceBetween: 0,
+					centeredSlides: true,
+				},
+				992: {
+					slidesPerView: 3,
+				}
+			}
 		});
 	}
 

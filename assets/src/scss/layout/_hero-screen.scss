@@ -3,6 +3,10 @@
   &-offer {
     margin-top: 75px;
     .offer {
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        height: 100%;
+      }
       &-title {
         @include font($roboto, $black-weight,$h1, $lh-title , $primary-white);
         margin-bottom: 18px;
@@ -16,7 +20,6 @@
       }
     }
     .slider-img {
-      //padding-right: 15px;
       padding-top: 15px;
       z-index: 9999 !important;
       position: relative;
@@ -28,6 +31,9 @@
         z-index: 9999 !important;
         @media screen and (max-width: 1199px) {
           width: 100%;
+        }
+        @media screen and (max-width: 575px) {
+          height: 220px;
         }
       }
       .slider-bg {

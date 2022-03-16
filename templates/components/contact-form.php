@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-5 col-md-5">
+			<div class="col-xl-5 col-12 col-lg-5">
                 <div class="form">
                     <?php echo do_shortcode('[forminator_form id="209"]') ?>
                 </div>
@@ -18,7 +18,7 @@
                         Контактные данные
                     </h3>
                     <div class="row">
-                        <div class="col col-lg-12 col-xl d-flex align-items-center">
+                        <div class="col-12 col-sm col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
                                 <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/phone.svg'?>" alt="phone">
                                 <a class="contact-data-item-phone" href="tel:+7 (962) 444-40-53">
@@ -26,7 +26,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col col-lg-12 col-xl d-flex align-items-center">
+                        <div class="col-12 col-sm  col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
                                 <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/mail.svg'?>" alt="mail">
                                 <div class="d-flex flex-column">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col col-lg-12 col-xl d-flex align-items-center">
+                        <div class="col-12 col-sm  col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
                                 <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
                                 <div class="d-flex flex-column">
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-lg-12 col-xl d-flex align-items-center">
+                        <div class="col-12 col-sm col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
                                 <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
                                 <div class="d-flex flex-column">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col col-lg-12 col-xl d-flex align-items-center">
+                        <div class="col-12 col-sm col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex m-0">
                                 <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/time.svg'?>" alt="time">
                                 <div class="d-flex flex-column">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 			</div>
-			<div class="col-xl-7 col-md-7 d-flex justify-content-end">
+			<div class="col-xl-7 col-12 col-lg-7 d-flex justify-content-lg-end">
 				<iframe class="contact-form-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0d65e56db49bc5d067672b3a2ad9eb8ba0b87191e8f449a1fd5ac00ec727b0ba&amp;source=constructor" width="546" height="100%" frameborder="0"></iframe>
 			</div>
 		</div>

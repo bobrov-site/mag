@@ -1,4 +1,11 @@
 .dealers-map {
   @include paddingSection;
   padding-bottom: 0;
+  &-block {
+    iframe {
+      @media screen and (max-width: 767px) {
+        height: 300px;
+      }
+    }
+  }
 }

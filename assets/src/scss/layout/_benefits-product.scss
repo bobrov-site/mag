@@ -40,5 +40,8 @@
     height: 340px;
     object-fit: cover;
     @include boxShadow($regular-box);
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 }

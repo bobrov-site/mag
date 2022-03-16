@@ -12,7 +12,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
 <section class="product">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-7 col-lg-7">
+			<div class="col-xl-7 col-md-7 col-lg-7">
                 <div class="product-images">
                     <div class="product-img d-flex justify-content-center">
                         <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title?>">
@@ -36,7 +36,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                     </div>
                 </div>
 			</div>
-			<div class="col-xl-5 col-lg-5">
+			<div class="col-xl-5 col-md-5 col-lg-5">
 				<div class="product-info">
 					<div class="product-info-item">
 						<div class="product-info-header d-flex align-items-center">

@@ -4,10 +4,10 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
             <div class="row">
-                <div class="col-xl-3 col-lg-12">
+                <div class="col-xl-3 col-md-3 col-lg-12">
                     <img class="logo-footer" src="<?php echo get_template_directory_uri() . '/assets/src/img/components/footer/logo.png'?>" alt="logo-footer">
                 </div>
-                <div class="col-xl-2 col-lg-3">
+                <div class="col-xl-2 col-md-3 col-lg-3">
 	                <?php
 	                wp_nav_menu(array(
 		                'theme_location' => 'main-menu',
@@ -20,7 +20,7 @@
 	                ));
 	                ?>
                 </div>
-                <div class="col-xl-3 col-lg-3">
+                <div class="col-xl-3 col-md-3 col-lg-3">
                     <div class="footer-address">
                         <div class="address-info">
                             <h4 class="address-info-title">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl col-lg-6 d-flex justify-content-start justify-content-lg-end">
+                <div class="col-xl col-10 col-sm-12 col-md-3 flex-wrap flex-lg-nowrap col-lg-6 d-flex justify-content-start justify-content-lg-end">
                     <a href="tel:+7 (962) 444-40-53" class="footer-number">
                         +7 (962) 444-40-53
                     </a>
@@ -64,7 +64,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="socials d-flex justify-content-end">
+                        <div class="socials d-flex justify-content-start justify-content-md-end">
                             <a class="social-link" href="https://www.instagram.com/mag_official_ru/">
                                 <img class="social-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/instagram.svg'?>" alt="instagram">
                             </a>
@@ -82,12 +82,12 @@
                         © 2022 ООО “МАГ”
                     </span>
                 </div>
-                <div class="col-xl col-md">
+                <div class="col-xl col-md d-flex">
                     <a class="developer" href="taplink.cc/bobrov_site">
                         Сайт разработал Бобров Даниил
                     </a>
                 </div>
-                <div class="col-xl col-md">
+                <div class="col-xl col-md d-flex justify-content-start justify-content-md-end">
                     <?php echo get_the_privacy_policy_link();?>
                 </div>
             </div>
