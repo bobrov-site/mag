@@ -1,6 +1,6 @@
 <section class="get-requisites">
     <div class="container">
-        <div class="row">
+        <div class="row flex-column-reverse flex-md-row">
             <div class="col-xl-7 col-md-7 col-lg-7 d-flex align-items-center">
                 <div class="get-requisites-offer">
                     <h2 class="title-section dark-section">

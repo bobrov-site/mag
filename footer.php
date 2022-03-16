@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl col-md-3 flex-wrap flex-lg-nowrap col-lg-6 d-flex justify-content-start justify-content-lg-end">
+                <div class="col-xl col-5 col-md-3 flex-wrap flex-lg-nowrap col-lg-6 d-flex justify-content-start justify-content-lg-end">
                     <a href="tel:+7 (962) 444-40-53" class="footer-number">
                         +7 (962) 444-40-53
                     </a>
@@ -64,7 +64,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="socials d-flex justify-content-end">
+                        <div class="socials d-flex justify-content-start justify-content-md-end">
                             <a class="social-link" href="https://www.instagram.com/mag_official_ru/">
                                 <img class="social-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/instagram.svg'?>" alt="instagram">
                             </a>
@@ -87,7 +87,7 @@
                         Сайт разработал Бобров Даниил
                     </a>
                 </div>
-                <div class="col-xl col-md d-flex justify-content-end">
+                <div class="col-xl col-md d-flex justify-content-start justify-content-md-end">
                     <?php echo get_the_privacy_policy_link();?>
                 </div>
             </div>

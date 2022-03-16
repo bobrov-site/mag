@@ -52,6 +52,17 @@ class SwiperJS {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 4,
+				}
+			}
 		});
 
 		if (document.querySelector('.dealers-swiper')) {
@@ -147,13 +158,23 @@ class SwiperJS {
 		// eslint-disable-next-line no-new
 		new Swiper('.certificates-swiper', {
 			loop: true,
-			autoplay: true,
+			// autoplay: true,
 			slidesPerView: 3,
 			spaceBetween: 24,
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				320: {
+					slidesPerView: 'auto',
+					spaceBetween: 0,
+					centeredSlides: true,
+				},
+				992: {
+					slidesPerView: 3,
+				}
+			}
 		});
 	}
 

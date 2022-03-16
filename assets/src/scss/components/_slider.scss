@@ -8,13 +8,14 @@
 
 .certificates-swiper {
   overflow-x: hidden;
-  .certificates-swiper {
     .swiper-wrapper {
       .swiper-slide {
-
+        @media screen and (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
-  }
 }
 
 .product-slider {
@@ -69,6 +70,9 @@
 .partners-slider {
   height: 100%;
   max-height: 240px;
+  @media screen and (max-width: 767px) {
+    height: 240px;
+  }
   .partners-swiper {
     overflow-x: hidden;
     height: 100%;
@@ -88,6 +92,9 @@
 
 .swiper-controls {
   margin-top: 42px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
   .swiper-button-prev {
     background: url("../svg/components/slider/arrow-left.svg") no-repeat;
     margin-right: 15px;

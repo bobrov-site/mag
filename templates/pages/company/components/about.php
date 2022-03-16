@@ -1,6 +1,6 @@
 <section class="catalog-about">
 	<div class="container">
-		<div class="row">
+		<div class="row flex-column-reverse flex-md-row">
 			<div class="col-xl-5 col-md-5 col-lg-5 d-flex align-items-center">
 				<div class="catalog-about-offer">
                     <h2 class="title-section">

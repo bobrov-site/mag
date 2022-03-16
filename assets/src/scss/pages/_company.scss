@@ -12,6 +12,7 @@
 
 .catalog-about {
   @include paddingSection;
+  padding-bottom: 0;
   &-offer {
     .title-section {
       margin-bottom: 15px;
@@ -25,6 +26,9 @@
     position: relative;
     max-width: 531px;
     max-height: 415px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
     img {
       position: relative;
       z-index: 2;

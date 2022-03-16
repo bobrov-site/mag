@@ -2,6 +2,9 @@
   @include paddingSection;
   padding-bottom: 0;
   &-offer {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
     .title-offer {
       @include font($roboto, $black-weight, $h3, $lh-title, $primary-black);
       margin-bottom: 15px;
@@ -18,5 +21,13 @@
   }
   &-img {
     @include boxShadow($regular-box);
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      @media screen and (max-width: 767px) {
+        height: 320px;
+      }
+    }
   }
 }

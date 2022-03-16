@@ -31,7 +31,7 @@ $categories = get_categories( $arg_category );
                     <h2 class="title-section"><?php echo $cat->name; ?></h2>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 <div class="col">
                     <div class="card h-100">

@@ -13,7 +13,7 @@ $loop = new WP_Query( $mypost ); ?>
 				<h2 class="title-section">Наши партнеры</h2>
 			</div>
 		</div>
-        <div class="row">
+        <div class="row flex-column-reverse flex-md-row">
             <div class="col-xl-6 col-md-6">
 	            <?php if ($loop->have_posts()) ?>
 	            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>

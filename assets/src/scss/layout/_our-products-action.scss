@@ -6,6 +6,12 @@
     position: relative;
     z-index: 2;
     @include boxShadow($regular-box);
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      max-height: 229px;
+      width: 100%;
+      object-fit: cover;
+    }
   }
   &-offer {
     position: relative;

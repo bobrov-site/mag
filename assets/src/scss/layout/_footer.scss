@@ -18,6 +18,12 @@
     }
   }
 
+  .navbar-nav {
+    @media screen and (max-width:767px) {
+      margin-bottom: 20px;
+    }
+  }
+
   .footer-address {
     .address-info {
       margin-bottom: 15px;
@@ -34,6 +40,9 @@
     margin-right: 41px;
     @media screen and (max-width: 991px) {
       margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
     }
   }
 
@@ -75,7 +84,11 @@
   }
 
   .copyright, .developer, .privacy-policy-link {
-    @include font($roboto, $regular-weight, $p, $lh-text, $primary-white)
+    @include font($roboto, $regular-weight, $p, $lh-text, $primary-white);
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+      display: block;
+    }
   }
 
   .developer {
