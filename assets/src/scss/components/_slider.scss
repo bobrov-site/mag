@@ -53,6 +53,9 @@
       max-width: unset;
       top: 400px;
     }
+    @media screen and (max-width: 575px) {
+      top: 200px;
+    }
     .swiper-pagination-bullet {
       border: 0;
       border-radius: 0;

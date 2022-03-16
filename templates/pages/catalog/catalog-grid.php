@@ -147,7 +147,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                 </form>
 			</div>
 			<div class="col-xl-9 col-md-8 col-lg-9">
-				<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 g-4" data-js-filter="target">
+				<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 gy-4 g-sm-4" data-js-filter="target">
 					<?php
 					$mypost = array(
 						'post_type' => 'product',
@@ -339,7 +339,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                 </form>
             </div>
             <div class="col-xl-9 col-md-8 col-lg-9">
-                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 g-4" data-js-filter="target">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 gy-4 g-sm-4" data-js-filter="target">
 					<?php
                     $key_developer = array(
 	                    'key' => 'crb_developer',

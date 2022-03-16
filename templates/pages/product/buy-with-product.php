@@ -13,7 +13,7 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association')
 				</h2>
 			</div>
 		</div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 g-sm-4">
 			<?php foreach ($products as $product) { ?>
                 <div class="col">
                     <div class="card h-100">

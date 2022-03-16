@@ -145,9 +145,14 @@ class SwiperJS {
 					el: '.swiper-pagination',
 					clickable: true,
 				},
-				// fadeEffect: {
-				// 	crossFade: true
-				// },
+				breakpoints: {
+					320: {
+						spaceBetween: 24,
+					},
+					576: {
+						spaceBetween: 0
+					}
+				}
 			}
 		);
 	}
@@ -158,7 +163,7 @@ class SwiperJS {
 		// eslint-disable-next-line no-new
 		new Swiper('.certificates-swiper', {
 			loop: true,
-			// autoplay: true,
+			autoplay: true,
 			slidesPerView: 3,
 			spaceBetween: 24,
 			navigation: {

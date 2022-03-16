@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl col-5 col-md-3 flex-wrap flex-lg-nowrap col-lg-6 d-flex justify-content-start justify-content-lg-end">
+                <div class="col-xl col-10 col-sm-12 col-md-3 flex-wrap flex-lg-nowrap col-lg-6 d-flex justify-content-start justify-content-lg-end">
                     <a href="tel:+7 (962) 444-40-53" class="footer-number">
                         +7 (962) 444-40-53
                     </a>
