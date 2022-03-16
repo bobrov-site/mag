@@ -32,6 +32,9 @@
   .footer-number {
     @include font($roboto, $black-weight, $p, $lh-text, $primary-white);
     margin-right: 41px;
+    @media screen and (max-width: 991px) {
+      margin-right: 0;
+    }
   }
 
   hr {
@@ -73,6 +76,17 @@
 
   .copyright, .developer, .privacy-policy-link {
     @include font($roboto, $regular-weight, $p, $lh-text, $primary-white)
+  }
+
+  .developer {
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+  .privacy-policy-link {
+    @media screen and (max-width: 991px) {
+      text-align: right;
+    }
   }
 
 

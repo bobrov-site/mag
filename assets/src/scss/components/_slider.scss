@@ -71,8 +71,12 @@
   max-height: 240px;
   .partners-swiper {
     overflow-x: hidden;
+    height: 100%;
     .swiper-wrapper {
       .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .partners-logo {
           max-width: 146px;
           height: auto;

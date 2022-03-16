@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-5 col-md-5">
+			<div class="col-xl-5 col-12 col-lg-5">
                 <div class="form">
                     <?php echo do_shortcode('[forminator_form id="209"]') ?>
                 </div>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 			</div>
-			<div class="col-xl-7 col-md-7 d-flex justify-content-end">
+			<div class="col-xl-7 col-12 col-lg-7 d-flex justify-content-lg-end">
 				<iframe class="contact-form-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0d65e56db49bc5d067672b3a2ad9eb8ba0b87191e8f449a1fd5ac00ec727b0ba&amp;source=constructor" width="546" height="100%" frameborder="0"></iframe>
 			</div>
 		</div>

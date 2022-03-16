@@ -20,7 +20,7 @@ $developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
             <div class="col-xl-12">
                 <div class="benefits-product-box">
                     <div class="row">
-                        <div class="col-xl-5 col-lg-5 d-flex align-items-center">
+                        <div class="col-xl-5 col-md-5 col-lg-5 d-flex align-items-center">
                             <div class="benefits-product-offer">
                                 <h2 class="title-section">
                                     <?php echo $benefit['crb_title'] ?>
@@ -30,7 +30,7 @@ $developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-7 d-flex align-items-center">
+                        <div class="col-xl-7 col-md-7 col-lg-7 d-flex align-items-center">
                             <img class="benefits-product-img" src="<?php echo wp_get_attachment_url($benefit['crb_image'])  ?>" alt="<?php echo get_the_title($benefit['crb_image']) ?>">
                         </div>
                     </div>

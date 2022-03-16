@@ -9,7 +9,7 @@
 			</div>
 		</div>
         <div class="row">
-            <div class="col-xl-8 col-lg-8">
+            <div class="col-xl-8 col-md-12 col-lg-8">
                 <div class="border">
                     <div class="row g-3">
 	                    <?php
@@ -27,7 +27,7 @@
 	                    $loop = new WP_Query( $mypost ); ?>
 	                    <?php if ($loop->have_posts()) ?>
 	                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <div class="col-xl-6 col-lg-6 d-flex justify-content-center">
+                        <div class="col-xl-6 col-md-6 col-lg-6 d-flex justify-content-center">
 	                        <?php
 	                        $image_id = get_post_thumbnail_id();
 

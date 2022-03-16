@@ -16,8 +16,8 @@ $image_title = get_the_title($image_id);
 ?>
 <section class="company-action">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-5 col-xl-5 d-flex align-items-center">
+		<div class="row flex-column-reverse flex-lg-row">
+			<div class="col-12 col-lg-5 col-xl-5 d-flex align-items-center">
 				<div class="company-action-offer">
                     <h2 class="title-section dark-section">
                         Компания ООО «МАГ» благодарит партнеров за оказанное доверие и сотрудничество.
@@ -30,7 +30,7 @@ $image_title = get_the_title($image_id);
                     </a>
                 </div>
 			</div>
-			<div class="col-md-7 col-xl-7 d-flex justify-content-end">
+			<div class="col-12 col-lg-7 col-xl-7 d-flex justify-content-lg-end">
 				<img class="company-action-img" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
 			</div>
 		</div>

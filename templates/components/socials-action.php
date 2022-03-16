@@ -1,7 +1,7 @@
 <section class="social-action">
     <div class="container">
-        <div class="row flex-column-reverse flex-lg-row">
-            <div class="col-md-7 col-xl-6 d-flex align-items-center">
+        <div class="row flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 justify-content-center justify-content-lg-start col-lg-7 col-xl-6 d-flex align-items-center">
                 <div class="offer">
                     <h2 class="title-section dark-section">
                         <?php
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-xl-6">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-6">
                 <div style="background: url('<?php echo get_template_directory_uri() . '/assets/dist/img/components/socials-action/socials.png' ?>')" class="social-icons"></div>
             </div>
         </div>

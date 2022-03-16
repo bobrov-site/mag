@@ -41,9 +41,9 @@ $loop = new WP_Query( $mypost ); ?>
 	            <?php endwhile; ?>
             </div>
             <div class="col-xl-6 col-md-6">
-                <div class="partners-slider d-flex align-items-center justify-content-center border">
+                <div class="partners-slider border">
                     <div class="partners-swiper">
-                        <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-wrapper">
 	                        <?php
 	                        $mypost = array(
 		                        'post_type' => 'partners',
