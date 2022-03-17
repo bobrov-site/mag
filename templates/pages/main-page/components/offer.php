@@ -36,7 +36,8 @@ $slider = carbon_get_post_meta(get_the_ID(), 'crb_slider');
                                 </div>
                                 <div class="col-xl-7 d-xl-flex justify-content-xl-end justify-content-xll-end align-items-center">
                                     <div class="slider-img">
-                                        <img alt="<?php get_post_meta($slide['crb_image'], '_wp_attachment_image_alt', TRUE); ?>" src="<?php echo wp_get_attachment_url($slide['crb_image'])?>">
+                                        <?php $src = wp_get_attachment_image_src( $slide['crb_image'], '1280'); $url = $src[0] ?>
+                                        <img alt="<?php get_post_meta($slide['crb_image'], '_wp_attachment_image_alt', TRUE); ?>" src="<?php echo $url?>">
                                         <div class="slider-bg"></div>
                                     </div>
                                 </div>

@@ -29,7 +29,7 @@ function custom_setup() {
 	remove_image_size( '2048x2048' );
 
 	// CUSTOM IMAGE SIZES
-	 add_image_size( '424x424', 424, 424, true );
+	 add_image_size( '424', 424, 424, true );
 	 add_image_size( '1920', 1920, 1080 );
 	 add_image_size('1280', 1280, 720);
 }
