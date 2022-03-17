@@ -30,8 +30,8 @@ function custom_setup() {
 
 	// CUSTOM IMAGE SIZES
 	 add_image_size( 'square', 424, 424);
-	 add_image_size( 'fullhd', 1920, 1080 );
-	 add_image_size('hd', 1280, 720);
+	 add_image_size( 'fullhd', 1920, 1080, true);
+	 add_image_size('hd', 1280, 720, true);
 	 add_image_size('logo-slider', 130, 100);
 	 add_image_size('card', 412, 143, true);
 }

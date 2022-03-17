@@ -2,7 +2,7 @@
 <header id="masthead" class="site-header transparent">
     <nav class="navbar navbar-expand-xl navbar-dark">
         <div class="container-fluid container-xl">
-            <a class="custom-logo-link" rel="home" href="<?php home_url();?>">
+            <a class="custom-logo-link" rel="home" href="<?php echo home_url();?>">
                 <img width="261" height="43" src="<?php echo $custom_logo__url[0] ?>" class="custom-logo" alt="Монолит Агро Групп">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

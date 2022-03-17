@@ -20,12 +20,16 @@
     }
   }
   &-img {
-    @include boxShadow($regular-box);
-    width: 100%;
-    img {
+    @media screen and (max-width: 767px) {
       width: 100%;
+    }
+    img {
+      width: 546px;
+      height: 457px;
       object-fit: cover;
+      @include boxShadow($regular-box);
       @media screen and (max-width: 767px) {
+        width: 100%;
         height: 320px;
       }
     }
