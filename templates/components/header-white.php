@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-expand-xl navbar-light">
 		<div class="container-fluid container-xl">
             <a href="<?php echo home_url(); ?>" class="custom-logo-link" rel="home">
-                <img width="261" height="43" class="custom-logo" src="<?php echo get_template_directory_uri() . '/assets/dist/img/components/header/logo-dark.png' ?>" alt="Монолит Агро Групп">
+                <img width="261" height="43" class="custom-logo" src="<?php echo wp_get_attachment_url(304) ?>" alt="Монолит Агро Групп">
             </a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
