@@ -3,6 +3,7 @@ import BootstrapPlugins from './_bootstrapPlugins';
 import SwiperJS from './_swiperJs';
 import Filters from './_filters';
 import FancyBoxJs from './_fancybox';
+import LazyLoad from './_lazyLoad';
 
 const App = {
 
@@ -26,11 +27,15 @@ const App = {
 		function initFancyBox() {
 			return new FancyBoxJs();
 		}
+		function initLazyLoad() {
+			return new LazyLoad();
+		}
 		initPopperJs();
 		initBootstrapPlugins();
 		initSwiperJS();
 		initFilters();
 		initFancyBox();
+		initLazyLoad();
 	}
 
 };
