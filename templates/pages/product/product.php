@@ -16,7 +16,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                 <div class="product-images">
                     <div class="product-img d-flex justify-content-center">
                         <a data-fancybox="gallery" href="<?php echo get_the_post_thumbnail_url() ?>">
-                            <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title?>">
+                            <img src="<?php echo get_the_post_thumbnail_url('', 'fullhd') ?>" alt="<?php echo $image_title?>">
                         </a>
                     </div>
                     <div class="product-slider">
