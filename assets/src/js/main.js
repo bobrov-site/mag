@@ -2,6 +2,7 @@ import PopperJs from './_popper';
 import BootstrapPlugins from './_bootstrapPlugins';
 import SwiperJS from './_swiperJs';
 import Filters from './_filters';
+import FancyBoxJs from './_fancybox';
 
 const App = {
 
@@ -22,10 +23,14 @@ const App = {
 		function initFilters() {
 			return new Filters();
 		}
+		function initFancyBox() {
+			return new FancyBoxJs();
+		}
 		initPopperJs();
 		initBootstrapPlugins();
 		initSwiperJS();
 		initFilters();
+		initFancyBox();
 	}
 
 };

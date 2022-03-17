@@ -4,6 +4,7 @@
 
 // vendors
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/@fancyapps/ui/src/Fancybox/Fancybox";
 @import "node_modules/swiper/swiper";
 @import "node_modules/swiper/modules/pagination/pagination";
 
@@ -58,7 +59,8 @@
         "components/breadcrumbs",
         "components/certificates",
         "components/nav-pills",
-        "components/pagination";
+        "components/pagination",
+        "components/fancybox";
 
 // pages
 @import "pages/front-page",

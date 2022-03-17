@@ -48,13 +48,18 @@
     }
   }
   &-img {
-    @include boxShadow($regular-box);
     margin-bottom: 24px;
     max-width: 546px;
     max-height: 546px;
-    img {
-      object-fit: cover;
-      width: 100%;
+    a {
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
     }
+  }
+  &-img:hover {
+    @include animation;
+    @include boxShadow($regular-box);
   }
 }
