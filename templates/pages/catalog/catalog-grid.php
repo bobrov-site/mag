@@ -14,7 +14,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                             <h3 class="title-filters">
                                 Фильтр
                             </h3>
-                            <a href="#collapseFilter" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFilter">
+                            <a class="filter-collapse" href="#collapseFilter" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFilter">
                                 <img class="filter-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/catalog/filter.svg'; ?>" alt="filter-icon">
                             </a>
                         </div>
@@ -206,7 +206,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                             <h3 class="title-filters">
                                 Фильтр
                             </h3>
-                            <a href="#collapseFilter" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFilter">
+                            <a class="filter-collapse" href="#collapseFilter" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFilter">
                                 <img class="filter-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/catalog/filter.svg'; ?>" alt="filter-icon">
                             </a>
                         </div>

@@ -1,6 +1,11 @@
+import { Collapse } from 'bootstrap';
+
+require('bootstrap');
+
 class Filters {
 	constructor() {
 		this.filtersInit();
+		this.filtersShow();
 	}
 
 	// eslint-disable-next-line class-methods-use-this
@@ -30,6 +35,19 @@ class Filters {
 				});
 			});
 		}(jQuery));
+	}
+
+	// eslint-disable-next-line class-methods-use-this
+	filtersShow() {
+		const filter = document.querySelector('#collapseFilter');
+		if (filter) {
+			const screen = window.matchMedia('(min-width: 768px)').matches;
+			if (screen) {
+				// eslint-disable-next-line no-undef
+				const collapse = new Collapse(filter, {});
+				collapse.toggle();
+			}
+		}
 	}
 }
 
