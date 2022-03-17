@@ -163,7 +163,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                         ?>
 					<div class="col">
 						<div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100">
-							<img src="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
+							<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'square') ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
 							<div class="card-body">
 								<h3 class="card-title">
 									<?php echo get_the_title(get_the_ID()) ?>
