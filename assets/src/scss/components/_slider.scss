@@ -25,11 +25,16 @@
     overflow-x: hidden;
     padding-bottom: 24px;
     .swiper-slide {
-      img {
-        @include boxShadow($regular-box);
-        width: 166px;
-        height: 166px;
-        object-fit: cover;
+      a {
+        img {
+          width: 166px;
+          height: 166px;
+          object-fit: cover;
+        }
+        img:hover {
+          @include animation;
+          @include boxShadow($regular-box);
+        }
       }
     }
   }

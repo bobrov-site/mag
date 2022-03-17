@@ -188,6 +188,7 @@ class SwiperJS {
 		Swiper.use([Navigation]);
 		// eslint-disable-next-line no-new
 		const swiper = new Swiper('.product-img-swiper', {
+			loop: false,
 			slidesPerView: 3,
 			spaceBetween: 24,
 			navigation: {
