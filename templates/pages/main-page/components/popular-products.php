@@ -27,7 +27,7 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association');
                 ?>
             <div class="col">
                 <div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100">
-                    <img src="<?php echo get_the_post_thumbnail_url($product['id']) ?>" class="card-img-top" alt="<?php echo wp_get_attachment_url( $product['id'] ) ?>">
+                    <img src="<?php echo get_the_post_thumbnail_url($product['id'], '424') ?>" class="card-img-top" alt="<?php echo wp_get_attachment_url( $product['id'] ) ?>">
                     <div class="card-body">
                         <h3 class="card-title">
 	                        <?php echo get_the_title($product['id']) ?>
