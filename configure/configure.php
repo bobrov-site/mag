@@ -34,7 +34,7 @@ function custom_setup() {
 	 add_image_size('hd', 1280, 720, true);
 	 add_image_size('logo-slider', 130, 100);
 	 add_image_size('card', 412, 143, true);
-	 add_image_size('product-thumb', 546, 546, true);
+	 add_image_size('product-thumb', 546, 546);
 }
 add_action('after_setup_theme', 'custom_setup');
 //
