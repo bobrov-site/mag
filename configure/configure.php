@@ -32,6 +32,7 @@ function custom_setup() {
 	 add_image_size( '424', 424, 424, true );
 	 add_image_size( '1920', 1920, 1080 );
 	 add_image_size('1280', 1280, 720);
+	 add_image_size('logo-slider', 130, 100);
 }
 add_action('after_setup_theme', 'custom_setup');
 //

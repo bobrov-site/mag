@@ -31,7 +31,7 @@ $image_title = get_the_title($image_id);
                 </div>
 			</div>
 			<div class="col-12 col-lg-7 col-xl-7 d-flex justify-content-lg-end">
-				<img class="company-action-img" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
+				<img class="company-action-img" src="<?php echo get_the_post_thumbnail_url('', '424') ?>" alt="<?php echo $image_title ?>">
 			</div>
 		</div>
 	</div>
