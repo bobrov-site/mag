@@ -82,7 +82,7 @@ $image_title = get_the_title($image_id);
             </div>
             <div class="col-xl-6 d-flex justify-content-end">
                 <div class="benefits-img">
-                    <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
+                    <img src="<?php echo get_the_post_thumbnail_url('', array(451, 502)) ?>" alt="<?php echo $image_title ?>">
                 </div>
             </div>
         </div>
