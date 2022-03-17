@@ -29,10 +29,19 @@ function custom_setup() {
 	remove_image_size( '2048x2048' );
 
 	// CUSTOM IMAGE SIZES
-	// add_image_size( '424x424', 424, 424, true );
-	// add_image_size( '1920', 1920, 9999 );
+	 add_image_size( '424x424', 424, 424, true );
+	 add_image_size( '1920', 1920, 1080 );
+	 add_image_size('1280', 1280, 720);
 }
 add_action('after_setup_theme', 'custom_setup');
+//
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+function my_custom_sizes( $sizes ) {
+	return array_merge( $sizes, array(
+		'1920' => 'FullHD размер',
+		'424x424' => 'Превью карточка',
+	) );
+}
 
 // remove default image sizes to avoid overcharging server - comment line if you need size
 function remove_default_image_sizes( $sizes) {
