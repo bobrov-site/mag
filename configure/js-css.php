@@ -135,7 +135,7 @@ function filterAjax () {
                 <?php // this loop for catalog-page ?>
                 <?php if (empty($catalogName)): ?>
                 <div class="card <?php if ($developer == 'MAG'){  echo 'card-our-product'; } ?> h-100">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
+                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'card') ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
                     <div class="card-body">
                         <h3 class="card-title">
 							<?php echo get_the_title(get_the_ID()) ?>
@@ -150,7 +150,7 @@ function filterAjax () {
 	            <?php // this loop for production-page ?>
                 <?php if (!empty($catalogName)):  ?>
                 <div class="card h-100">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
+                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'card') ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
                     <div class="card-body">
                         <h3 class="card-title">
 				            <?php echo get_the_title(get_the_ID()) ?>

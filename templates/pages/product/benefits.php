@@ -32,7 +32,7 @@ $developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
                         </div>
                         <div class="col-xl-7 col-md-7 col-lg-7 d-flex align-items-center">
                             <?php $src = wp_get_attachment_image_src($benefit['crb_image'], 'hd'); ?>
-                            <img class="benefits-product-img" src="<?php echo $src[0];  ?>" alt="<?php echo get_the_title($benefit['crb_image']) ?>">
+                            <img class="benefits-product-img lazyload" data-src="<?php echo $src[0];  ?>" alt="<?php echo get_the_title($benefit['crb_image']) ?>">
                         </div>
                     </div>
                 </div>
