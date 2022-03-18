@@ -31,7 +31,7 @@ $image_title = get_the_title($image_id);
                 </div>
 			</div>
 			<div class="col-12 col-lg-7 col-xl-7 d-flex justify-content-lg-end">
-				<img class="company-action-img" src="<?php echo get_the_post_thumbnail_url('', 'hd') ?>" alt="<?php echo $image_title ?>">
+				<img class="company-action-img lazyload" data-src="<?php echo get_the_post_thumbnail_url('', 'hd') ?>" alt="<?php echo $image_title ?>">
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@ $image_title = get_the_title($image_id);
             <div class="col-xl-12 d-flex justify-content-center">
                 <div class="mosh-partner-offer text-center">
                     <div class="d-flex justify-content-center">
-                        <img class="mosh-logo" src="<?php echo get_template_directory_uri(). '/assets/src/img/components/company-action/mosh.png'?>" alt="mosh">
+                        <img class="mosh-logo lazyload" data-src="<?php echo get_template_directory_uri(). '/assets/src/img/components/company-action/mosh.png'?>" alt="mosh">
                     </div>
                     <p class="mosh-desc">
                         Турецкая сельскохозяйственная техника высшего класса

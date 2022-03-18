@@ -18,7 +18,7 @@ $image_title = get_the_title($image_id);
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-7 col-md-7">
-				<img class="our-products-action-img" src="<?php echo get_the_post_thumbnail_url('', 'hd') ?>" alt="<?php echo $image_title ?>">
+				<img class="our-products-action-img lazyload" data-src="<?php echo get_the_post_thumbnail_url('', 'hd') ?>" alt="<?php echo $image_title ?>">
 			</div>
 			<div class="col-xl-5 col-md-5 d-flex align-items-center">
 				<div class="our-products-action-offer">

@@ -28,7 +28,7 @@ $image_title = get_the_title($image_id);
                     <div class="row">
                         <div class="col-md-6 col-xl-6">
                             <div class="benefit">
-                                <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/headphones.svg' ?>">
+                                <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/headphones.svg' ?>">
                                 <h3 class="benefit-title">
                                     Тех. поддержка 24/7
                                 </h3>
@@ -41,7 +41,7 @@ $image_title = get_the_title($image_id);
                         </div>
                         <div class="col-md-6 col-xl-6">
                             <div class="benefit">
-                                <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/handshake.svg' ?>">
+                                <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/handshake.svg' ?>">
                                 <h3 class="benefit-title">
                                     Всегда идем навстречу клиенту
                                 </h3>
@@ -54,7 +54,7 @@ $image_title = get_the_title($image_id);
                     <div class="row">
                         <div class="col-md-6 col-xl-6">
                             <div class="benefit">
-                                <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/checkbox.svg' ?>">
+                                <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/checkbox.svg' ?>">
                                 <h3 class="benefit-title">
                                     Инновационные решения
                                 </h3>
@@ -65,7 +65,7 @@ $image_title = get_the_title($image_id);
                         </div>
                         <div class="col-md-6 col-xl-6">
                             <div class="benefit">
-                                <img class="benefit-icon" alt="" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/gear.svg' ?>">
+                                <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/gear.svg' ?>">
                                 <h3 class="benefit-title">
                                     Собственное производство в городе Ставрополь
                                 </h3>
@@ -82,7 +82,7 @@ $image_title = get_the_title($image_id);
             </div>
             <div class="col-xl-6 d-flex justify-content-end">
                 <div class="benefits-img">
-                    <img src="<?php echo get_the_post_thumbnail_url('', array(451, 502)) ?>" alt="<?php echo $image_title ?>">
+                    <img class="lazyload" data-src="<?php echo get_the_post_thumbnail_url('', array(451, 502)) ?>" alt="<?php echo $image_title ?>">
                 </div>
             </div>
         </div>

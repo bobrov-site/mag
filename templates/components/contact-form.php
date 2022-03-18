@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="col-12 col-sm col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/phone.svg'?>" alt="phone">
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/phone.svg'?>" alt="phone">
                                 <a class="contact-data-item-phone" href="tel:+7 (962) 444-40-53">
                                     +7 (962) 444-40-53
                                 </a>
@@ -28,7 +28,7 @@
                         </div>
                         <div class="col-12 col-sm  col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/mail.svg'?>" alt="mail">
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/mail.svg'?>" alt="mail">
                                 <div class="d-flex flex-column">
                                     <a class="contact-data-item-mail" href="mailto:info@ooo-mag.ru">
                                         info@ooo-mag.ru
@@ -43,7 +43,7 @@
                     <div class="row">
                         <div class="col-12 col-sm  col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
                                 <div class="d-flex flex-column">
                                     <h4 class="contact-data-item-title">
                                         Главный офис:
@@ -60,7 +60,7 @@
                         </div>
                         <div class="col-12 col-sm col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/map.svg'?>" alt="map">
                                 <div class="d-flex flex-column">
                                     <h4 class="contact-data-item-title">
                                         Наше производство:
@@ -77,7 +77,7 @@
                     <div class="row">
                         <div class="col-12 col-sm col-lg-12 col-xl d-flex align-items-center">
                             <div class="contact-data-item d-flex m-0">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/time.svg'?>" alt="time">
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/src/svg/components/contacts/time.svg'?>" alt="time">
                                 <div class="d-flex flex-column">
                                     <h4 class="contact-data-item-title">
                                         Режим работы:
