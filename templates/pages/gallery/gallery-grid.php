@@ -42,7 +42,7 @@ $categories = get_categories( $arg_category );
 
                         $image_title = get_the_title($image_id);
                         ?>
-                        <img src="<?php echo get_the_post_thumbnail_url() ?>" class="card-img-top" alt="<?php echo $image_title ?>>">
+                        <img data-src="<?php echo get_the_post_thumbnail_url('', 'card') ?>" class="card-img-top lazyload" alt="<?php echo $image_title ?>>">
                         <div class="card-body">
                             <h3 class="card-title">
 								<?php the_title() ?>

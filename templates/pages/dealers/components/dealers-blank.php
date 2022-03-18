@@ -26,7 +26,7 @@
 			</div>
 			<div class="col-12 col-md-7 col-lg-7 col-xl-7 d-flex justify-content-end">
 				<div class="dealers-blank-img">
-					<img src="<?php the_field('img_blank'); ?>" alt="Диллер">
+					<img class="lazyload" data-src="<?php the_field('img_blank'); ?>" alt="Диллер">
 				</div>
 			</div>
 		</div>
