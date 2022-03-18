@@ -16,7 +16,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                 <div class="product-images">
                     <div class="product-img d-flex justify-content-center">
                         <a data-fancybox="gallery" href="<?php echo get_the_post_thumbnail_url('', 'full') ?>">
-                            <img src="<?php echo get_the_post_thumbnail_url('', 'product-thumb') ?>" alt="<?php echo $image_title?>">
+                            <img class="lazyload" data-src="<?php echo get_the_post_thumbnail_url('', 'product-thumb') ?>" alt="<?php echo $image_title?>">
                         </a>
                     </div>
                     <div class="product-slider">
@@ -29,7 +29,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                                         ?>
                                 <div class="swiper-slide">
                                     <a data-fancybox="gallery" href="<?php echo wp_get_attachment_url($img['crb_image'])  ?>">
-                                        <img src="<?php echo $src[0]; ?>" alt="<?php echo get_the_title($img['crb_image']) ?>">
+                                        <img class="lazyload" data-src="<?php echo $src[0]; ?>" alt="<?php echo get_the_title($img['crb_image']) ?>">
                                     </a>
                                 </div>
                                     <?php endif; ?>
@@ -47,7 +47,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
 				<div class="product-info">
 					<div class="product-info-item">
 						<div class="product-info-header d-flex align-items-center">
-							<img class="product-info-item-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/info.svg' ?>" alt="info">
+							<img class="product-info-item-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/info.svg' ?>" alt="info">
 							<h3 class="product-info-header-title">
 								Характеристики:
 							</h3>
@@ -72,7 +72,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
 					<hr>
                     <div class="product-info-item">
                         <div class="product-info-header d-flex align-items-center">
-                            <img class="product-info-item-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/file.svg' ?>" alt="info">
+                            <img class="product-info-item-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/file.svg' ?>" alt="info">
                             <h3 class="product-info-header-title">
                                 Описание:
                             </h3>
@@ -87,7 +87,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                     <hr>
                     <div class="product-info-item">
                         <div class="product-info-header d-flex align-items-center">
-                            <img class="product-info-header-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/download.svg' ?>" alt="info">
+                            <img class="product-info-header-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/download.svg' ?>" alt="info">
                             <h3 class="product-info-header-title">
                                 Дополнительная информация:
                             </h3>
