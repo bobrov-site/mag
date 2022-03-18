@@ -40,7 +40,7 @@ $terms = get_terms( $args );
                         <?php
                         $imgField = carbon_get_term_meta($term->term_id, 'crb_image');
                         ?>
-						<img src="<?php echo wp_get_attachment_url($imgField)  ?>" class="card-img-top" alt="<?php echo get_the_title($imgField) ?>">
+						<img data-src="<?php echo wp_get_attachment_url($imgField)  ?>" class="card-img-top lazyload" alt="<?php echo get_the_title($imgField) ?>">
 						<div class="card-body">
 							<h3 class="card-title">
 								<?php echo $term->name ?>
