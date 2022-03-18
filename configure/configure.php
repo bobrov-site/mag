@@ -29,10 +29,15 @@ function custom_setup() {
 	remove_image_size( '2048x2048' );
 
 	// CUSTOM IMAGE SIZES
-	// add_image_size( '424x424', 424, 424, true );
-	// add_image_size( '1920', 1920, 9999 );
+	 add_image_size( 'square', 424, 424);
+	 add_image_size( 'fullhd', 1920, 1080, true);
+	 add_image_size('hd', 1280, 720, true);
+	 add_image_size('logo-slider', 130, 100);
+	 add_image_size('card', 412, 143, true);
+	 add_image_size('product-thumb', 546, 546);
 }
 add_action('after_setup_theme', 'custom_setup');
+//
 
 // remove default image sizes to avoid overcharging server - comment line if you need size
 function remove_default_image_sizes( $sizes) {

@@ -69,6 +69,7 @@
     "@fancyapps/ui": "^4.0.26",
     "@popperjs/core": "^2.11.2",
     "bootstrap": "5.1.3",
+    "lazyload": "^2.0.0-rc.2",
     "swiper": "^8.0.7"
   }
 }

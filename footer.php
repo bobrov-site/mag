@@ -5,7 +5,7 @@
 		<div class="container">
             <div class="row">
                 <div class="col-xl-3 col-md-3 col-lg-12">
-                    <img class="logo-footer" src="<?php echo get_template_directory_uri() . '/assets/src/img/components/footer/logo.png'?>" alt="logo-footer">
+                    <img class="logo-footer lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/src/img/components/footer/logo.png'?>" alt="logo-footer">
                 </div>
                 <div class="col-xl-2 col-md-3 col-lg-3">
 	                <?php
@@ -66,10 +66,10 @@
                         </div>
                         <div class="socials d-flex justify-content-start justify-content-md-end">
                             <a class="social-link" href="https://www.instagram.com/mag_official_ru/">
-                                <img class="social-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/instagram.svg'?>" alt="instagram">
+                                <img class="social-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/instagram.svg'?>" alt="instagram">
                             </a>
                             <a class="social-link" href="https://www.youtube.com/channel/UCN9A0uLBBE-7c83rDxkOqLw">
-                                <img class="social-icon" src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/youtube.svg'?>" alt="youtube">
+                                <img class="social-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/footer/youtube.svg'?>" alt="youtube">
                             </a>
                         </div>
                     </div>

@@ -16,7 +16,7 @@
 			</div>
 			<div class="col-xl-7 col-md-6 col-lg-7 d-flex justify-content-end">
 				<div class="catalog-about-img">
-					<img src="<?php the_field('img');?>" alt="catalog">
+					<img class="lazyload" data-src="<?php the_field('img');?>" alt="catalog">
 					<div class="catalog-about-img-bg"></div>
 				</div>
 			</div>
@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-xl-6 col-md-6 col-lg-6 d-flex">
                 <div class="catalog-about-img">
-                    <img src="<?php the_field('img-f')?>" alt="feedback">
+                    <img class="lazyload" data-src="<?php the_field('img-f')?>" alt="feedback">
                     <div class="catalog-about-img-bg"></div>
                 </div>
             </div>

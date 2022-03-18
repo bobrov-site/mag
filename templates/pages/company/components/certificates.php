@@ -28,7 +28,7 @@
 
 	                        $image_title = get_the_title($image_id);
                             ?>
-                            <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
+                            <img class="lazyload" data-src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
                         </div>
 		                    <?php wp_reset_postdata(); ?>
 	                    <?php endwhile; ?>

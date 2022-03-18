@@ -152,7 +152,7 @@ class SwiperJS {
 					576: {
 						spaceBetween: 0
 					}
-				}
+				},
 			}
 		);
 	}

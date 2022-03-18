@@ -25,7 +25,7 @@ $loop = new WP_Query( $mypost ); ?>
 	            $image_title = get_the_title($image_id);
 	            ?>
                 <div class="partners-offer">
-                    <img class="partners-offer-img" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
+                    <img class="partners-offer-img" data-src="<?php echo get_the_post_thumbnail_url() ?>" src="<?php echo get_the_post_thumbnail_url('', array(630, 240)) ?>" alt="<?php echo $image_title ?>">
                     <h3 class="partners-offer-title">
                         Хотите стать нашим партнером?
                     </h3>
@@ -69,7 +69,7 @@ $loop = new WP_Query( $mypost ); ?>
                                 $image_title = get_the_title( $image_id );
 
                                 ?>
-                                <img class="partners-logo" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
+                                <img class="partners-logo lazyload" data-src="<?php echo get_the_post_thumbnail_url('', 'logo-slider') ?>" alt="<?php echo $image_title ?>">
                             </div>
 		                        <?php wp_reset_postdata(); ?>
 	                        <?php endwhile; ?>

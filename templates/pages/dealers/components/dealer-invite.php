@@ -15,7 +15,7 @@
                 </div>
 			</div>
 			<div class="col-xl-7 col-md-7 col-lg-7 d-flex justify-content-end">
-				<img class="dealer-invite-img" src="<?php the_field('img'); ?>" alt="dealer">
+				<img class="dealer-invite-img lazyload" data-src="<?php the_field('img'); ?>" alt="dealer">
 			</div>
 		</div>
 	</div>
