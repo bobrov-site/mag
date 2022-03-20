@@ -69,8 +69,8 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                             <?php } ?>
 						</div>
 					</div>
-					<hr>
 					<?php if (get_the_content()) : ?>
+					<hr>
                     <div class="product-info-item">
                         <div class="product-info-header d-flex align-items-center">
                             <img class="product-info-item-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/file.svg' ?>" alt="info">
