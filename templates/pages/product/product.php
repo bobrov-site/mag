@@ -70,6 +70,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
 						</div>
 					</div>
 					<hr>
+					<?php if (get_the_content()) : ?>
                     <div class="product-info-item">
                         <div class="product-info-header d-flex align-items-center">
                             <img class="product-info-item-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/file.svg' ?>" alt="info">
@@ -77,14 +78,13 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                                 Описание:
                             </h3>
                         </div>
-                        <?php if (get_the_content()) : ?>
                         <div class="product-info-item-desc">
                             <p>
                                 <?php the_content(); ?>
                             </p>
                         </div>
-                        <?php endif; ?>
                     </div>
+					<?php endif; ?>
 					<?php if ($files !== '') : ?>
                     <hr>
                     <div class="product-info-item">
