@@ -77,11 +77,13 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                                 Описание:
                             </h3>
                         </div>
+                        <?php if (get_the_content()) : ?>
                         <div class="product-info-item-desc">
                             <p>
                                 <?php the_content(); ?>
                             </p>
                         </div>
+                        <?php endif; ?>
                     </div>
 					<?php if ($files !== '') : ?>
                     <hr>
