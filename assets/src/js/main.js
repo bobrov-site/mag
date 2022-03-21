@@ -4,6 +4,7 @@ import SwiperJS from './_swiperJs';
 import Filters from './_filters';
 import FancyBoxJs from './_fancybox';
 import LazyLoad from './_lazyLoad';
+import WowJs from './_wow';
 
 const App = {
 
@@ -30,12 +31,16 @@ const App = {
 		function initLazyLoad() {
 			return new LazyLoad();
 		}
+		function initWowJs() {
+			return new WowJs();
+		}
 		initPopperJs();
 		initBootstrapPlugins();
 		initSwiperJS();
 		initFilters();
 		initFancyBox();
 		initLazyLoad();
+		initWowJs();
 	}
 
 };
