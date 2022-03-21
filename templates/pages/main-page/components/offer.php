@@ -52,7 +52,7 @@ $slider = carbon_get_post_meta(get_the_ID(), 'crb_slider');
         <div class="row">
             <div class="col-xl-12">
                 <a href="#popular-products" class="arrow-down-link">
-                    <div class="arrow-down"></div>
+                    <div class="arrow-down wow fadeInDown"></div>
                 </a>
             </div>
         </div>

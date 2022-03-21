@@ -15,7 +15,7 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association');
         <div class="row">
             <div class="col-xl-12">
                 <div class="brick"></div>
-                <h2 class="title-section">
+                <h2 class="title-section wow fadeInDown">
                     Популярная продукция
                 </h2>
             </div>
