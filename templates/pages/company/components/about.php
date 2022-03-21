@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row flex-column-reverse flex-md-row">
 			<div class="col-xl-5 col-md-5 col-lg-5 d-flex align-items-center">
-				<div class="catalog-about-offer">
+				<div class="catalog-about-offer wow fadeInLeft">
                     <h2 class="title-section">
                         <?php the_field('title'); ?>
                     </h2>
@@ -15,7 +15,7 @@
                 </div>
 			</div>
 			<div class="col-xl-7 col-md-6 col-lg-7 d-flex justify-content-end">
-				<div class="catalog-about-img">
+				<div class="catalog-about-img wow fadeInRight">
 					<img class="lazyload" data-src="<?php the_field('img');?>" alt="catalog">
 					<div class="catalog-about-img-bg"></div>
 				</div>
@@ -27,13 +27,13 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-md-6 col-lg-6 d-flex">
-                <div class="catalog-about-img">
+                <div class="catalog-about-img wow fadeInLeft">
                     <img class="lazyload" data-src="<?php the_field('img-f')?>" alt="feedback">
                     <div class="catalog-about-img-bg"></div>
                 </div>
             </div>
             <div class="col-xl-6 col-md-5 col-lg-6 d-flex align-items-center">
-                <div class="catalog-about-offer">
+                <div class="catalog-about-offer wow fadeInRight">
                     <h2 class="title-section">
                         <?php the_field('title-f'); ?>
                     </h2>

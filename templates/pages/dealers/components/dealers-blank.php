@@ -3,14 +3,14 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">
+				<h2 class="title-section wow fadeInDown">
                     Хотите стать нашим дилером?
                 </h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 col-md-5 col-lg-5 col-xl-5 d-flex align-items-center">
-				<div class="dealers-blank-offer">
+				<div class="dealers-blank-offer wow fadeInLeft">
 					<h3 class="title-offer">
                         Если вы хотите стать официальным дилером нашей компании
                     </h3>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-md-7 col-lg-7 col-xl-7 d-flex justify-content-end">
-				<div class="dealers-blank-img">
+				<div class="dealers-blank-img wow fadeInRight">
 					<img class="lazyload" data-src="<?php the_field('img_blank'); ?>" alt="Диллер">
 				</div>
 			</div>

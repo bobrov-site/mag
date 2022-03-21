@@ -36,7 +36,7 @@ $terms = get_terms( $args );
             foreach( $terms as $term ){
             ?>
 				<div class="col">
-					<div class="card h-100">
+					<div class="card h-100 wow fadeIn">
                         <?php
                         $imgField = carbon_get_term_meta($term->term_id, 'crb_image');
                         ?>

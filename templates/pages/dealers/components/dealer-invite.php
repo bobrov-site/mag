@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row flex-column-reverse flex-md-row">
 			<div class="col-xl-5 col-md-5 col-lg-5 d-flex align-items-center">
-				<div class="dealer-invite-offer">
+				<div class="dealer-invite-offer wow fadeInLeft">
                     <h2 class="title-section dark-section">
                         ООО “Монолит Агро Групп” приглашает вас стать официальным дилером
                     </h2>
@@ -15,7 +15,7 @@
                 </div>
 			</div>
 			<div class="col-xl-7 col-md-7 col-lg-7 d-flex justify-content-end">
-				<img class="dealer-invite-img lazyload" data-src="<?php the_field('img'); ?>" alt="dealer">
+				<img class="dealer-invite-img lazyload wow fadeInRight" data-src="<?php the_field('img'); ?>" alt="dealer">
 			</div>
 		</div>
 	</div>

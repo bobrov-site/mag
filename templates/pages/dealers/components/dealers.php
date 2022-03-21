@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">
+				<h2 class="title-section wow fadeInDown">
 					Наши официальные дилеры
 				</h2>
 			</div>
@@ -25,7 +25,7 @@
 			<?php if ($loop->have_posts()) ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 wow fadeIn">
                     <div class="card-body">
                         <h4 class="card-title">
                             <?php the_title() ?>
@@ -55,7 +55,7 @@
                     <div class="swiper-wrapper">
 	                    <?php if ($loop->have_posts()) ?>
 	                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <div class="swiper-slide card h-100">
+                        <div class="swiper-slide card h-100 wow fadeIn">
                             <div class="card-body">
                                 <h4 class="card-title">
 			                        <?php the_title() ?>
@@ -87,7 +87,7 @@
         </div>
         <div class="row">
             <div class="col-xl-3">
-                <div class="become-dealer-link">
+                <div class="become-dealer-link wow fadeInLeft">
                     <a class="btn btn-primary btn-lg" href="#dealers-blank">
                         Стать дилером
                     </a>

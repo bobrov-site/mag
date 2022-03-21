@@ -50,7 +50,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 			<?php if ($loop->have_posts()) ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<div class="col">
-					<div class="card h-100">
+					<div class="card h-100 wow fadeIn">
 						<?php
 						$image_id = get_post_thumbnail_id();
 

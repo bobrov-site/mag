@@ -3,14 +3,14 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">
+				<h2 class="title-section wow fadeInDown">
 					Как получить технику в лизинг?
 				</h2>
 			</div>
 		</div>
-		<div class="row row-cols-1 row-cols-md-3 g-4">
+		<div class="row row-cols-1 row-cols-md-3 gy-4 g-sm-4">
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 wow fadeInDown">
                     <div class="card-body">
                         <div class="number-stage">1</div>
                         <img class="card-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/pages/leasing/user-check.svg' ?>" alt="Подбор техники и лизинга">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 wow fadeInDown">
                     <div class="card-body">
                         <div class="number-stage">2</div>
                         <img class="card-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/pages/leasing/tasks.svg' ?>" alt="Ведение и подача заявки">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 wow fadeInDown">
                     <div class="card-body">
                         <div class="number-stage">3</div>
                         <img class="card-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/pages/leasing/info-circle.svg' ?>" alt="Экономическая оценка компании">
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 wow fadeInDown">
                     <div class="card-body">
                         <div class="number-stage">4</div>
                         <img class="card-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/pages/leasing/user-check.svg' ?>" alt="Заключение договора">
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 wow fadeInDown">
                     <div class="card-body">
                         <div class="number-stage">5</div>
                         <img class="card-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/pages/leasing/money.svg' ?>" alt="Внесение авансовой суммы">
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 wow fadeInDown">
                     <div class="card-body">
                         <div class="number-stage">6</div>
                         <img class="card-icon" src="<?php echo get_template_directory_uri() . '/assets/src/svg/pages/leasing/like.svg' ?>" alt="Поставка техники в хозяйство">
@@ -96,7 +96,7 @@
 		</div>
         <div class="row">
             <div class="consultation-button">
-                <a class="btn btn-primary btn-lg" href="#contact-form">
+                <a class="btn btn-primary btn-lg wow fadeInDown" href="#contact-form">
                     Получить консультацию
                 </a>
             </div>

@@ -3,17 +3,17 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">
+				<h2 class="title-section wow fadeInDown">
 					Остались еще вопросы?
 				</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xl-5 col-12 col-lg-5">
-                <div class="form">
+                <div class="form wow fadeInLeft">
                     <?php echo do_shortcode('[forminator_form id="209"]') ?>
                 </div>
-                <div class="contact-data">
+                <div class="contact-data wow fadeInLeft">
                     <h3 class="title-data">
                         Контактные данные
                     </h3>

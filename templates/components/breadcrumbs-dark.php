@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xl-12">
-			<div class="breadcrumbs dark">
+			<div class="breadcrumbs dark wow fadeIn">
 				<?php
 				if (function_exists('yoast_breadcrumb') ) {
 					yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -12,7 +12,7 @@
 	</div>
 	<div class="row">
 		<div class="col-xl-12">
-			<h1 class="title-page dark">
+			<h1 class="title-page dark wow fadeIn">
 				<?php
 				if (is_archive()) {
                     the_archive_title();

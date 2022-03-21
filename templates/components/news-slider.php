@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">
+				<h2 class="title-section wow fadeInDown">
 					Новости
 				</h2>
 			</div>
@@ -22,7 +22,7 @@
 	                    $loop = new WP_Query( $mypost ); ?>
 	                    <?php if ($loop->have_posts()) ?>
 	                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <div class="swiper-slide card">
+                        <div class="swiper-slide card wow fadeIn">
 	                        <?php
 	                        $image_id = get_post_thumbnail_id();
 

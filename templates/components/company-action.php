@@ -18,7 +18,7 @@ $image_title = get_the_title($image_id);
 	<div class="container">
 		<div class="row flex-column-reverse flex-lg-row">
 			<div class="col-12 col-lg-5 col-xl-5 d-flex align-items-center">
-				<div class="company-action-offer">
+				<div class="company-action-offer wow wow fadeInLeft">
                     <h2 class="title-section dark-section">
                         Компания ООО «МАГ» благодарит партнеров за оказанное доверие и сотрудничество.
                     </h2>
@@ -31,7 +31,7 @@ $image_title = get_the_title($image_id);
                 </div>
 			</div>
 			<div class="col-12 col-lg-7 col-xl-7 d-flex justify-content-lg-end">
-				<img class="company-action-img lazyload" data-src="<?php echo get_the_post_thumbnail_url('', 'hd') ?>" alt="<?php echo $image_title ?>">
+				<img class="company-action-img lazyload wow fadeInRight" data-src="<?php echo get_the_post_thumbnail_url('', 'hd') ?>" alt="<?php echo $image_title ?>">
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@ $image_title = get_the_title($image_id);
     <div class="container">
         <div class="row">
             <div class="col-xl-12 d-flex justify-content-center">
-                <div class="mosh-partner-offer text-center">
+                <div class="mosh-partner-offer text-center wow fadeInDown">
                     <div class="d-flex justify-content-center">
                         <img class="mosh-logo lazyload" data-src="<?php echo get_template_directory_uri(). '/assets/src/img/components/company-action/mosh.png'?>" alt="mosh">
                     </div>

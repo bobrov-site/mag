@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">
+				<h2 class="title-section wow fadeInDown">
                     Мы работаем с лизинговыми компаниями:
                 </h2>
 			</div>
@@ -35,7 +35,7 @@
 
 	                        $image_title = get_the_title($image_id);
 	                        ?>
-                            <img class="company-logo" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
+                            <img class="company-logo wow fadeIn" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo $image_title ?>">
                         </div>
 		                    <?php wp_reset_postdata(); ?>
 	                    <?php endwhile; ?>

@@ -162,7 +162,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 						$developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
                         ?>
 					<div class="col">
-						<div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100">
+						<div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100 wow fadeIn">
 							<img data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'square') ?>" class="card-img-top lazyload" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
 							<div class="card-body">
 								<h3 class="card-title">
@@ -362,7 +362,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 						$developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
 						?>
                         <div class="col">
-                            <div class="card h-100">
+                            <div class="card h-100 wow fadeIn">
                                 <img data-src="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>" class="card-img-top lazyload" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
                                 <div class="card-body">
                                     <h3 class="card-title">

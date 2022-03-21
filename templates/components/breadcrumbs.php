@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xl-12">
-			<div class="breadcrumbs">
+			<div class="breadcrumbs wow fadeIn">
                 <?php
                 if (function_exists('yoast_breadcrumb') ) {
                     yoast_breadcrumb('<p id="breadcrumbs">','</p>');
@@ -12,7 +12,7 @@
 	</div>
 	<div class="row">
 		<div class="col-xl-12">
-			<h1 class="title-page">
+			<h1 class="title-page wow fadeIn">
                 <?php
                 if (is_archive()) {
                     single_term_title();

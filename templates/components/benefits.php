@@ -19,7 +19,7 @@ $image_title = get_the_title($image_id);
 		<div class="row">
 			<div class="col-xl-6">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">Преимущества покупки продукции у ООО “МАГ”</h2>
+				<h2 class="title-section wow fadeInDown">Преимущества покупки продукции у ООО “МАГ”</h2>
 			</div>
 		</div>
         <div class="row flex-column-reverse flex-xl-row d-flex">
@@ -27,7 +27,7 @@ $image_title = get_the_title($image_id);
                 <div class="benefits-list">
                     <div class="row">
                         <div class="col-md-6 col-xl-6">
-                            <div class="benefit">
+                            <div class="benefit wow fadeInLeft">
                                 <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/headphones.svg' ?>">
                                 <h3 class="benefit-title">
                                     Тех. поддержка 24/7
@@ -40,7 +40,7 @@ $image_title = get_the_title($image_id);
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-6">
-                            <div class="benefit">
+                            <div class="benefit wow fadeInRight">
                                 <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/handshake.svg' ?>">
                                 <h3 class="benefit-title">
                                     Всегда идем навстречу клиенту
@@ -53,7 +53,7 @@ $image_title = get_the_title($image_id);
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-xl-6">
-                            <div class="benefit">
+                            <div class="benefit wow fadeInLeft">
                                 <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/checkbox.svg' ?>">
                                 <h3 class="benefit-title">
                                     Инновационные решения
@@ -64,7 +64,7 @@ $image_title = get_the_title($image_id);
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-6">
-                            <div class="benefit">
+                            <div class="benefit wow fadeInRight">
                                 <img class="benefit-icon lazyload" alt="" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/components/benefits/gear.svg' ?>">
                                 <h3 class="benefit-title">
                                     Собственное производство в городе Ставрополь
@@ -76,13 +76,13 @@ $image_title = get_the_title($image_id);
                         </div>
                     </div>
                 </div>
-                <a href="<?php echo get_permalink(17) ?>" class="btn btn-primary btn-lg">
+                <a href="<?php echo get_permalink(17) ?>" class="btn btn-primary btn-lg wow fadeInDown">
                     Перейти в каталог
                 </a>
             </div>
             <div class="col-xl-6 d-flex justify-content-end">
-                <div class="benefits-img">
-                    <img class="lazyload" data-src="<?php echo get_the_post_thumbnail_url('', array(451, 502)) ?>" alt="<?php echo $image_title ?>">
+                <div class="benefits-img wow fadeIn">
+                    <img class="lazyload wow fadeIn" data-src="<?php echo get_the_post_thumbnail_url('', array(451, 502)) ?>" alt="<?php echo $image_title ?>">
                 </div>
             </div>
         </div>

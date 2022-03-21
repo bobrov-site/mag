@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="brick wow fadeInDown"></div>
-                <h2 class="title-section">
+                <h2 class="title-section wow fadeInDown">
                     Наши сертификаты и награды
                 </h2>
             </div>

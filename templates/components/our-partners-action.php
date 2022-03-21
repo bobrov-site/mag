@@ -10,7 +10,7 @@ $loop = new WP_Query( $mypost ); ?>
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">Наши партнеры</h2>
+				<h2 class="title-section wow fadeInDown">Наши партнеры</h2>
 			</div>
 		</div>
         <div class="row flex-column-reverse flex-md-row">
@@ -24,7 +24,7 @@ $loop = new WP_Query( $mypost ); ?>
 
 	            $image_title = get_the_title($image_id);
 	            ?>
-                <div class="partners-offer">
+                <div class="partners-offer wow fadeInLeft">
                     <img class="partners-offer-img" data-src="<?php echo get_the_post_thumbnail_url() ?>" src="<?php echo get_the_post_thumbnail_url('', array(630, 240)) ?>" alt="<?php echo $image_title ?>">
                     <h3 class="partners-offer-title">
                         Хотите стать нашим партнером?
@@ -41,7 +41,7 @@ $loop = new WP_Query( $mypost ); ?>
 	            <?php endwhile; ?>
             </div>
             <div class="col-xl-6 col-md-6">
-                <div class="partners-slider border">
+                <div class="partners-slider border wow fadeInRight">
                     <div class="partners-swiper">
                         <div class="swiper-wrapper">
 	                        <?php

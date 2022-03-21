@@ -8,7 +8,7 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association')
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="brick wow fadeInDown"></div>
-				<h2 class="title-section">
+				<h2 class="title-section wow fadeInDown">
 					С этим товаром покупают:
 				</h2>
 			</div>
@@ -16,7 +16,7 @@ $products = carbon_get_post_meta(get_the_ID(), 'crb_association')
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 g-sm-4">
 			<?php foreach ($products as $product) { ?>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 wow fadeIn">
                         <img src="<?php echo get_the_post_thumbnail_url($product['id']) ?>" class="card-img-top" alt="">
                         <div class="card-body">
                             <h3 class="card-title">

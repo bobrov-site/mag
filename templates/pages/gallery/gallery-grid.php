@@ -28,13 +28,13 @@ $categories = get_categories( $arg_category );
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <h2 class="title-section"><?php echo $cat->name; ?></h2>
+                    <h2 class="title-section wow fadeInDown"><?php echo $cat->name; ?></h2>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 g-sm-4">
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 wow fadeIn">
                         <?php
                         $image_id = get_post_thumbnail_id();
 
