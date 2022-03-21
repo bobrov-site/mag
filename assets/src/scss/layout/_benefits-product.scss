@@ -1,25 +1,37 @@
 .benefits-product {
+  background-color: $primary-color;
+  .row {
+    flex-direction: row-reverse !important;
+  }
   &:nth-child(odd) {
-    .row {
-      flex-flow: row-reverse;
-    }
     padding-top: 75px;
-    background-color: $primary-color;
-    color: $primary-white;
-
-    .benefits-product-offer {
-      .title-section , .desc-section {
-        color: $primary-white;
-      }
+    background-color: #fff;
+    .row {
+      flex-direction: row !important;
     }
     .benefits-product-box {
       box-shadow: none;
+    }
+    .benefits-product-offer {
+      .title-section , .desc-section {
+        color: $primary-black;
+      }
+    }
+  }
+  .benefits-product-offer {
+    .title-section , .desc-section {
+      color: $primary-white;
+    }
+    .desc-section {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px !important;
+      }
     }
   }
   padding-bottom: 75px;
   padding-top: 75px;
   &-box {
-    @include boxShadow($regular-box);
+    //@include boxShadow($regular-box);
     padding: 20px;
   }
   &-offer {
