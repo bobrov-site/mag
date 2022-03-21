@@ -18,7 +18,7 @@ $image_title = get_the_title($image_id);
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-6">
-				<div class="brick"></div>
+				<div class="brick wow fadeInDown"></div>
 				<h2 class="title-section">Преимущества покупки продукции у ООО “МАГ”</h2>
 			</div>
 		</div>

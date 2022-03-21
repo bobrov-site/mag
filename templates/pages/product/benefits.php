@@ -6,7 +6,7 @@ $developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
 <div class="container">
     <div class="row">
         <div class="col-xl-12">
-            <div class="brick"></div>
+            <div class="brick wow fadeInDown"></div>
             <h2 class="title-section">
                 Преимущества нашего продукта:
             </h2>

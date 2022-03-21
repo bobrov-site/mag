@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
-				<div class="brick"></div>
+				<div class="brick wow fadeInDown"></div>
 				<h2 class="title-section">
                     Хотите стать нашим дилером?
                 </h2>

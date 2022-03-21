@@ -9,7 +9,7 @@ $loop = new WP_Query( $mypost ); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
-				<div class="brick"></div>
+				<div class="brick wow fadeInDown"></div>
 				<h2 class="title-section">Наши партнеры</h2>
 			</div>
 		</div>
