@@ -101,8 +101,8 @@ function filterAjax () {
 
 	$args = array(
 		'post_type' => 'product',
-		'posts_per_archive_page' => 9,
-		'paged' => $paged,
+		'posts_per_archive_page' => -1,
+//		'paged' => $paged,
 		'search_prod_title' => $productName,
 		'tax_query' => array(
 			array(
@@ -128,54 +128,56 @@ function filterAjax () {
 	<?php $loop = new WP_Query( $args ); ?>
 
 	<?php if ($loop->have_posts()) {  ?>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-3 gy-4 g-sm-4">
 		<?php while ( $loop->have_posts()) : $loop->the_post(); ?>
 			<?php
 			$developer = carbon_get_post_meta(get_the_ID(), 'crb_developer'); ?>
             <div class="col">
-                <?php // this loop for catalog-page ?>
-                <?php if (empty($catalogName)): ?>
-                <div class="card <?php if ($developer == 'MAG'){  echo 'card-our-product'; } ?> h-100">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'card') ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
-                    <div class="card-body">
-                        <h3 class="card-title">
-							<?php echo get_the_title(get_the_ID()) ?>
-                        </h3>
-                        <p class="card-text"><?php echo get_the_excerpt(get_the_ID()) ?></p>
-                        <a class="btn <?php if ($developer == 'MAG'){ echo 'btn-secondary'; } else { echo 'btn-primary'; }; ?>" href="<?php echo get_the_permalink(get_the_ID()) ?>">
-                            Подробнее
-                        </a>
+				<?php // this loop for catalog-page ?>
+				<?php if (empty($catalogName)): ?>
+                    <div class="card <?php if ($developer == 'MAG'){  echo 'card-our-product'; } ?> h-100">
+                        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'card') ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
+                        <div class="card-body">
+                            <h3 class="card-title">
+								<?php echo get_the_title(get_the_ID()) ?>
+                            </h3>
+                            <p class="card-text"><?php echo get_the_excerpt(get_the_ID()) ?></p>
+                            <a class="btn <?php if ($developer == 'MAG'){ echo 'btn-secondary'; } else { echo 'btn-primary'; }; ?>" href="<?php echo get_the_permalink(get_the_ID()) ?>">
+                                Подробнее
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <?php endif; ?>
-	            <?php // this loop for production-page ?>
-                <?php if (!empty($catalogName)):  ?>
-                <div class="card h-100">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'card') ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
-                    <div class="card-body">
-                        <h3 class="card-title">
-				            <?php echo get_the_title(get_the_ID()) ?>
-                        </h3>
-                        <p class="card-text"><?php echo get_the_excerpt(get_the_ID()) ?></p>
-                        <a class="btn btn-primary" href="<?php echo get_the_permalink(get_the_ID()) ?>">
-                            Подробнее
-                        </a>
+				<?php endif; ?>
+				<?php // this loop for production-page ?>
+				<?php if (!empty($catalogName)):  ?>
+                    <div class="card h-100">
+                        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'card') ?>" class="card-img-top" alt="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>">
+                        <div class="card-body">
+                            <h3 class="card-title">
+								<?php echo get_the_title(get_the_ID()) ?>
+                            </h3>
+                            <p class="card-text"><?php echo get_the_excerpt(get_the_ID()) ?></p>
+                            <a class="btn btn-primary" href="<?php echo get_the_permalink(get_the_ID()) ?>">
+                                Подробнее
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <?php endif; ?>
+				<?php endif; ?>
             </div>
 			<?php wp_reset_postdata(); ?>
 		<?php endwhile; ?>
 	<?php }
 	else {
 		?>
-            <div class="col">
-                <h2 class="title-section">
-                    Товаров не найдено! Укажите другие фильтры
-                </h2>
-            </div>
+        <div class="col">
+            <h2 class="title-section">
+                Товаров не найдено! Укажите другие фильтры
+            </h2>
+        </div>
 		<?php
 	}
 	?>
+        </div>
 
 	<?php
 	remove_filter( 'posts_where', 'title_filter', 10, 2 ); //because this loop it's deleted in the end
