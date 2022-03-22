@@ -23,14 +23,18 @@ $term = get_term_by('name', single_term_title('', false), 'repairs');
 			$loop = new WP_Query( $mypost ); ?>
 			<?php if ($loop->have_posts()) ?>
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+            <?php
+				$developer = carbon_get_post_meta( get_the_ID(), 'crb_developer' );
+                ?>
 				<div class="col">
-					<div class="card h-100 wow fadeIn">
+					<div class="card <?php if ($developer == 'MAG'){ echo 'card-our-product'; } ?> h-100 wow fadeIn">
 						<?php
 						$image_id = get_post_thumbnail_id();
 
 						$image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
 
 						$image_title = get_the_title($image_id);
+
 						?>
 						<img data-src="<?php echo get_the_post_thumbnail_url() ?>" class="card-img-top lazyload" alt="<?php echo $image_title ?>">
 						<div class="card-body">
@@ -50,7 +54,7 @@ $term = get_term_by('name', single_term_title('', false), 'repairs');
 								?>
                             </div>
 							<p class="card-text"><?php echo get_the_excerpt() ?></p>
-							<a class="btn btn-primary" href="<?php the_permalink(); ?>">
+							<a class="btn <?php if ($developer == 'MAG'){ echo 'btn-secondary'; } else { echo 'btn-primary'; }; ?>" href="<?php the_permalink(); ?>">
 								Подробнее
 							</a>
 						</div>
