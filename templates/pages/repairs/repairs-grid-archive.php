@@ -39,7 +39,7 @@ $term = get_term_by('name', single_term_title('', false), 'repairs');
 							</h3>
                             <div class="card-links">
 								<?php
-								$terms = get_the_terms(get_the_ID(), 'technique');
+								$terms = get_the_terms(get_the_ID(), 'repairs');
 								if ($terms) {
 									foreach ($terms as $term) {
 										?>
