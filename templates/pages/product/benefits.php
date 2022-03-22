@@ -2,7 +2,7 @@
 $benefits = carbon_get_post_meta(get_the_ID(), 'crb_benefits');
 $developer = carbon_get_post_meta(get_the_ID(), 'crb_developer');
 ?>
-<?php if ($developer == 'MAG') : ?>
+<?php if ($benefits) : ?>
 <div class="container">
     <div class="row">
         <div class="col-xl-12">
