@@ -46,7 +46,7 @@ $term = get_term_by('name', single_term_title('', false), 'technique');
                                 if ($terms) {
                                     foreach ($terms as $term) {
                                         ?>
-                                        <a class="card-link" href="<?php echo get_term_link($term->term_id)?>"><?php echo $term->name ?></a>
+                                        <a class="card-link <?php if ($developer == 'MAG'){ echo 'link-our'; }  ?>" href="<?php echo get_term_link($term->term_id)?>"><?php echo $term->name ?></a>
                                 <?php
                                     }
                                 }
