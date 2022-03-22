@@ -70,9 +70,9 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                             <?php } ?>
 						</div>
 					</div>
+                        <hr>
                     <?php endif; ?>
 					<?php if (get_the_content()) : ?>
-					<hr>
                     <div class="product-info-item wow fadeInDown">
                         <div class="product-info-header d-flex align-items-center">
                             <img class="product-info-item-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/file.svg' ?>" alt="info">
@@ -86,9 +86,9 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                             </p>
                         </div>
                     </div>
+                        <hr>
 					<?php endif; ?>
 					<?php if ($files !== '') : ?>
-                    <hr>
                     <div class="product-info-item wow fadeInDown">
                         <div class="product-info-header d-flex align-items-center">
                             <img class="product-info-header-icon lazyload" data-src="<?php echo get_template_directory_uri() . '/assets/dist/svg/pages/product-page/download.svg' ?>" alt="info">
@@ -100,8 +100,8 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                             <a href="<?php ?>" download>Скачать коммерческое предложение</a>
                         </div>
                     </div>
+                        <hr>
                     <?php endif; ?>
-                    <hr>
                     <div class="product-info-item wow fadeInDown">
                         <a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#priceModal">
                             Узнать цену
