@@ -153,6 +153,8 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 						'post_type' => 'product',
 						'posts_per_page' => 9,
 						'paged' => $paged,
+                        'orderby' => 'title',
+                        'order' => 'ASC'
 
 					);
 					$loop = new WP_Query( $mypost ); ?>
@@ -349,6 +351,8 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
 						'post_type' => 'product',
 						'posts_per_page' => 9,
 						'paged' => $paged,
+						'orderby' => 'title',
+						'order' => 'ASC',
 						'meta_query' => [
 							'relation' => 'AND',
                             $key_developer

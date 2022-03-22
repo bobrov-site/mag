@@ -102,6 +102,8 @@ function filterAjax () {
 	$args = array(
 		'post_type' => 'product',
 		'posts_per_archive_page' => -1,
+		'orderby' => 'title',
+		'order' => 'ASC',
 //		'paged' => $paged,
 		'search_prod_title' => $productName,
 		'tax_query' => array(
