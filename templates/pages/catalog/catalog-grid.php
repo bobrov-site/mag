@@ -349,7 +349,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                     );
 					$mypost = array(
 						'post_type' => 'product',
-						'posts_per_page' => 9,
+						'posts_per_page' => -1,
 						'paged' => $paged,
 						'orderby' => 'title',
 						'order' => 'ASC',
@@ -381,18 +381,6 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                         </div>
 						<?php wp_reset_postdata(); ?>
 					<?php endwhile; ?>
-                </div>
-                <div class="row">
-                    <div class="col-xl-12 d-flex justify-content-end">
-                        <div class="pagination-archive">
-							<?php
-							$args = array(
-								'prev_next' => false,
-							);
-							?>
-							<?php  the_posts_pagination($args); ?>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
