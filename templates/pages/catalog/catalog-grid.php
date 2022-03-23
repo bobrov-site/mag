@@ -138,6 +138,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                             </div>
                             <div class="filter-item d-grid">
                                 <input type="hidden" name="action" value="filter">
+
                                 <button class="btn btn-primary" type="submit">
                                     Найти
                                 </button>
@@ -332,6 +333,7 @@ $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
                             </div>
                             <div class="filter-item d-grid">
                                 <input type="hidden" name="action" value="filter">
+                                <input type="hidden" name="catalog" value="MAG">
                                 <button class="btn btn-primary" type="submit">
                                     Найти
                                 </button>

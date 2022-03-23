@@ -102,10 +102,11 @@ function filterAjax () {
 	$args = array(
 		'post_type' => 'product',
 		'posts_per_archive_page' => -1,
-		'orderby' => 'title',
-		'order' => 'ASC',
+//		'orderby' => 'title',
+//		'order' => 'ASC',
 //		'paged' => $paged,
-		'search_prod_title' => $productName,
+//		'search_prod_title' => $productName,
+        's' => $productName,
 		'tax_query' => array(
 			array(
 				'taxonomy' => $taxonomy,
@@ -124,7 +125,6 @@ function filterAjax () {
 
 
 	);
-	add_filter( 'posts_where', 'title_filter', 10, 2 ); //filter by title post
 	?>
 
 	<?php $loop = new WP_Query( $args ); ?>
@@ -182,7 +182,6 @@ function filterAjax () {
         </div>
 
 	<?php
-	remove_filter( 'posts_where', 'title_filter', 10, 2 ); //because this loop it's deleted in the end
 	wp_die();
 
 }
