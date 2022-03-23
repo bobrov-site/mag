@@ -47,7 +47,7 @@ $categories = get_categories( $arg_category );
                             <h3 class="card-title">
 								<?php the_title() ?>
                             </h3>
-                            <p class="card-text"><?php the_field('date') . the_field('year'); ?></p>
+                            <p class="card-text"><?php the_field('date') ?></p>
                             <a class="btn btn-primary" href="<?php the_permalink(); ?>">
                                 Подробнее
                             </a>
