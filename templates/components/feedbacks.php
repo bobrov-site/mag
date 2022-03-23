@@ -35,7 +35,7 @@
                                 <h3 class="card-title">
 	                                <?php the_title() ?>
                                 </h3>
-                                <p class="card-text"><?php the_content(); ?></p>
+                                <p class="card-text"><?php echo wp_strip_all_tags(get_the_content()); ?></p>
                             </div>
                         </div>
 		                    <?php wp_reset_postdata(); ?>
