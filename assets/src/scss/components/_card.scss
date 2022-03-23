@@ -67,6 +67,7 @@
       box-orient: vertical;
     }
     .card-text {
+      @include font($roboto, $regular-weight, $p, $lh-text, $primary-black);
       margin-bottom: 12px;
       overflow: hidden;
       text-overflow: ellipsis;
