@@ -141,16 +141,19 @@ class SwiperJS {
 					delay: 6000
 				},
 				slidesPerView: 1,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
 				breakpoints: {
 					320: {
 						spaceBetween: 24,
+						pagination: false,
 					},
 					576: {
 						spaceBetween: 0
+					},
+					992: {
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						}
 					}
 				},
 			}
