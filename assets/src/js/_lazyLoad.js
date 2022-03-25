@@ -7,6 +7,7 @@ class LazyLoad {
 
 	// eslint-disable-next-line class-methods-use-this
 	lazyLoadInit() {
+		// eslint-disable-next-line no-undef
 		lazyload();
 	}
 }
