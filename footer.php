@@ -83,7 +83,7 @@
                     </span>
                 </div>
                 <div class="col-xl col-md d-flex">
-                    <a class="developer" href="taplink.cc/bobrov_site">
+                    <a class="developer" href="https://taplink.cc/bobrov_site">
                         Сайт разработал Бобров Даниил
                     </a>
                 </div>
