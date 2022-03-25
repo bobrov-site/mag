@@ -56,14 +56,17 @@
     max-width: 531px;
     right: 0;
     left: unset;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
     @media screen and (max-width: 1199px) {
       width: 100%;
       max-width: unset;
       top: 400px;
     }
-    @media screen and (max-width: 575px) {
-      top: 200px;
-    }
+    //@media screen and (max-width: 575px) {
+    //  top: 200px;
+    //}
     .swiper-pagination-bullet {
       border: 0;
       border-radius: 0;
