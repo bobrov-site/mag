@@ -13,6 +13,7 @@
 			$mypost = array(
 				'post_type' => 'partners',
 				'order' => 'ASC',
+                'posts_per_page' => -1,
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'partners_categories',
