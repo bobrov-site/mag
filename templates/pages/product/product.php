@@ -8,6 +8,7 @@ $image_title = get_the_title($image_id);
 $slider_imgs = carbon_get_post_meta(get_the_ID(), 'crb_slider');
 $product_chars = carbon_get_post_meta(get_the_ID(), 'crb_characteristics');
 $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
+$url_file = wp_get_attachment_url($files);
 ?>
 <section class="product">
 	<div class="container">
@@ -97,7 +98,7 @@ $files = carbon_get_post_meta(get_the_ID(), 'crb_file');
                             </h3>
                         </div>
                         <div class="product-info-item-link">
-                            <a href="<?php ?>" download>Скачать коммерческое предложение</a>
+                            <a href="<?php echo $url_file ?>" download>Скачать коммерческое предложение</a>
                         </div>
                     </div>
                         <hr>
