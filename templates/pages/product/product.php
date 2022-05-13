@@ -123,7 +123,7 @@ $url_file = wp_get_attachment_url($files);
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-	            <?php echo do_shortcode('[forminator_form id="240"]') ?>
+	            <?php echo do_shortcode('[forminator_form id="1304"]') ?>
             </div>
         </div>
     </div>
