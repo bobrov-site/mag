@@ -10,6 +10,7 @@
       &-title {
         @include font($roboto, $black-weight,$h1, $lh-title , $primary-white);
         margin-bottom: 18px;
+        word-break: break-word;
         @media screen and (max-width: 1199px) {
           margin-top: 18px;
         }

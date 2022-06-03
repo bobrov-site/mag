@@ -189,6 +189,6 @@ function filterAjax () {
 
 function _add_stylesheets() {
     $path = get_template_directory_uri() . '/assets/dist/css/main.css';
-	wp_enqueue_style('theme', $path, array(), '1.0', 'all' );
+	wp_enqueue_style('theme', $path, array(), '1.1', 'all' );
 }
 add_action('wp_enqueue_scripts', '_add_stylesheets');
