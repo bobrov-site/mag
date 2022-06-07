@@ -82,7 +82,7 @@
                         © 2022 ООО “МАГ”
                     </span>
                 </div>
-                <div class="col-xl col-md d-flex">
+                <div class="col-xl col-md d-flex justify-content-start justify-content-md-center">
                     <a class="developer" href="https://taplink.cc/bobrov_site">
                         Сайт разработал Бобров Даниил
                     </a>
