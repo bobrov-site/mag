@@ -19,9 +19,9 @@
 					'walker' => new bootstrap_5_wp_nav_menu_walker()
 				));
 				?>
-				<a href="tel:<?php echo '+7 (962) 444-40-53' ?>" class="navbar-number">
-					+7 (962) 444-40-53
-				</a>
+                <a href="tel:88007707596" class="navbar-number">
+                    8 (800) 770-75-96
+                </a>
 				<a href="#contact-form" class="navbar-callback">
 					<div class="navbar-callback-icon"></div>
 					<span class="navbar-callback-text">

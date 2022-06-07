@@ -52,8 +52,8 @@
                     </div>
                 </div>
                 <div class="col-xl col-8 col-sm-12 col-md-3 flex-wrap flex-lg-nowrap col-lg-6 d-flex justify-content-start justify-content-lg-end">
-                    <a href="tel:+7 (962) 444-40-53" class="footer-number">
-                        +7 (962) 444-40-53
+                    <a href="tel:88007707596" class="footer-number">
+                        8 (800) 770-75-96
                     </a>
                     <div class="callback-and-social">
                         <div class="callback">
