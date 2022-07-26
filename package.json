@@ -71,7 +71,7 @@
     "animate-sass": "^0.8.2",
     "bootstrap": "5.2.0",
     "lazyload": "^2.0.0-rc.2",
-    "swiper": "^8.3.1",
+    "swiper": "^8.3.2",
     "wowjs": "^1.1.3"
   }
 }
