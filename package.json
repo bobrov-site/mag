@@ -59,14 +59,14 @@
     "merge-stream": "2.0.0",
     "node-notifier": "10.0.0",
     "postcss": "8.4.14",
-    "sass": "1.49.9",
+    "sass": "1.54.0",
     "terser-webpack-plugin": "5.3.3",
     "vinyl-named": "1.1.0",
-    "webpack": "5.73.0",
+    "webpack": "5.74.0",
     "webpack-stream": "7.0.0"
   },
   "dependencies": {
-    "@fancyapps/ui": "^4.0.26",
+    "@fancyapps/ui": "^4.0.29",
     "@popperjs/core": "^2.11.5",
     "animate-sass": "^0.8.2",
     "bootstrap": "5.1.3",
