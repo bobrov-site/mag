@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
-    "@popperjs/core": "^2.11.5",
+    "@popperjs/core": "^2.11.6",
     "animate-sass": "^0.8.2",
     "bootstrap": "5.2.0",
     "lazyload": "^2.0.0-rc.2",
